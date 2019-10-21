@@ -1,0 +1,3077 @@
+[
+    {
+        "id": "e0207c67.5fe73",
+        "type": "tab",
+        "label": "GLOBAL"
+    },
+    {
+        "id": "4b279b3e.b560d4",
+        "type": "tab",
+        "label": "Alexa Commands"
+    },
+    {
+        "id": "d62b2f38.d374f",
+        "type": "tab",
+        "label": "Dashboard Living Room"
+    },
+    {
+        "id": "2186aa43.d8c126",
+        "type": "tab",
+        "label": "Dashboard Home Cinema"
+    },
+    {
+        "id": "1285763.399ba8a",
+        "type": "tab",
+        "label": "Dashboard Kitchen Room"
+    },
+    {
+        "id": "166dd706.9b58d9",
+        "type": "tab",
+        "label": "Dashboard Bathroom"
+    },
+    {
+        "id": "7ac0d37f.c1198c",
+        "type": "tab",
+        "label": "Dashboard Bedroom"
+    },
+    {
+        "id": "3ee9262a.061c0a",
+        "type": "tab",
+        "label": "Dashboard Corridor"
+    },
+    {
+        "id": "99e96001.113a9",
+        "type": "tab",
+        "label": "Dashboard States"
+    },
+    {
+        "id": "de157ea5.02ed8",
+        "type": "ui_base",
+        "name": "Smart Home",
+        "theme": "theme-dark"
+    },
+    {
+        "id": "b7fc869.1c84e78",
+        "type": "mqtt-broker",
+        "z": "",
+        "broker": "192.168.0.254",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    },
+    {
+        "id": "b49c9c97.4faa",
+        "type": "ui_group",
+        "z": "",
+        "name": "Living Room",
+        "tab": "43cb37bd.804a18",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "43cb37bd.804a18",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Living Room",
+        "icon": "dashboard",
+        "order": 2
+    },
+    {
+        "id": "89ab95f3.422648",
+        "type": "ui_group",
+        "z": "",
+        "name": "Channel",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "c2b82a5a.921208",
+        "type": "ui_group",
+        "z": "",
+        "name": "Volume",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "46fad4f8.93fd6c",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home Cinema",
+        "icon": "dashboard",
+        "order": 7
+    },
+    {
+        "id": "485a2c0c.fa7014",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Kitchen Room",
+        "icon": "dashboard",
+        "order": 3
+    },
+    {
+        "id": "e1fa2245.b869d",
+        "type": "ui_group",
+        "z": "",
+        "name": "Kitchen Room",
+        "tab": "485a2c0c.fa7014",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "e16c2091.d9fcf",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Bathroom",
+        "icon": "dashboard",
+        "order": 4
+    },
+    {
+        "id": "19215066.901d3",
+        "type": "ui_group",
+        "z": "",
+        "name": "Bathroom",
+        "tab": "e16c2091.d9fcf",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "93938f86.dae36",
+        "type": "ui_group",
+        "z": "",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "471a061d.7cdfa8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Recording State",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "e74f9ca2.2617f",
+        "type": "ui_group",
+        "z": "",
+        "name": "Recording State",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "b7b45836.7d0da8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Recording Start",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "9718b566.666db8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Status",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "eb2441b4.1ea54",
+        "type": "ui_group",
+        "z": "",
+        "name": "Lights",
+        "tab": "9718b566.666db8",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "49693815.953628",
+        "type": "ui_group",
+        "z": "",
+        "name": "Home Cinema",
+        "tab": "9718b566.666db8",
+        "order": 2,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "cd7c93f9.3ec9d",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Bedroom",
+        "icon": "dashboard",
+        "order": 5
+    },
+    {
+        "id": "477251ce.a4b56",
+        "type": "ui_group",
+        "z": "",
+        "name": "Bedroom",
+        "tab": "cd7c93f9.3ec9d",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "37c12700.472dea",
+        "type": "ui_group",
+        "z": "",
+        "name": "OpenWebif",
+        "tab": "46fad4f8.93fd6c",
+        "order": 5,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "6c77859c.fda2fc",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Corridor Room",
+        "icon": "dashboard",
+        "order": 6
+    },
+    {
+        "id": "a534f0b7.392d3",
+        "type": "ui_group",
+        "z": "",
+        "name": "Corridor",
+        "tab": "6c77859c.fda2fc",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "5c8d0313.8d196c",
+        "type": "amazon-echo-hub",
+        "z": "4b279b3e.b560d4",
+        "port": "80",
+        "enableinput": false,
+        "x": 112.5,
+        "y": 1071.0000162124634,
+        "wires": [
+            [
+                "a0a28272.a558b",
+                "89381f11.6b7eb",
+                "8d236e16.62acd",
+                "ecc98b83.4025e8",
+                "98a2753b.48f028",
+                "e133c169.3cf4b",
+                "db5470ea.84713",
+                "6dcb948.f3ea46c",
+                "900bde.588f042",
+                "4f50b3a4.52500c",
+                "f5189ce6.c02c9",
+                "bbf1f4b0.0bb5d8",
+                "c5fe2965.bd3828",
+                "7f35d4ee.0dd56c",
+                "d5c07f63.1781c",
+                "1cb64fe.7c9e7b",
+                "52d439aa.976af8",
+                "a05d95ed.b874e8",
+                "8ea30fd0.4f335",
+                "385ebbb5.5eec14",
+                "76da33c1.1a60fc"
+            ]
+        ]
+    },
+    {
+        "id": "a0a28272.a558b",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "Wohnzimmer Licht",
+        "topic": "",
+        "x": 376.50000381469727,
+        "y": 80.5,
+        "wires": [
+            [
+                "eb3edbef.0c21c8"
+            ]
+        ]
+    },
+    {
+        "id": "23cf7baa.0d86f4",
+        "type": "mqtt in",
+        "z": "d62b2f38.d374f",
+        "name": "Living Room Light IN",
+        "topic": "shellies/shelly1-B9CFBD/relay/0",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 133,
+        "y": 97,
+        "wires": [
+            [
+                "49c1e523.e7cd6c"
+            ]
+        ]
+    },
+    {
+        "id": "fb963537.28fc18",
+        "type": "mqtt out",
+        "z": "d62b2f38.d374f",
+        "name": "Living Room Light OUT",
+        "topic": "shellies/shelly1-B9CFBD/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 515,
+        "y": 97,
+        "wires": []
+    },
+    {
+        "id": "49c1e523.e7cd6c",
+        "type": "ui_switch",
+        "z": "d62b2f38.d374f",
+        "name": "",
+        "label": "Light",
+        "group": "b49c9c97.4faa",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 309,
+        "y": 97,
+        "wires": [
+            [
+                "fb963537.28fc18"
+            ]
+        ]
+    },
+    {
+        "id": "eb3edbef.0c21c8",
+        "type": "mqtt out",
+        "z": "4b279b3e.b560d4",
+        "name": "Living Room Light OUT",
+        "topic": "shellies/shelly1-B9CFBD/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 620.5000038146973,
+        "y": 80.5,
+        "wires": []
+    },
+    {
+        "id": "57541dd4.5a2d14",
+        "type": "function",
+        "z": "e0207c67.5fe73",
+        "name": "DreamboxIP",
+        "func": "global.set('dreamboxip','http://192.168.0.199');\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 368,
+        "y": 59,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "17b6dc59.b61654",
+        "type": "inject",
+        "z": "e0207c67.5fe73",
+        "name": "",
+        "topic": "",
+        "payload": "dreamboxip",
+        "payloadType": "global",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "x": 145,
+        "y": 59,
+        "wires": [
+            [
+                "57541dd4.5a2d14"
+            ]
+        ]
+    },
+    {
+        "id": "1983e857.b52598",
+        "type": "comment",
+        "z": "d62b2f38.d374f",
+        "name": "Living Room Light",
+        "info": "",
+        "x": 133,
+        "y": 46,
+        "wires": []
+    },
+    {
+        "id": "5f37b221.03661c",
+        "type": "mqtt in",
+        "z": "1285763.399ba8a",
+        "name": "Kitchen Room Light IN",
+        "topic": "shellies/shelly1-B9DD3A/relay/0",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 147,
+        "y": 99,
+        "wires": [
+            [
+                "498c7fb9.b8e59"
+            ]
+        ]
+    },
+    {
+        "id": "ca3abe23.eae0f",
+        "type": "mqtt out",
+        "z": "1285763.399ba8a",
+        "name": "Kitchen Room Light OUT",
+        "topic": "shellies/shelly1-B9DD3A/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 519,
+        "y": 99,
+        "wires": []
+    },
+    {
+        "id": "498c7fb9.b8e59",
+        "type": "ui_switch",
+        "z": "1285763.399ba8a",
+        "name": "",
+        "label": "Light",
+        "group": "e1fa2245.b869d",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 322,
+        "y": 99,
+        "wires": [
+            [
+                "ca3abe23.eae0f"
+            ]
+        ]
+    },
+    {
+        "id": "4903af96.215bd",
+        "type": "comment",
+        "z": "1285763.399ba8a",
+        "name": "Kitchen Room Light",
+        "info": "",
+        "x": 137,
+        "y": 48,
+        "wires": []
+    },
+    {
+        "id": "89381f11.6b7eb",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "Küche Licht",
+        "topic": "",
+        "x": 360.50000190734863,
+        "y": 142.00000286102295,
+        "wires": [
+            [
+                "63481d71.390174"
+            ]
+        ]
+    },
+    {
+        "id": "63481d71.390174",
+        "type": "mqtt out",
+        "z": "4b279b3e.b560d4",
+        "name": "Kitchen Room Light OUT",
+        "topic": "shellies/shelly1-B9DD3A/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 607.7500038146973,
+        "y": 140.50000190734863,
+        "wires": []
+    },
+    {
+        "id": "bf75ee85.38ecb",
+        "type": "mqtt in",
+        "z": "166dd706.9b58d9",
+        "name": "Bathroom Light IN",
+        "topic": "shellies/shelly1-B9D598/relay/0",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 125,
+        "y": 101,
+        "wires": [
+            [
+                "a946456a.5b5da8"
+            ]
+        ]
+    },
+    {
+        "id": "a331f41c.2ac4a8",
+        "type": "mqtt out",
+        "z": "166dd706.9b58d9",
+        "name": "Bathroom Light OUT",
+        "topic": "shellies/shelly1-B9D598/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 497,
+        "y": 101,
+        "wires": []
+    },
+    {
+        "id": "a946456a.5b5da8",
+        "type": "ui_switch",
+        "z": "166dd706.9b58d9",
+        "name": "",
+        "label": "Light",
+        "group": "19215066.901d3",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 310,
+        "y": 101,
+        "wires": [
+            [
+                "a331f41c.2ac4a8"
+            ]
+        ]
+    },
+    {
+        "id": "30094e75.cdead2",
+        "type": "comment",
+        "z": "166dd706.9b58d9",
+        "name": "Bathroom Light",
+        "info": "",
+        "x": 115,
+        "y": 50,
+        "wires": []
+    },
+    {
+        "id": "8d236e16.62acd",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "Badezimmer Licht",
+        "topic": "",
+        "x": 376.75000381469727,
+        "y": 202.50000381469727,
+        "wires": [
+            [
+                "2edc1c6b.a2e5c4"
+            ]
+        ]
+    },
+    {
+        "id": "2edc1c6b.a2e5c4",
+        "type": "mqtt out",
+        "z": "4b279b3e.b560d4",
+        "name": "Bathroom Light OUT",
+        "topic": "shellies/shelly1-B9D598/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 608.5000038146973,
+        "y": 203.75000286102295,
+        "wires": []
+    },
+    {
+        "id": "8d35563e.da2788",
+        "type": "http request",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "url": "",
+        "tls": "",
+        "x": 1355.3333587646484,
+        "y": 843.3334527015686,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d09a5c90.a8dac",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL for Standby",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=116';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1131.3372650146484,
+        "y": 842.4154839515686,
+        "wires": [
+            [
+                "8d35563e.da2788"
+            ]
+        ]
+    },
+    {
+        "id": "ecc98b83.4025e8",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "Dreambox",
+        "topic": "",
+        "x": 372.5833740234375,
+        "y": 795.3334717750549,
+        "wires": [
+            [
+                "80df6a5.4dd0498",
+                "2e0f6e22.4d8f72"
+            ]
+        ]
+    },
+    {
+        "id": "98a2753b.48f028",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "Sound",
+        "topic": "",
+        "x": 361.33335876464844,
+        "y": 884.3334527015686,
+        "wires": [
+            [
+                "3e6bd1a3.908c1e"
+            ]
+        ]
+    },
+    {
+        "id": "3e6bd1a3.908c1e",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL with Volume",
+        "func": "var ip=global.get('dreamboxip');\nvar value;\nif(msg.payload === \"on\"){\n    value = 80;\n}\nif (msg.payload === \"off\"){\n    value = 40;\n}\n\nmsg.url = ip + '/web/vol?set=set' + value;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 561.3528900146484,
+        "y": 884.4388909339905,
+        "wires": [
+            [
+                "b29c0716.2c42a8"
+            ]
+        ]
+    },
+    {
+        "id": "b29c0716.2c42a8",
+        "type": "http request",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "url": "",
+        "tls": "",
+        "x": 778.3333587646484,
+        "y": 883.3334527015686,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e133c169.3cf4b",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "Recording",
+        "topic": "",
+        "x": 372.33335876464844,
+        "y": 947.3334527015686,
+        "wires": [
+            [
+                "37e144a1.bbe6ec"
+            ]
+        ]
+    },
+    {
+        "id": "52c8c98.9a06738",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL for Recording Start",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=167';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 728.3333587646484,
+        "y": 943.3334527015686,
+        "wires": [
+            [
+                "a4ce3d87.29bb5"
+            ]
+        ]
+    },
+    {
+        "id": "a4ce3d87.29bb5",
+        "type": "http request",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "url": "",
+        "tls": "",
+        "x": 953.3333587646484,
+        "y": 944.3334527015686,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f015a91.76c804",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL for OK",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=352';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 852.3333587646484,
+        "y": 994.3334527015686,
+        "wires": [
+            [
+                "4c1a4ce5.613be4"
+            ]
+        ]
+    },
+    {
+        "id": "4c1a4ce5.613be4",
+        "type": "http request",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "url": "",
+        "tls": "",
+        "x": 1040.3333587646484,
+        "y": 994.3334527015686,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fde13890.fe1b48",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 671.3333587646484,
+        "y": 993.3334527015686,
+        "wires": [
+            [
+                "5f015a91.76c804"
+            ]
+        ]
+    },
+    {
+        "id": "37e144a1.bbe6ec",
+        "type": "switch",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "outputs": 2,
+        "x": 515.3333587646484,
+        "y": 948.3334527015686,
+        "wires": [
+            [
+                "52c8c98.9a06738",
+                "fde13890.fe1b48"
+            ],
+            [
+                "bdce2d5f.adb23",
+                "a1bb0198.0f52b",
+                "32762292.19d2ae"
+            ]
+        ]
+    },
+    {
+        "id": "bdce2d5f.adb23",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL for Recording Stop",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=167';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 722.3333587646484,
+        "y": 1069.3334527015686,
+        "wires": [
+            [
+                "a36bf574.462f58"
+            ]
+        ]
+    },
+    {
+        "id": "a36bf574.462f58",
+        "type": "http request",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "url": "",
+        "tls": "",
+        "x": 947.3333587646484,
+        "y": 1069.3334527015686,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f91771cf.6c35c",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL for OK",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=352';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 844.3333587646484,
+        "y": 1120.3334527015686,
+        "wires": [
+            [
+                "9374c392.7d5f9"
+            ]
+        ]
+    },
+    {
+        "id": "9374c392.7d5f9",
+        "type": "http request",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "url": "",
+        "tls": "",
+        "x": 1023.3333587646484,
+        "y": 1121.3334527015686,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a1bb0198.0f52b",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 654.3333587646484,
+        "y": 1120.3334527015686,
+        "wires": [
+            [
+                "f91771cf.6c35c"
+            ]
+        ]
+    },
+    {
+        "id": "aed32e6b.b1bbc",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL for OK",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=352';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 843.3333587646484,
+        "y": 1180.3334527015686,
+        "wires": [
+            [
+                "d40315cf.827ca8"
+            ]
+        ]
+    },
+    {
+        "id": "d40315cf.827ca8",
+        "type": "http request",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "url": "",
+        "tls": "",
+        "x": 1019.3333587646484,
+        "y": 1179.3334527015686,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "32762292.19d2ae",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 664.3333587646484,
+        "y": 1181.3334527015686,
+        "wires": [
+            [
+                "aed32e6b.b1bbc"
+            ]
+        ]
+    },
+    {
+        "id": "c9aa0e78.874a5",
+        "type": "http request",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "url": "",
+        "tls": "",
+        "x": 861.3333587646484,
+        "y": 1255.3334527015686,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "67d1cb65.ae8dd4",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL for Info",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=358';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 665.3372650146484,
+        "y": 1254.4154839515686,
+        "wires": [
+            [
+                "c9aa0e78.874a5"
+            ]
+        ]
+    },
+    {
+        "id": "db5470ea.84713",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "Senderinfo",
+        "topic": "",
+        "x": 350.83338928222656,
+        "y": 1252.833411693573,
+        "wires": [
+            [
+                "cc2dd57c.af33f8"
+            ]
+        ]
+    },
+    {
+        "id": "cc2dd57c.af33f8",
+        "type": "switch",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "outputs": 2,
+        "x": 495.33335876464844,
+        "y": 1254.3334527015686,
+        "wires": [
+            [
+                "67d1cb65.ae8dd4"
+            ],
+            [
+                "941135e7.4180a8"
+            ]
+        ]
+    },
+    {
+        "id": "941135e7.4180a8",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL with Exit",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=174';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 673.3333587646484,
+        "y": 1315.3334527015686,
+        "wires": [
+            [
+                "7bfc7870.72b358"
+            ]
+        ]
+    },
+    {
+        "id": "7bfc7870.72b358",
+        "type": "http request",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "url": "",
+        "tls": "",
+        "x": 874.3333587646484,
+        "y": 1313.3334527015686,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d4b3ca9.60245",
+        "type": "http request",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "url": "",
+        "tls": "",
+        "x": 913.3333435058594,
+        "y": 1394.047712802887,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "386ab4f5.11f9cc",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL for PVR",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=393';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 724.3372497558594,
+        "y": 1395.129744052887,
+        "wires": [
+            [
+                "9d4b3ca9.60245"
+            ]
+        ]
+    },
+    {
+        "id": "6dcb948.f3ea46c",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "Filmliste",
+        "topic": "",
+        "x": 389.1904983520508,
+        "y": 1396.047767162323,
+        "wires": [
+            [
+                "1e396e42.00bfe2"
+            ]
+        ]
+    },
+    {
+        "id": "1e396e42.00bfe2",
+        "type": "switch",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "outputs": 2,
+        "x": 539.3333435058594,
+        "y": 1397.047712802887,
+        "wires": [
+            [
+                "386ab4f5.11f9cc"
+            ],
+            [
+                "a3197578.564288"
+            ]
+        ]
+    },
+    {
+        "id": "a3197578.564288",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL with Exit",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=174';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 728.3333435058594,
+        "y": 1448.047712802887,
+        "wires": [
+            [
+                "bb0eda0c.a23028"
+            ]
+        ]
+    },
+    {
+        "id": "bb0eda0c.a23028",
+        "type": "http request",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "url": "",
+        "tls": "",
+        "x": 923.3333435058594,
+        "y": 1448.047712802887,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "900bde.588f042",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "Filmwiedergabe",
+        "topic": "",
+        "x": 404.33336639404297,
+        "y": 1540.3334679603577,
+        "wires": [
+            [
+                "c33ae2dc.33efe"
+            ]
+        ]
+    },
+    {
+        "id": "c33ae2dc.33efe",
+        "type": "switch",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "outputs": 2,
+        "x": 552.333366394043,
+        "y": 1541.3334679603577,
+        "wires": [
+            [],
+            [
+                "8c9e769e.dd5e78",
+                "f8416136.77316"
+            ]
+        ]
+    },
+    {
+        "id": "8c9e769e.dd5e78",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL with MovieStop",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=128';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 757.333366394043,
+        "y": 1534.3334679603577,
+        "wires": [
+            [
+                "edbc3b44.4355a8"
+            ]
+        ]
+    },
+    {
+        "id": "edbc3b44.4355a8",
+        "type": "http request",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "url": "",
+        "tls": "",
+        "x": 977.333366394043,
+        "y": 1533.3334679603577,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c975be1a.b4ec8",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL with Exit",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=174';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 905.333366394043,
+        "y": 1589.3334679603577,
+        "wires": [
+            [
+                "4f50fcbd.2ba4a4"
+            ]
+        ]
+    },
+    {
+        "id": "4f50fcbd.2ba4a4",
+        "type": "http request",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "url": "",
+        "tls": "",
+        "x": 1097.333366394043,
+        "y": 1589.3334679603577,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f8416136.77316",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 711.333366394043,
+        "y": 1590.3334679603577,
+        "wires": [
+            [
+                "c975be1a.b4ec8"
+            ]
+        ]
+    },
+    {
+        "id": "c53db748.4868c8",
+        "type": "http request",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "url": "",
+        "tls": "",
+        "x": 784.3333511352539,
+        "y": 1654.833424091339,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5bbd9bdf.02c354",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL for Pause",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=207';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 570.3372573852539,
+        "y": 1655.915455341339,
+        "wires": [
+            [
+                "c53db748.4868c8"
+            ]
+        ]
+    },
+    {
+        "id": "4f50b3a4.52500c",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "Pause",
+        "topic": "",
+        "x": 378.3333511352539,
+        "y": 1654.833424091339,
+        "wires": [
+            [
+                "5bbd9bdf.02c354"
+            ]
+        ]
+    },
+    {
+        "id": "80df6a5.4dd0498",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL Statusinfo",
+        "func": "msg.action = msg.payload;\n\nvar ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/statusinfo';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 618.3333587646484,
+        "y": 790.3334527015686,
+        "wires": [
+            [
+                "c1ec66f5.06f4c8"
+            ]
+        ]
+    },
+    {
+        "id": "c1ec66f5.06f4c8",
+        "type": "http request",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "url": "",
+        "tls": "",
+        "x": 816.3333587646484,
+        "y": 790.3334527015686,
+        "wires": [
+            [
+                "1ecaabea.e80804"
+            ]
+        ]
+    },
+    {
+        "id": "1ecaabea.e80804",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create inStandy Value",
+        "func": "if (msg.action === 'on' && msg.payload.inStandby === 'false')\n{\n    global.set('inStandby','on_false');\n}\nif (msg.action === 'on' && msg.payload.inStandby === 'true')\n{\n    global.set('inStandby','on_true');\n}\nif (msg.action === 'off' && msg.payload.inStandby === 'false')\n{\n    global.set('inStandby','off_true');\n}\nif (msg.action === 'off' && msg.payload.inStandby === 'true')\n{\n    global.set('inStandby','off_false');\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1010.3333587646484,
+        "y": 790.3334527015686,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "38d81076.f311",
+        "type": "switch",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "property": "inStandby",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on_true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "on_false",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off_true",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off_false",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "outputs": 4,
+        "x": 917.3333587646484,
+        "y": 845.3334527015686,
+        "wires": [
+            [
+                "d09a5c90.a8dac"
+            ],
+            [],
+            [
+                "d09a5c90.a8dac"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "2e0f6e22.4d8f72",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 592.3333587646484,
+        "y": 844.3334527015686,
+        "wires": [
+            [
+                "38d81076.f311"
+            ]
+        ]
+    },
+    {
+        "id": "8c81d1ad.58ccf",
+        "type": "comment",
+        "z": "99e96001.113a9",
+        "name": "Lights",
+        "info": "",
+        "x": 122,
+        "y": 53,
+        "wires": []
+    },
+    {
+        "id": "73d58e31.6ab8f",
+        "type": "comment",
+        "z": "99e96001.113a9",
+        "name": "Home Cinema",
+        "info": "",
+        "x": 137.4444351196289,
+        "y": 507.3333988189697,
+        "wires": []
+    },
+    {
+        "id": "75319ad8.6b24c4",
+        "type": "mqtt in",
+        "z": "99e96001.113a9",
+        "name": "Bathroom Light IN",
+        "topic": "shellies/shelly1-B9D598/relay/0",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 159,
+        "y": 103,
+        "wires": [
+            [
+                "ffd6c143.2fdc3"
+            ]
+        ]
+    },
+    {
+        "id": "2b70adc5.7462c2",
+        "type": "mqtt out",
+        "z": "99e96001.113a9",
+        "name": "Bathroom Light OUT",
+        "topic": "shellies/shelly1-B9D598/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 572,
+        "y": 101,
+        "wires": []
+    },
+    {
+        "id": "ffd6c143.2fdc3",
+        "type": "ui_switch",
+        "z": "99e96001.113a9",
+        "name": "",
+        "label": "Badezimmer",
+        "group": "eb2441b4.1ea54",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 362.7142868041992,
+        "y": 102.42857360839844,
+        "wires": [
+            [
+                "2b70adc5.7462c2"
+            ]
+        ]
+    },
+    {
+        "id": "b9792a89.ad1568",
+        "type": "mqtt in",
+        "z": "99e96001.113a9",
+        "name": "Kitchen Room Light IN",
+        "topic": "shellies/shelly1-B9DD3A/relay/0",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 168,
+        "y": 167,
+        "wires": [
+            [
+                "8af6284f.2cb648"
+            ]
+        ]
+    },
+    {
+        "id": "14d4822f.f6642e",
+        "type": "mqtt out",
+        "z": "99e96001.113a9",
+        "name": "Kitchen Room Light OUT",
+        "topic": "shellies/shelly1-B9DD3A/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 561,
+        "y": 167,
+        "wires": []
+    },
+    {
+        "id": "8af6284f.2cb648",
+        "type": "ui_switch",
+        "z": "99e96001.113a9",
+        "name": "",
+        "label": "Küche",
+        "group": "eb2441b4.1ea54",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 347,
+        "y": 167,
+        "wires": [
+            [
+                "14d4822f.f6642e"
+            ]
+        ]
+    },
+    {
+        "id": "fd4e8834.7d7f48",
+        "type": "mqtt in",
+        "z": "99e96001.113a9",
+        "name": "Living Room Light IN",
+        "topic": "shellies/shelly1-B9CFBD/relay/0",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 159,
+        "y": 229,
+        "wires": [
+            [
+                "e3337fa3.ec6eb"
+            ]
+        ]
+    },
+    {
+        "id": "f1771a84.de40d8",
+        "type": "mqtt out",
+        "z": "99e96001.113a9",
+        "name": "Living Room Light OUT",
+        "topic": "shellies/shelly1-B9CFBD/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 561,
+        "y": 229,
+        "wires": []
+    },
+    {
+        "id": "e3337fa3.ec6eb",
+        "type": "ui_switch",
+        "z": "99e96001.113a9",
+        "name": "",
+        "label": "Wohnzimmer",
+        "group": "eb2441b4.1ea54",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 351,
+        "y": 229,
+        "wires": [
+            [
+                "f1771a84.de40d8"
+            ]
+        ]
+    },
+    {
+        "id": "6b51d13d.9021b",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1000",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 578.8511979239328,
+        "y": 1848.8640257971629,
+        "wires": [
+            [
+                "643147e5.c799e8"
+            ]
+        ]
+    },
+    {
+        "id": "18568c3f.97dcf4",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 568.5177781241281,
+        "y": 1811.8004939215525,
+        "wires": [
+            [
+                "5a3b939.fbc5c6c"
+            ]
+        ]
+    },
+    {
+        "id": "f4082d5.fdc66d",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1000",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 582.3828866141183,
+        "y": 1954.3878352301463,
+        "wires": [
+            [
+                "9f816356.6f3cb"
+            ]
+        ]
+    },
+    {
+        "id": "89fb2fa8.7f4d1",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 574.747972215925,
+        "y": 1917.324354852949,
+        "wires": [
+            [
+                "5a3b939.fbc5c6c"
+            ]
+        ]
+    },
+    {
+        "id": "a6e6a29f.f0f86",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1000",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 589.9225518362863,
+        "y": 2154.689423288618,
+        "wires": [
+            [
+                "ae703056.8d4c8"
+            ]
+        ]
+    },
+    {
+        "id": "7b334f6e.911f",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 579.589296068464,
+        "y": 2117.943395342146,
+        "wires": [
+            [
+                "ae703056.8d4c8"
+            ]
+        ]
+    },
+    {
+        "id": "f5189ce6.c02c9",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "HomeSkyCinema",
+        "topic": "",
+        "x": 370.24600764683316,
+        "y": 2132.8574244635447,
+        "wires": [
+            [
+                "7b334f6e.911f",
+                "a6e6a29f.f0f86",
+                "6e618358.4005cc"
+            ]
+        ]
+    },
+    {
+        "id": "a31c4be8.50c7d8",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1000",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 583.7004029410226,
+        "y": 2063.9592878477915,
+        "wires": [
+            [
+                "7f69ddfd.962af4"
+            ]
+        ]
+    },
+    {
+        "id": "12f6f351.69ee7d",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 575.5892579214914,
+        "y": 2025.9433104651316,
+        "wires": [
+            [
+                "5a3b939.fbc5c6c"
+            ]
+        ]
+    },
+    {
+        "id": "1da73feb.ce108",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1000",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 591.1289269583566,
+        "y": 2263.9274794714793,
+        "wires": [
+            [
+                "a772bf3a.f6b2f"
+            ]
+        ]
+    },
+    {
+        "id": "2fc1189e.2077f8",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 581.5892521994455,
+        "y": 2227.657573427473,
+        "wires": [
+            [
+                "ae703056.8d4c8"
+            ]
+        ]
+    },
+    {
+        "id": "bbf1f4b0.0bb5d8",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "HomeSkyCinemaPlusEins",
+        "topic": "",
+        "x": 359.6745812552316,
+        "y": 2244.6191002982005,
+        "wires": [
+            [
+                "2fc1189e.2077f8",
+                "1da73feb.ce108",
+                "6e618358.4005cc"
+            ]
+        ]
+    },
+    {
+        "id": "f30c5eb1.69a45",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1000",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 588.7639090674264,
+        "y": 2371.8956267493113,
+        "wires": [
+            [
+                "7f69ddfd.962af4"
+            ]
+        ]
+    },
+    {
+        "id": "90e874e2.d93998",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 578.9067313330514,
+        "y": 2337.054449762617,
+        "wires": [
+            [
+                "ae703056.8d4c8"
+            ]
+        ]
+    },
+    {
+        "id": "c5fe2965.bd3828",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "HomeSkyCinemaPlusVieUndZwanzig",
+        "topic": "",
+        "x": 321.75394221714566,
+        "y": 2356.0793807165965,
+        "wires": [
+            [
+                "90e874e2.d93998",
+                "f30c5eb1.69a45",
+                "6e618358.4005cc"
+            ]
+        ]
+    },
+    {
+        "id": "602d42b1.b1488c",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1000",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 582.922605242048,
+        "y": 2477.0068022864207,
+        "wires": [
+            [
+                "9f816356.6f3cb"
+            ]
+        ]
+    },
+    {
+        "id": "5db05974.84cd38",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 575.9226205008371,
+        "y": 2442.6417548315867,
+        "wires": [
+            [
+                "ae703056.8d4c8"
+            ]
+        ]
+    },
+    {
+        "id": "7f35d4ee.0dd56c",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "HomeSkyAction",
+        "topic": "",
+        "x": 390.07142421177457,
+        "y": 2457.5556141989573,
+        "wires": [
+            [
+                "5db05974.84cd38",
+                "602d42b1.b1488c",
+                "6e618358.4005cc"
+            ]
+        ]
+    },
+    {
+        "id": "d5c07f63.1781c",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "HomeTelevision",
+        "topic": "",
+        "x": 372.1824624197824,
+        "y": 1930.952531542097,
+        "wires": [
+            [
+                "89fb2fa8.7f4d1",
+                "f4082d5.fdc66d",
+                "598fc28b.0d659c"
+            ]
+        ]
+    },
+    {
+        "id": "1cb64fe.7c9e7b",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "HomeSatEins",
+        "topic": "",
+        "x": 378.3729989188058,
+        "y": 2040.7937895911082,
+        "wires": [
+            [
+                "12f6f351.69ee7d",
+                "a31c4be8.50c7d8",
+                "598fc28b.0d659c"
+            ]
+        ]
+    },
+    {
+        "id": "598fc28b.0d659c",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL for 1 key",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=2';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 924.8810424804688,
+        "y": 1966.50794506073,
+        "wires": [
+            [
+                "730ffdfe.b60ba4"
+            ]
+        ]
+    },
+    {
+        "id": "6e618358.4005cc",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL for 2 key",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=3';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 924.8810920715332,
+        "y": 2006.507926940918,
+        "wires": [
+            [
+                "730ffdfe.b60ba4"
+            ]
+        ]
+    },
+    {
+        "id": "590084ed.846fbc",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL for 3 key",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=4';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 928.5318832397461,
+        "y": 2044.7618861198425,
+        "wires": [
+            [
+                "730ffdfe.b60ba4"
+            ]
+        ]
+    },
+    {
+        "id": "ae703056.8d4c8",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL for 4 key",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=5';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 929.1667633056641,
+        "y": 2082.222264289856,
+        "wires": [
+            [
+                "730ffdfe.b60ba4"
+            ]
+        ]
+    },
+    {
+        "id": "a772bf3a.f6b2f",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL for 5 key",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=6';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 929.1667022705078,
+        "y": 2117.936532020569,
+        "wires": [
+            [
+                "730ffdfe.b60ba4"
+            ]
+        ]
+    },
+    {
+        "id": "7f69ddfd.962af4",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL for 6 key",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=7';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 929.1668586730957,
+        "y": 2155.079300880432,
+        "wires": [
+            [
+                "730ffdfe.b60ba4"
+            ]
+        ]
+    },
+    {
+        "id": "9f816356.6f3cb",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL for 7 key",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=8';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 926.3097534179688,
+        "y": 2195.07931804657,
+        "wires": [
+            [
+                "730ffdfe.b60ba4"
+            ]
+        ]
+    },
+    {
+        "id": "643147e5.c799e8",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL for 8 key",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=9';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 926.3096313476562,
+        "y": 2235.0793867111206,
+        "wires": [
+            [
+                "730ffdfe.b60ba4"
+            ]
+        ]
+    },
+    {
+        "id": "5a3b939.fbc5c6c",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL for 9 key",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=10';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 926.3097152709961,
+        "y": 2273.650866508484,
+        "wires": [
+            [
+                "730ffdfe.b60ba4"
+            ]
+        ]
+    },
+    {
+        "id": "730ffdfe.b60ba4",
+        "type": "http request",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "url": "",
+        "tls": "",
+        "x": 1233.452480316162,
+        "y": 2110.7936220169067,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "52d439aa.976af8",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "HomePro",
+        "topic": "",
+        "x": 359.6428124564035,
+        "y": 1824.7619893210276,
+        "wires": [
+            [
+                "598fc28b.0d659c",
+                "18568c3f.97dcf4",
+                "6b51d13d.9021b"
+            ]
+        ]
+    },
+    {
+        "id": "92bf1865.004978",
+        "type": "comment",
+        "z": "4b279b3e.b560d4",
+        "name": "Dreambox Channels",
+        "info": "",
+        "x": 389.64283752441406,
+        "y": 1761.9048862457275,
+        "wires": []
+    },
+    {
+        "id": "64e2cd46.adf624",
+        "type": "comment",
+        "z": "4b279b3e.b560d4",
+        "name": "Lights",
+        "info": "",
+        "x": 331.5,
+        "y": 34,
+        "wires": []
+    },
+    {
+        "id": "a9764f48.bcedf",
+        "type": "comment",
+        "z": "4b279b3e.b560d4",
+        "name": "Dreambox Commands",
+        "info": "",
+        "x": 391.6666564941406,
+        "y": 726.2500519752502,
+        "wires": []
+    },
+    {
+        "id": "703180d3.db21e",
+        "type": "mqtt in",
+        "z": "d62b2f38.d374f",
+        "name": "HomeCinema IN",
+        "topic": "cmnd/sonoff_homecinema/power",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 120,
+        "y": 211,
+        "wires": [
+            [
+                "92f6459b.7237a8"
+            ]
+        ]
+    },
+    {
+        "id": "50c4e2ef.5f32bc",
+        "type": "mqtt out",
+        "z": "d62b2f38.d374f",
+        "name": "HomeCinema OUT",
+        "topic": "cmnd/sonoff_homecinema/power",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 532,
+        "y": 211,
+        "wires": []
+    },
+    {
+        "id": "92f6459b.7237a8",
+        "type": "ui_switch",
+        "z": "d62b2f38.d374f",
+        "name": "",
+        "label": "Home Cinema",
+        "group": "b49c9c97.4faa",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 328,
+        "y": 212,
+        "wires": [
+            [
+                "50c4e2ef.5f32bc"
+            ]
+        ]
+    },
+    {
+        "id": "652d47ec.dbea38",
+        "type": "mqtt out",
+        "z": "4b279b3e.b560d4",
+        "name": "HeimKino OUT",
+        "topic": "cmnd/sonoff_homecinema/power",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 895.8335838317871,
+        "y": 419.0000262260437,
+        "wires": []
+    },
+    {
+        "id": "a05d95ed.b874e8",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "HeimKino",
+        "topic": "",
+        "x": 373.83349990844727,
+        "y": 426.0000123977661,
+        "wires": [
+            [
+                "7abf5e61.839a3"
+            ]
+        ]
+    },
+    {
+        "id": "38129eb.598ff62",
+        "type": "mqtt in",
+        "z": "99e96001.113a9",
+        "name": "HomeCinema IN",
+        "topic": "cmnd/sonoff_homecinema/power",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 142.4444351196289,
+        "y": 565.3333988189697,
+        "wires": [
+            [
+                "6853fcb4.c96cf4"
+            ]
+        ]
+    },
+    {
+        "id": "31ca2c0c.597494",
+        "type": "mqtt out",
+        "z": "99e96001.113a9",
+        "name": "HomeCinema OUT",
+        "topic": "cmnd/sonoff_homecinema/power",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 554.4444351196289,
+        "y": 565.3333988189697,
+        "wires": []
+    },
+    {
+        "id": "6853fcb4.c96cf4",
+        "type": "ui_switch",
+        "z": "99e96001.113a9",
+        "name": "",
+        "label": "Home Cinema",
+        "group": "49693815.953628",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 350.4444351196289,
+        "y": 566.3333988189697,
+        "wires": [
+            [
+                "31ca2c0c.597494"
+            ]
+        ]
+    },
+    {
+        "id": "d7620aea.172db8",
+        "type": "comment",
+        "z": "4b279b3e.b560d4",
+        "name": "Plugs",
+        "info": "",
+        "x": 363.5000534057617,
+        "y": 379.0000238418579,
+        "wires": []
+    },
+    {
+        "id": "ffcf551a.4c48f8",
+        "type": "comment",
+        "z": "d62b2f38.d374f",
+        "name": "Home Cinema Plug",
+        "info": "",
+        "x": 128,
+        "y": 168,
+        "wires": []
+    },
+    {
+        "id": "8ea30fd0.4f335",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "Schlafzimmer Licht",
+        "topic": "",
+        "x": 378,
+        "y": 258,
+        "wires": [
+            [
+                "31a9196f.2ddde6"
+            ]
+        ]
+    },
+    {
+        "id": "31a9196f.2ddde6",
+        "type": "mqtt out",
+        "z": "4b279b3e.b560d4",
+        "name": "Bedroom Light OUT",
+        "topic": "shellies/shelly1-944E49/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 604.75,
+        "y": 258.25,
+        "wires": []
+    },
+    {
+        "id": "41b47532.61017c",
+        "type": "mqtt in",
+        "z": "99e96001.113a9",
+        "name": "Living Room Light IN",
+        "topic": "shellies/shelly1-944E49/relay/0",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 160,
+        "y": 285,
+        "wires": [
+            [
+                "eea8453e.38fd28"
+            ]
+        ]
+    },
+    {
+        "id": "300fda65.cb9476",
+        "type": "mqtt out",
+        "z": "99e96001.113a9",
+        "name": "Living Room Light OUT",
+        "topic": "shellies/shelly1-944E49/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 581.9999847412109,
+        "y": 286.00000381469727,
+        "wires": []
+    },
+    {
+        "id": "eea8453e.38fd28",
+        "type": "ui_switch",
+        "z": "99e96001.113a9",
+        "name": "",
+        "label": "Schlafzimmer",
+        "group": "eb2441b4.1ea54",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 362,
+        "y": 285,
+        "wires": [
+            [
+                "300fda65.cb9476"
+            ]
+        ]
+    },
+    {
+        "id": "62e6d2d1.a99d2c",
+        "type": "mqtt in",
+        "z": "7ac0d37f.c1198c",
+        "name": "Bathroom Light IN",
+        "topic": "shellies/shelly1-944E49/relay/0",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 126.0173568725586,
+        "y": 99.01041412353516,
+        "wires": [
+            [
+                "bd5321c0.98359"
+            ]
+        ]
+    },
+    {
+        "id": "3f9f19fc.e6e6b6",
+        "type": "mqtt out",
+        "z": "7ac0d37f.c1198c",
+        "name": "Bathroom Light OUT",
+        "topic": "shellies/shelly1-944E49/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 498.0173568725586,
+        "y": 99.01041412353516,
+        "wires": []
+    },
+    {
+        "id": "bd5321c0.98359",
+        "type": "ui_switch",
+        "z": "7ac0d37f.c1198c",
+        "name": "",
+        "label": "Light",
+        "group": "477251ce.a4b56",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 311.0173568725586,
+        "y": 99.01041412353516,
+        "wires": [
+            [
+                "3f9f19fc.e6e6b6"
+            ]
+        ]
+    },
+    {
+        "id": "dd9446be.d2eb48",
+        "type": "comment",
+        "z": "7ac0d37f.c1198c",
+        "name": "Bedroom Light",
+        "info": "",
+        "x": 116.0173568725586,
+        "y": 48.010414123535156,
+        "wires": []
+    },
+    {
+        "id": "385ebbb5.5eec14",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "Bett Licht",
+        "topic": "",
+        "x": 367.4796676635742,
+        "y": 592.2337293624878,
+        "wires": [
+            [
+                "801e07b7.bb7f38"
+            ]
+        ]
+    },
+    {
+        "id": "801e07b7.bb7f38",
+        "type": "mqtt out",
+        "z": "4b279b3e.b560d4",
+        "name": "Bedroom Light OUT",
+        "topic": "cmnd/sonoff_bedlight/power",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 571.7852249145508,
+        "y": 593.4837408065796,
+        "wires": []
+    },
+    {
+        "id": "7b150557.ade7cc",
+        "type": "mqtt in",
+        "z": "7ac0d37f.c1198c",
+        "name": "BedLight IN",
+        "topic": "cmnd/sonoff_bedlight/power",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 102.24150085449219,
+        "y": 230.01156616210938,
+        "wires": [
+            [
+                "535ae15.1e2922"
+            ]
+        ]
+    },
+    {
+        "id": "743103a7.25acac",
+        "type": "mqtt out",
+        "z": "7ac0d37f.c1198c",
+        "name": "Bed Light OUT",
+        "topic": "cmnd/sonoff_bedlight/power",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 500.9081916809082,
+        "y": 231.12267875671387,
+        "wires": []
+    },
+    {
+        "id": "535ae15.1e2922",
+        "type": "ui_switch",
+        "z": "7ac0d37f.c1198c",
+        "name": "",
+        "label": "Bed Light",
+        "group": "477251ce.a4b56",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 300.2415008544922,
+        "y": 231.01156616210938,
+        "wires": [
+            [
+                "743103a7.25acac"
+            ]
+        ]
+    },
+    {
+        "id": "c014fea1.6c41c",
+        "type": "comment",
+        "z": "7ac0d37f.c1198c",
+        "name": "Bed Light",
+        "info": "",
+        "x": 95.57483673095703,
+        "y": 180.01156616210938,
+        "wires": []
+    },
+    {
+        "id": "7970fe91.8921f",
+        "type": "mqtt in",
+        "z": "99e96001.113a9",
+        "name": "BedLight IN",
+        "topic": "cmnd/sonoff_bedlight/power",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 138.90816116333008,
+        "y": 348.6535358428955,
+        "wires": [
+            [
+                "24f463b6.6bba5c"
+            ]
+        ]
+    },
+    {
+        "id": "874cb57a.302e18",
+        "type": "mqtt out",
+        "z": "99e96001.113a9",
+        "name": "Bed Light OUT",
+        "topic": "cmnd/sonoff_bedlight/power",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 537.5748519897461,
+        "y": 349.7646484375,
+        "wires": []
+    },
+    {
+        "id": "24f463b6.6bba5c",
+        "type": "ui_switch",
+        "z": "99e96001.113a9",
+        "name": "",
+        "label": "Bett Licht",
+        "group": "eb2441b4.1ea54",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 336.9081611633301,
+        "y": 349.6535358428955,
+        "wires": [
+            [
+                "874cb57a.302e18"
+            ]
+        ]
+    },
+    {
+        "id": "7abf5e61.839a3",
+        "type": "switch",
+        "z": "4b279b3e.b560d4",
+        "name": "On or Off",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "outputs": 2,
+        "x": 557.6840896606445,
+        "y": 425.63543033599854,
+        "wires": [
+            [
+                "652d47ec.dbea38"
+            ],
+            [
+                "6812a7f8.5f9048",
+                "4f664027.4456d"
+            ]
+        ]
+    },
+    {
+        "id": "6812a7f8.5f9048",
+        "type": "delay",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 727.6878204345703,
+        "y": 454.6354990005493,
+        "wires": [
+            [
+                "652d47ec.dbea38"
+            ]
+        ]
+    },
+    {
+        "id": "4f664027.4456d",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "Create URL for Shutdown",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/powerstate?newstate=1';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 769.5175094604492,
+        "y": 507.732647895813,
+        "wires": [
+            [
+                "2138a3d4.de44cc"
+            ]
+        ]
+    },
+    {
+        "id": "2138a3d4.de44cc",
+        "type": "http request",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "url": "",
+        "tls": "",
+        "x": 977.5136413574219,
+        "y": 508.65059757232666,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "72309b3a.3b8d84",
+        "type": "comment",
+        "z": "2186aa43.d8c126",
+        "name": "Embedded OpenWebif Iterface from Dreambox",
+        "info": "",
+        "x": 250.51734161376953,
+        "y": 44.9097204208374,
+        "wires": []
+    },
+    {
+        "id": "1d6dfaa.76f8d05",
+        "type": "inject",
+        "z": "2186aa43.d8c126",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "x": 161.07988357543945,
+        "y": 99.97223567962646,
+        "wires": [
+            [
+                "a1c6e1cf.240dd"
+            ]
+        ]
+    },
+    {
+        "id": "a1c6e1cf.240dd",
+        "type": "function",
+        "z": "2186aa43.d8c126",
+        "name": "Create WebIf URL for Dreambox",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.payload = ip + '/mobile';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 403.52781677246094,
+        "y": 99.91667366027832,
+        "wires": [
+            [
+                "4a221c50.9d7064"
+            ]
+        ]
+    },
+    {
+        "id": "4a221c50.9d7064",
+        "type": "ui_template",
+        "z": "2186aa43.d8c126",
+        "group": "37c12700.472dea",
+        "name": "",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "format": "<iframe id=\"myFrame\" height=\"600\" width=\"300\" src = \"\"></iframe>\n<script>\n(function(scope) {\n    // watch msg object from Node-RED\n    scope.$watch('msg', function(msg) {\n        // new message received\n        var x = document.getElementById('myFrame');\n        x.setAttribute('src', msg.payload); \n        });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "x": 633.5242805480957,
+        "y": 99.65628051757812,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f85ff227.e4c94",
+        "type": "mqtt in",
+        "z": "3ee9262a.061c0a",
+        "name": "Corridor Light IN",
+        "topic": "shellies/shelly1-942645/relay/0",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 106.0173568725586,
+        "y": 110,
+        "wires": [
+            [
+                "786f1552.91766c"
+            ]
+        ]
+    },
+    {
+        "id": "29347d08.d86742",
+        "type": "mqtt out",
+        "z": "3ee9262a.061c0a",
+        "name": "Corridor Light OUT",
+        "topic": "shellies/shelly1-942645/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 478.0173568725586,
+        "y": 110,
+        "wires": []
+    },
+    {
+        "id": "786f1552.91766c",
+        "type": "ui_switch",
+        "z": "3ee9262a.061c0a",
+        "name": "",
+        "label": "Light",
+        "group": "a534f0b7.392d3",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 286.0173759460449,
+        "y": 110.00000381469727,
+        "wires": [
+            [
+                "29347d08.d86742"
+            ]
+        ]
+    },
+    {
+        "id": "d489e70b.d0c5d8",
+        "type": "comment",
+        "z": "3ee9262a.061c0a",
+        "name": "Corridor Light",
+        "info": "",
+        "x": 96.0173568725586,
+        "y": 59,
+        "wires": []
+    },
+    {
+        "id": "37879a78.39c2c6",
+        "type": "mqtt in",
+        "z": "99e96001.113a9",
+        "name": "Corridor Light IN",
+        "topic": "shellies/shelly1-942645/relay/0",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 142.01734924316406,
+        "y": 422.0104064941406,
+        "wires": [
+            [
+                "fb5ec5cf.1abc38"
+            ]
+        ]
+    },
+    {
+        "id": "41d5c4b1.0dddac",
+        "type": "mqtt out",
+        "z": "99e96001.113a9",
+        "name": "Corridor Light OUT",
+        "topic": "shellies/shelly1-942645/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 514.0173492431641,
+        "y": 422.0104064941406,
+        "wires": []
+    },
+    {
+        "id": "fb5ec5cf.1abc38",
+        "type": "ui_switch",
+        "z": "99e96001.113a9",
+        "name": "",
+        "label": "Corridor",
+        "group": "eb2441b4.1ea54",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 326.0173873901367,
+        "y": 422.0104010105133,
+        "wires": [
+            [
+                "41d5c4b1.0dddac"
+            ]
+        ]
+    },
+    {
+        "id": "76da33c1.1a60fc",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "Gang Licht",
+        "topic": "",
+        "x": 363.0173797607422,
+        "y": 309.788236618042,
+        "wires": [
+            [
+                "ce1f41d5.f719e"
+            ]
+        ]
+    },
+    {
+        "id": "ce1f41d5.f719e",
+        "type": "mqtt out",
+        "z": "4b279b3e.b560d4",
+        "name": "Corridor Light OUT",
+        "topic": "shellies/shelly1-942645/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 585.017333984375,
+        "y": 308.7882080078125,
+        "wires": []
+    }
+]

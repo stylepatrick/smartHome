@@ -10,6 +10,8 @@ Node-RED Library used:
 ```
 npm install node-red-contrib-amazon-echo
 npm install node-red-dashboard
+npm install node-red-contrib-re-postgres
+npm install node-red-contrib-telegrambot
 ```
 
 #### Docker:

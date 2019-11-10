@@ -45,6 +45,11 @@
         "label": "Dashboard States"
     },
     {
+        "id": "1f564b0d.cd34c5",
+        "type": "tab",
+        "label": "H&T to Postgres"
+    },
+    {
         "id": "de157ea5.02ed8",
         "type": "ui_base",
         "name": "Smart Home",
@@ -202,20 +207,20 @@
         "id": "eb2441b4.1ea54",
         "type": "ui_group",
         "z": "",
-        "name": "Lights",
+        "name": "Lights & Home Cinema",
         "tab": "9718b566.666db8",
         "order": 1,
-        "disp": true,
+        "disp": false,
         "width": "6"
     },
     {
         "id": "49693815.953628",
         "type": "ui_group",
         "z": "",
-        "name": "Home Cinema",
+        "name": "Sensors",
         "tab": "9718b566.666db8",
         "order": 2,
-        "disp": true,
+        "disp": false,
         "width": "6"
     },
     {
@@ -265,6 +270,48 @@
         "width": "6"
     },
     {
+        "id": "6eb1c2a3.521c7c",
+        "type": "postgresdb",
+        "z": "",
+        "hostname": "localhost",
+        "port": "5432",
+        "db": "smarthome",
+        "ssl": false
+    },
+    {
+        "id": "fd50cfde.9d0d",
+        "type": "ui_group",
+        "z": "",
+        "name": "Chart and Battery state",
+        "tab": "9718b566.666db8",
+        "order": 3,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "72efc60c.f74b78",
+        "type": "telegram bot",
+        "z": "",
+        "botname": "MySmartHome",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "verboselogging": false
+    },
+    {
         "id": "5c8d0313.8d196c",
         "type": "amazon-echo-hub",
         "z": "4b279b3e.b560d4",
@@ -294,7 +341,8 @@
                 "a05d95ed.b874e8",
                 "8ea30fd0.4f335",
                 "385ebbb5.5eec14",
-                "76da33c1.1a60fc"
+                "76da33c1.1a60fc",
+                "4cd6bd3b.217824"
             ]
         ]
     },
@@ -431,7 +479,7 @@
         "type": "mqtt in",
         "z": "1285763.399ba8a",
         "name": "Kitchen Room Light IN",
-        "topic": "shellies/shelly1-B9DD3A/relay/0",
+        "topic": "shellies/shelly1-76F642/relay/0",
         "qos": "2",
         "broker": "b7fc869.1c84e78",
         "x": 147,
@@ -447,7 +495,7 @@
         "type": "mqtt out",
         "z": "1285763.399ba8a",
         "name": "Kitchen Room Light OUT",
-        "topic": "shellies/shelly1-B9DD3A/relay/0/command",
+        "topic": "shellies/shelly1-76F642/relay/0/command",
         "qos": "",
         "retain": "",
         "broker": "b7fc869.1c84e78",
@@ -513,7 +561,7 @@
         "type": "mqtt out",
         "z": "4b279b3e.b560d4",
         "name": "Kitchen Room Light OUT",
-        "topic": "shellies/shelly1-B9DD3A/relay/0/command",
+        "topic": "shellies/shelly1-76F642/relay/0/command",
         "qos": "",
         "retain": "",
         "broker": "b7fc869.1c84e78",
@@ -1541,7 +1589,7 @@
         "name": "",
         "label": "Badezimmer",
         "group": "eb2441b4.1ea54",
-        "order": 0,
+        "order": 1,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -1568,7 +1616,7 @@
         "type": "mqtt in",
         "z": "99e96001.113a9",
         "name": "Kitchen Room Light IN",
-        "topic": "shellies/shelly1-B9DD3A/relay/0",
+        "topic": "shellies/shelly1-76F642/relay/0",
         "qos": "2",
         "broker": "b7fc869.1c84e78",
         "x": 168,
@@ -1584,7 +1632,7 @@
         "type": "mqtt out",
         "z": "99e96001.113a9",
         "name": "Kitchen Room Light OUT",
-        "topic": "shellies/shelly1-B9DD3A/relay/0/command",
+        "topic": "shellies/shelly1-76F642/relay/0/command",
         "qos": "",
         "retain": "",
         "broker": "b7fc869.1c84e78",
@@ -1599,7 +1647,7 @@
         "name": "",
         "label": "Küche",
         "group": "eb2441b4.1ea54",
-        "order": 0,
+        "order": 2,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -1657,7 +1705,7 @@
         "name": "",
         "label": "Wohnzimmer",
         "group": "eb2441b4.1ea54",
-        "order": 0,
+        "order": 3,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -2422,8 +2470,8 @@
         "z": "99e96001.113a9",
         "name": "",
         "label": "Home Cinema",
-        "group": "49693815.953628",
-        "order": 0,
+        "group": "eb2441b4.1ea54",
+        "order": 7,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -2528,7 +2576,7 @@
         "name": "",
         "label": "Schlafzimmer",
         "group": "eb2441b4.1ea54",
-        "order": 0,
+        "order": 4,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -2586,7 +2634,7 @@
         "name": "",
         "label": "Light",
         "group": "477251ce.a4b56",
-        "order": 0,
+        "order": 1,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -2681,7 +2729,7 @@
         "name": "",
         "label": "Bed Light",
         "group": "477251ce.a4b56",
-        "order": 0,
+        "order": 2,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -2749,7 +2797,7 @@
         "name": "",
         "label": "Bett Licht",
         "group": "eb2441b4.1ea54",
-        "order": 0,
+        "order": 5,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -3025,7 +3073,7 @@
         "name": "",
         "label": "Corridor",
         "group": "eb2441b4.1ea54",
-        "order": 0,
+        "order": 6,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -3073,5 +3121,755 @@
         "x": 585.017333984375,
         "y": 308.7882080078125,
         "wires": []
+    },
+    {
+        "id": "c0f99084.45742",
+        "type": "mqtt in",
+        "z": "7ac0d37f.c1198c",
+        "name": "H&T Temperature IN",
+        "topic": "shellies/shellyht-58EEB4/sensor/temperature",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 129,
+        "y": 393,
+        "wires": [
+            [
+                "9e0256b7.814088",
+                "5c051acd.93dd94"
+            ]
+        ]
+    },
+    {
+        "id": "9e0256b7.814088",
+        "type": "ui_gauge",
+        "z": "7ac0d37f.c1198c",
+        "name": "Temperature",
+        "group": "477251ce.a4b56",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "Temperature",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "45",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "x": 362.1000061035156,
+        "y": 393.0000057220459,
+        "wires": []
+    },
+    {
+        "id": "125c14aa.edee1b",
+        "type": "mqtt in",
+        "z": "7ac0d37f.c1198c",
+        "name": "H&T Humidity IN",
+        "topic": "shellies/shellyht-58EEB4/sensor/humidity",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 123,
+        "y": 496.00000190734863,
+        "wires": [
+            [
+                "36ca349d.b8540c",
+                "f450332f.039fe"
+            ]
+        ]
+    },
+    {
+        "id": "36ca349d.b8540c",
+        "type": "ui_gauge",
+        "z": "7ac0d37f.c1198c",
+        "name": "Humidity",
+        "group": "477251ce.a4b56",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "Humidity",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "x": 350.00000381469727,
+        "y": 497.00000858306885,
+        "wires": []
+    },
+    {
+        "id": "911a23c.bd1dfe",
+        "type": "mqtt in",
+        "z": "7ac0d37f.c1198c",
+        "name": "H&T Battery IN",
+        "topic": "shellies/shellyht-58EEB4/sensor/battery",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 112,
+        "y": 623.000002861023,
+        "wires": [
+            [
+                "89947cb8.c3f9f",
+                "2a0b57a4.9ed558"
+            ]
+        ]
+    },
+    {
+        "id": "89947cb8.c3f9f",
+        "type": "ui_gauge",
+        "z": "7ac0d37f.c1198c",
+        "name": "Battery",
+        "group": "477251ce.a4b56",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "Battery",
+        "label": "Battery",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "x": 339.00000381469727,
+        "y": 624.0000095367432,
+        "wires": []
+    },
+    {
+        "id": "e240febc.fa666",
+        "type": "comment",
+        "z": "7ac0d37f.c1198c",
+        "name": "H&T Sensor",
+        "info": "",
+        "x": 103,
+        "y": 344,
+        "wires": []
+    },
+    {
+        "id": "78fa2931.c7aa58",
+        "type": "mqtt in",
+        "z": "99e96001.113a9",
+        "name": "H&T Temperature IN",
+        "topic": "shellies/shellyht-58EEB4/sensor/temperature",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 156,
+        "y": 808.5999755859375,
+        "wires": [
+            [
+                "1ea6bb02.20d5c5"
+            ]
+        ]
+    },
+    {
+        "id": "1ea6bb02.20d5c5",
+        "type": "ui_gauge",
+        "z": "99e96001.113a9",
+        "name": "Temperature",
+        "group": "49693815.953628",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature Bedroom",
+        "label": "",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "45",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "x": 389.1000061035156,
+        "y": 808.5999813079834,
+        "wires": []
+    },
+    {
+        "id": "6bac1c1c.75cde4",
+        "type": "mqtt in",
+        "z": "99e96001.113a9",
+        "name": "H&T Humidity IN",
+        "topic": "shellies/shellyht-58EEB4/sensor/humidity",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 146,
+        "y": 880.5999755859375,
+        "wires": [
+            [
+                "788bbc1b.89b774"
+            ]
+        ]
+    },
+    {
+        "id": "788bbc1b.89b774",
+        "type": "ui_gauge",
+        "z": "99e96001.113a9",
+        "name": "Humidity",
+        "group": "49693815.953628",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity Bedroom",
+        "label": "",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "x": 373.00000381469727,
+        "y": 881.5999822616577,
+        "wires": []
+    },
+    {
+        "id": "ce34d088.0e43c",
+        "type": "comment",
+        "z": "99e96001.113a9",
+        "name": "H&T Bedroom Sensor",
+        "info": "",
+        "x": 160,
+        "y": 759.5999755859375,
+        "wires": []
+    },
+    {
+        "id": "aacaba00.2065e8",
+        "type": "template",
+        "z": "1f564b0d.cd34c5",
+        "name": "format query temperature table",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "insert into temperature_bedroom (temperature) values ($param1)",
+        "x": 603.0000152587891,
+        "y": 62.50000190734863,
+        "wires": [
+            [
+                "eb2fc448.ad19a8"
+            ]
+        ]
+    },
+    {
+        "id": "eb2fc448.ad19a8",
+        "type": "postgres",
+        "z": "1f564b0d.cd34c5",
+        "postgresdb": "6eb1c2a3.521c7c",
+        "name": "",
+        "output": true,
+        "perrow": false,
+        "outputs": 1,
+        "x": 846.2500228881836,
+        "y": 112.25000858306885,
+        "wires": [
+            [
+                "2bc786d5.19efca"
+            ]
+        ]
+    },
+    {
+        "id": "2bc786d5.19efca",
+        "type": "debug",
+        "z": "1f564b0d.cd34c5",
+        "name": "query output",
+        "active": true,
+        "console": "false",
+        "complete": "true",
+        "x": 1018.2500305175781,
+        "y": 108.25001525878906,
+        "wires": []
+    },
+    {
+        "id": "6f82a018.10df8",
+        "type": "function",
+        "z": "1f564b0d.cd34c5",
+        "name": "setup params",
+        "func": "msg.queryParameters = msg.queryParameters || {};\nmsg.queryParameters.param1 = parseFloat(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 361.75001525878906,
+        "y": 61.75000238418579,
+        "wires": [
+            [
+                "aacaba00.2065e8"
+            ]
+        ]
+    },
+    {
+        "id": "db5327c0.1216b8",
+        "type": "mqtt in",
+        "z": "1f564b0d.cd34c5",
+        "name": "H&T Temperature IN",
+        "topic": "shellies/shellyht-58EEB4/sensor/temperature",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 146.25001525878906,
+        "y": 62.50000858306885,
+        "wires": [
+            [
+                "6f82a018.10df8"
+            ]
+        ]
+    },
+    {
+        "id": "9a12f3e5.6c90f",
+        "type": "template",
+        "z": "1f564b0d.cd34c5",
+        "name": "format query humidity table",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "insert into humidity_bedroom (humidity) values ($param1)",
+        "x": 587.5,
+        "y": 160,
+        "wires": [
+            [
+                "eb2fc448.ad19a8"
+            ]
+        ]
+    },
+    {
+        "id": "233bba92.92c746",
+        "type": "function",
+        "z": "1f564b0d.cd34c5",
+        "name": "setup params",
+        "func": "msg.queryParameters = msg.queryParameters || {};\nmsg.queryParameters.param1 = parseFloat(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 356.25,
+        "y": 159.25000047683716,
+        "wires": [
+            [
+                "9a12f3e5.6c90f"
+            ]
+        ]
+    },
+    {
+        "id": "593a9239.6836ac",
+        "type": "mqtt in",
+        "z": "1f564b0d.cd34c5",
+        "name": "H&T Humidity IN",
+        "topic": "shellies/shellyht-58EEB4/sensor/humidity",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 141.25,
+        "y": 160.00000476837158,
+        "wires": [
+            [
+                "233bba92.92c746"
+            ]
+        ]
+    },
+    {
+        "id": "ab9377c2.b65d88",
+        "type": "mqtt in",
+        "z": "99e96001.113a9",
+        "name": "H&T Temperature IN",
+        "topic": "shellies/shellyht-58EEB4/sensor/temperature",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 142.99999237060547,
+        "y": 1025.9999914169312,
+        "wires": [
+            [
+                "b772fcd5.60aa2"
+            ]
+        ]
+    },
+    {
+        "id": "69c62960.d6abb8",
+        "type": "mqtt in",
+        "z": "99e96001.113a9",
+        "name": "H&T Humidity IN",
+        "topic": "shellies/shellyht-58EEB4/sensor/humidity",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 139.99999237060547,
+        "y": 1100.9999923706055,
+        "wires": [
+            [
+                "2262d82b.8d4ce8"
+            ]
+        ]
+    },
+    {
+        "id": "b772fcd5.60aa2",
+        "type": "function",
+        "z": "99e96001.113a9",
+        "name": "Create Topic Temperature",
+        "func": "msg.topic='Temperature'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 393.50000762939453,
+        "y": 1024.9999914169312,
+        "wires": [
+            [
+                "ecaee482.280018"
+            ]
+        ]
+    },
+    {
+        "id": "2262d82b.8d4ce8",
+        "type": "function",
+        "z": "99e96001.113a9",
+        "name": "Create Topic Humidity",
+        "func": "msg.topic='Humidity'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 371.00000381469727,
+        "y": 1098.9999752044678,
+        "wires": [
+            [
+                "ecaee482.280018"
+            ]
+        ]
+    },
+    {
+        "id": "ecaee482.280018",
+        "type": "ui_chart",
+        "z": "99e96001.113a9",
+        "name": "Humidity and Temperauter",
+        "group": "fd50cfde.9d0d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Bedroom Humidity and Temperauter",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "10000",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "x": 660.5000038146973,
+        "y": 1069.9999752044678,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "7b4dfa95.b1cbd4",
+        "type": "mqtt in",
+        "z": "7ac0d37f.c1198c",
+        "name": "H&T Temperature IN",
+        "topic": "shellies/shellyht-58EEB4/sensor/temperature",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 118,
+        "y": 742.800012588501,
+        "wires": [
+            [
+                "32765aed.df6726"
+            ]
+        ]
+    },
+    {
+        "id": "3fb36cd0.77d704",
+        "type": "mqtt in",
+        "z": "7ac0d37f.c1198c",
+        "name": "H&T Humidity IN",
+        "topic": "shellies/shellyht-58EEB4/sensor/humidity",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 110,
+        "y": 817.8000135421753,
+        "wires": [
+            [
+                "ae72e347.c1343"
+            ]
+        ]
+    },
+    {
+        "id": "32765aed.df6726",
+        "type": "function",
+        "z": "7ac0d37f.c1198c",
+        "name": "Create Topic Temperature",
+        "func": "msg.topic='Temperature'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 363.50000381469727,
+        "y": 742.8000297546387,
+        "wires": [
+            [
+                "bce63642.089d48"
+            ]
+        ]
+    },
+    {
+        "id": "ae72e347.c1343",
+        "type": "function",
+        "z": "7ac0d37f.c1198c",
+        "name": "Create Topic Humidity",
+        "func": "msg.topic='Humidity'\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 341,
+        "y": 816.8000135421753,
+        "wires": [
+            [
+                "bce63642.089d48"
+            ]
+        ]
+    },
+    {
+        "id": "bce63642.089d48",
+        "type": "ui_chart",
+        "z": "7ac0d37f.c1198c",
+        "name": "Humidity and Temperauter",
+        "group": "477251ce.a4b56",
+        "order": 6,
+        "width": "0",
+        "height": "0",
+        "label": "Humidity and Temperauter",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "10000",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "x": 628.5000076293945,
+        "y": 781.8000116348267,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "732732a6.41e06c",
+        "type": "mqtt in",
+        "z": "99e96001.113a9",
+        "name": "H&T Battery IN",
+        "topic": "shellies/shellyht-58EEB4/sensor/battery",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 136,
+        "y": 945.5999755859375,
+        "wires": [
+            [
+                "8ce34d79.0583f"
+            ]
+        ]
+    },
+    {
+        "id": "8ce34d79.0583f",
+        "type": "ui_gauge",
+        "z": "99e96001.113a9",
+        "name": "Battery",
+        "group": "fd50cfde.9d0d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "donut",
+        "title": "Battery H&T Bed Sensor",
+        "label": "",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "x": 363.00000381469727,
+        "y": 946.5999822616577,
+        "wires": []
+    },
+    {
+        "id": "94e6a61a.5cde08",
+        "type": "telegram sender",
+        "z": "7ac0d37f.c1198c",
+        "name": "",
+        "bot": "72efc60c.f74b78",
+        "x": 594.0000076293945,
+        "y": 677.0000114440918,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2a0b57a4.9ed558",
+        "type": "function",
+        "z": "7ac0d37f.c1198c",
+        "name": "Check Battery state",
+        "func": "const batteryState = msg.payload;\nmsg.payload = {};\nif (batteryState  == 10)\n{\n    msg.payload = {\n        chatId: '390062931',\n        type: 'message',\n        content: 'Battery of Bedroom H&T sensor less then ' + batteryState + '%'\n    }\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 371.40000915527344,
+        "y": 678.0000133514404,
+        "wires": [
+            [
+                "94e6a61a.5cde08"
+            ]
+        ]
+    },
+    {
+        "id": "67d7a32b.4cdebc",
+        "type": "function",
+        "z": "e0207c67.5fe73",
+        "name": "BedTemperature",
+        "func": "global.set('bedTemperature','');\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 378,
+        "y": 167,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6720086.c03f2f8",
+        "type": "inject",
+        "z": "e0207c67.5fe73",
+        "name": "",
+        "topic": "",
+        "payload": "bedTemperature",
+        "payloadType": "global",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "x": 165,
+        "y": 167,
+        "wires": [
+            [
+                "67d7a32b.4cdebc"
+            ]
+        ]
+    },
+    {
+        "id": "86314fcf.a3881",
+        "type": "function",
+        "z": "e0207c67.5fe73",
+        "name": "BedHumidity",
+        "func": "global.set('bedHumidity','');\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 362,
+        "y": 221,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "42263b24.d8ac84",
+        "type": "inject",
+        "z": "e0207c67.5fe73",
+        "name": "",
+        "topic": "",
+        "payload": "bedHumidity",
+        "payloadType": "global",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "x": 139,
+        "y": 221,
+        "wires": [
+            [
+                "86314fcf.a3881"
+            ]
+        ]
+    },
+    {
+        "id": "5c051acd.93dd94",
+        "type": "function",
+        "z": "7ac0d37f.c1198c",
+        "name": "set bedTemperature",
+        "func": "global.set('bedTemperature',msg.payload);",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 396.50000762939453,
+        "y": 441.0000057220459,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f450332f.039fe",
+        "type": "function",
+        "z": "7ac0d37f.c1198c",
+        "name": "setbedHumidity",
+        "func": "global.set('bedHumidity',msg.payload);",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 380.50000762939453,
+        "y": 559.0000085830688,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4cd6bd3b.217824",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "Schlafzimmersensor",
+        "topic": "",
+        "x": 354.00000762939453,
+        "y": 2675.5999422073364,
+        "wires": [
+            [
+                "e7448f9c.c4d0e"
+            ]
+        ]
+    },
+    {
+        "id": "ed038226.6912c",
+        "type": "comment",
+        "z": "4b279b3e.b560d4",
+        "name": "H&T Bedroom Sensor",
+        "info": "",
+        "x": 355.6000061035156,
+        "y": 2627.39990234375,
+        "wires": []
+    },
+    {
+        "id": "375ece9b.d68862",
+        "type": "telegram sender",
+        "z": "4b279b3e.b560d4",
+        "name": "",
+        "bot": "72efc60c.f74b78",
+        "x": 831.9333152770996,
+        "y": 2679.40006364882,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e7448f9c.c4d0e",
+        "type": "function",
+        "z": "4b279b3e.b560d4",
+        "name": "create Telegram message",
+        "func": "msg.payload = {\n    chatId: '390062931',\n    type: 'message',\n    content: 'Bedroom \\nTemperature: ' + global.get('bedTemperature') + '°C \\n' + 'Humidity: ' + global.get('bedHumidity') + '%'\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 624.333366394043,
+        "y": 2678.733316421509,
+        "wires": [
+            [
+                "375ece9b.d68862"
+            ]
+        ]
     }
 ]

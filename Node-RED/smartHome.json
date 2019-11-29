@@ -10,34 +10,9 @@
         "label": "Alexa Commands"
     },
     {
-        "id": "d62b2f38.d374f",
-        "type": "tab",
-        "label": "Dashboard Living Room"
-    },
-    {
         "id": "2186aa43.d8c126",
         "type": "tab",
         "label": "Dashboard Home Cinema"
-    },
-    {
-        "id": "1285763.399ba8a",
-        "type": "tab",
-        "label": "Dashboard Kitchen Room"
-    },
-    {
-        "id": "166dd706.9b58d9",
-        "type": "tab",
-        "label": "Dashboard Bathroom"
-    },
-    {
-        "id": "7ac0d37f.c1198c",
-        "type": "tab",
-        "label": "Dashboard Bedroom"
-    },
-    {
-        "id": "3ee9262a.061c0a",
-        "type": "tab",
-        "label": "Dashboard Corridor"
     },
     {
         "id": "99e96001.113a9",
@@ -47,7 +22,7 @@
     {
         "id": "1f564b0d.cd34c5",
         "type": "tab",
-        "label": "H&T to Postgres"
+        "label": "H&T Sensor"
     },
     {
         "id": "de157ea5.02ed8",
@@ -74,126 +49,12 @@
         "birthPayload": ""
     },
     {
-        "id": "b49c9c97.4faa",
-        "type": "ui_group",
-        "z": "",
-        "name": "Living Room",
-        "tab": "43cb37bd.804a18",
-        "order": 1,
-        "disp": true,
-        "width": "6"
-    },
-    {
-        "id": "43cb37bd.804a18",
-        "type": "ui_tab",
-        "z": "",
-        "name": "Living Room",
-        "icon": "dashboard",
-        "order": 2
-    },
-    {
-        "id": "89ab95f3.422648",
-        "type": "ui_group",
-        "z": "",
-        "name": "Channel",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "6"
-    },
-    {
-        "id": "c2b82a5a.921208",
-        "type": "ui_group",
-        "z": "",
-        "name": "Volume",
-        "tab": "",
-        "order": 2,
-        "disp": true,
-        "width": "6"
-    },
-    {
         "id": "46fad4f8.93fd6c",
         "type": "ui_tab",
         "z": "",
         "name": "Home Cinema",
         "icon": "dashboard",
         "order": 7
-    },
-    {
-        "id": "485a2c0c.fa7014",
-        "type": "ui_tab",
-        "z": "",
-        "name": "Kitchen Room",
-        "icon": "dashboard",
-        "order": 3
-    },
-    {
-        "id": "e1fa2245.b869d",
-        "type": "ui_group",
-        "z": "",
-        "name": "Kitchen Room",
-        "tab": "485a2c0c.fa7014",
-        "order": 1,
-        "disp": true,
-        "width": "6"
-    },
-    {
-        "id": "e16c2091.d9fcf",
-        "type": "ui_tab",
-        "z": "",
-        "name": "Bathroom",
-        "icon": "dashboard",
-        "order": 4
-    },
-    {
-        "id": "19215066.901d3",
-        "type": "ui_group",
-        "z": "",
-        "name": "Bathroom",
-        "tab": "e16c2091.d9fcf",
-        "order": 1,
-        "disp": true,
-        "width": "6"
-    },
-    {
-        "id": "93938f86.dae36",
-        "type": "ui_group",
-        "z": "",
-        "name": "Group 1",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "6"
-    },
-    {
-        "id": "471a061d.7cdfa8",
-        "type": "ui_group",
-        "z": "",
-        "name": "Recording State",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "6"
-    },
-    {
-        "id": "e74f9ca2.2617f",
-        "type": "ui_group",
-        "z": "",
-        "name": "Recording State",
-        "tab": "",
-        "order": 3,
-        "disp": true,
-        "width": "6"
-    },
-    {
-        "id": "b7b45836.7d0da8",
-        "type": "ui_group",
-        "z": "",
-        "name": "Recording Start",
-        "tab": "",
-        "order": 4,
-        "disp": true,
-        "width": "6"
     },
     {
         "id": "9718b566.666db8",
@@ -210,7 +71,7 @@
         "name": "Lights & Home Cinema",
         "tab": "9718b566.666db8",
         "order": 1,
-        "disp": false,
+        "disp": true,
         "width": "6"
     },
     {
@@ -219,25 +80,7 @@
         "z": "",
         "name": "Sensors",
         "tab": "9718b566.666db8",
-        "order": 2,
-        "disp": false,
-        "width": "6"
-    },
-    {
-        "id": "cd7c93f9.3ec9d",
-        "type": "ui_tab",
-        "z": "",
-        "name": "Bedroom",
-        "icon": "dashboard",
-        "order": 5
-    },
-    {
-        "id": "477251ce.a4b56",
-        "type": "ui_group",
-        "z": "",
-        "name": "Bedroom",
-        "tab": "cd7c93f9.3ec9d",
-        "order": 1,
+        "order": 4,
         "disp": true,
         "width": "6"
     },
@@ -252,24 +95,6 @@
         "width": "6"
     },
     {
-        "id": "6c77859c.fda2fc",
-        "type": "ui_tab",
-        "z": "",
-        "name": "Corridor Room",
-        "icon": "dashboard",
-        "order": 6
-    },
-    {
-        "id": "a534f0b7.392d3",
-        "type": "ui_group",
-        "z": "",
-        "name": "Corridor",
-        "tab": "6c77859c.fda2fc",
-        "order": 1,
-        "disp": true,
-        "width": "6"
-    },
-    {
         "id": "6eb1c2a3.521c7c",
         "type": "postgresdb",
         "z": "",
@@ -277,16 +102,6 @@
         "port": "5432",
         "db": "smarthome",
         "ssl": false
-    },
-    {
-        "id": "fd50cfde.9d0d",
-        "type": "ui_group",
-        "z": "",
-        "name": "Chart and Battery state",
-        "tab": "9718b566.666db8",
-        "order": 3,
-        "disp": false,
-        "width": "6"
     },
     {
         "id": "72efc60c.f74b78",
@@ -310,6 +125,26 @@
         "certificate": "",
         "useselfsignedcertificate": false,
         "verboselogging": false
+    },
+    {
+        "id": "3ecfa11d.eb264e",
+        "type": "ui_group",
+        "z": "",
+        "name": "Temperature",
+        "tab": "9718b566.666db8",
+        "order": 2,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "82ce3ed7.74938",
+        "type": "ui_group",
+        "z": "",
+        "name": "Humidity",
+        "tab": "9718b566.666db8",
+        "order": 3,
+        "disp": true,
+        "width": "6"
     },
     {
         "id": "5c8d0313.8d196c",
@@ -342,7 +177,8 @@
                 "8ea30fd0.4f335",
                 "385ebbb5.5eec14",
                 "76da33c1.1a60fc",
-                "4cd6bd3b.217824"
+                "4cd6bd3b.217824",
+                "d514e484.907df8"
             ]
         ]
     },
@@ -357,64 +193,6 @@
         "wires": [
             [
                 "eb3edbef.0c21c8"
-            ]
-        ]
-    },
-    {
-        "id": "23cf7baa.0d86f4",
-        "type": "mqtt in",
-        "z": "d62b2f38.d374f",
-        "name": "Living Room Light IN",
-        "topic": "shellies/shelly1-B9CFBD/relay/0",
-        "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 133,
-        "y": 97,
-        "wires": [
-            [
-                "49c1e523.e7cd6c"
-            ]
-        ]
-    },
-    {
-        "id": "fb963537.28fc18",
-        "type": "mqtt out",
-        "z": "d62b2f38.d374f",
-        "name": "Living Room Light OUT",
-        "topic": "shellies/shelly1-B9CFBD/relay/0/command",
-        "qos": "",
-        "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 515,
-        "y": 97,
-        "wires": []
-    },
-    {
-        "id": "49c1e523.e7cd6c",
-        "type": "ui_switch",
-        "z": "d62b2f38.d374f",
-        "name": "",
-        "label": "Light",
-        "group": "b49c9c97.4faa",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "topic": "",
-        "style": "",
-        "onvalue": "on",
-        "onvalueType": "str",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "off",
-        "offvalueType": "str",
-        "officon": "",
-        "offcolor": "",
-        "x": 309,
-        "y": 97,
-        "wires": [
-            [
-                "fb963537.28fc18"
             ]
         ]
     },
@@ -465,84 +243,6 @@
         ]
     },
     {
-        "id": "1983e857.b52598",
-        "type": "comment",
-        "z": "d62b2f38.d374f",
-        "name": "Living Room Light",
-        "info": "",
-        "x": 133,
-        "y": 46,
-        "wires": []
-    },
-    {
-        "id": "5f37b221.03661c",
-        "type": "mqtt in",
-        "z": "1285763.399ba8a",
-        "name": "Kitchen Room Light IN",
-        "topic": "shellies/shelly1-76F642/relay/0",
-        "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 147,
-        "y": 99,
-        "wires": [
-            [
-                "498c7fb9.b8e59"
-            ]
-        ]
-    },
-    {
-        "id": "ca3abe23.eae0f",
-        "type": "mqtt out",
-        "z": "1285763.399ba8a",
-        "name": "Kitchen Room Light OUT",
-        "topic": "shellies/shelly1-76F642/relay/0/command",
-        "qos": "",
-        "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 519,
-        "y": 99,
-        "wires": []
-    },
-    {
-        "id": "498c7fb9.b8e59",
-        "type": "ui_switch",
-        "z": "1285763.399ba8a",
-        "name": "",
-        "label": "Light",
-        "group": "e1fa2245.b869d",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "topic": "",
-        "style": "",
-        "onvalue": "on",
-        "onvalueType": "str",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "off",
-        "offvalueType": "str",
-        "officon": "",
-        "offcolor": "",
-        "x": 322,
-        "y": 99,
-        "wires": [
-            [
-                "ca3abe23.eae0f"
-            ]
-        ]
-    },
-    {
-        "id": "4903af96.215bd",
-        "type": "comment",
-        "z": "1285763.399ba8a",
-        "name": "Kitchen Room Light",
-        "info": "",
-        "x": 137,
-        "y": 48,
-        "wires": []
-    },
-    {
         "id": "89381f11.6b7eb",
         "type": "amazon-echo-device",
         "z": "4b279b3e.b560d4",
@@ -567,74 +267,6 @@
         "broker": "b7fc869.1c84e78",
         "x": 607.7500038146973,
         "y": 140.50000190734863,
-        "wires": []
-    },
-    {
-        "id": "bf75ee85.38ecb",
-        "type": "mqtt in",
-        "z": "166dd706.9b58d9",
-        "name": "Bathroom Light IN",
-        "topic": "shellies/shelly1-B9D598/relay/0",
-        "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 125,
-        "y": 101,
-        "wires": [
-            [
-                "a946456a.5b5da8"
-            ]
-        ]
-    },
-    {
-        "id": "a331f41c.2ac4a8",
-        "type": "mqtt out",
-        "z": "166dd706.9b58d9",
-        "name": "Bathroom Light OUT",
-        "topic": "shellies/shelly1-B9D598/relay/0/command",
-        "qos": "",
-        "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 497,
-        "y": 101,
-        "wires": []
-    },
-    {
-        "id": "a946456a.5b5da8",
-        "type": "ui_switch",
-        "z": "166dd706.9b58d9",
-        "name": "",
-        "label": "Light",
-        "group": "19215066.901d3",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "topic": "",
-        "style": "",
-        "onvalue": "on",
-        "onvalueType": "str",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "off",
-        "offvalueType": "str",
-        "officon": "",
-        "offcolor": "",
-        "x": 310,
-        "y": 101,
-        "wires": [
-            [
-                "a331f41c.2ac4a8"
-            ]
-        ]
-    },
-    {
-        "id": "30094e75.cdead2",
-        "type": "comment",
-        "z": "166dd706.9b58d9",
-        "name": "Bathroom Light",
-        "info": "",
-        "x": 115,
-        "y": 50,
         "wires": []
     },
     {
@@ -1171,9 +803,9 @@
         "id": "6dcb948.f3ea46c",
         "type": "amazon-echo-device",
         "z": "4b279b3e.b560d4",
-        "name": "Filmliste",
+        "name": "Filme",
         "topic": "",
-        "x": 389.1904983520508,
+        "x": 379.1904983520508,
         "y": 1396.047767162323,
         "wires": [
             [
@@ -1549,8 +1181,8 @@
         "z": "99e96001.113a9",
         "name": "Home Cinema",
         "info": "",
-        "x": 137.4444351196289,
-        "y": 507.3333988189697,
+        "x": 132.4444351196289,
+        "y": 584.3334798812866,
         "wires": []
     },
     {
@@ -1677,8 +1309,8 @@
         "topic": "shellies/shelly1-B9CFBD/relay/0",
         "qos": "2",
         "broker": "b7fc869.1c84e78",
-        "x": 159,
-        "y": 229,
+        "x": 156.77778244018555,
+        "y": 229.00000762939453,
         "wires": [
             [
                 "e3337fa3.ec6eb"
@@ -2351,64 +1983,6 @@
         "wires": []
     },
     {
-        "id": "703180d3.db21e",
-        "type": "mqtt in",
-        "z": "d62b2f38.d374f",
-        "name": "HomeCinema IN",
-        "topic": "cmnd/sonoff_homecinema/power",
-        "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 120,
-        "y": 211,
-        "wires": [
-            [
-                "92f6459b.7237a8"
-            ]
-        ]
-    },
-    {
-        "id": "50c4e2ef.5f32bc",
-        "type": "mqtt out",
-        "z": "d62b2f38.d374f",
-        "name": "HomeCinema OUT",
-        "topic": "cmnd/sonoff_homecinema/power",
-        "qos": "",
-        "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 532,
-        "y": 211,
-        "wires": []
-    },
-    {
-        "id": "92f6459b.7237a8",
-        "type": "ui_switch",
-        "z": "d62b2f38.d374f",
-        "name": "",
-        "label": "Home Cinema",
-        "group": "b49c9c97.4faa",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "topic": "",
-        "style": "",
-        "onvalue": "on",
-        "onvalueType": "str",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "off",
-        "offvalueType": "str",
-        "officon": "",
-        "offcolor": "",
-        "x": 328,
-        "y": 212,
-        "wires": [
-            [
-                "50c4e2ef.5f32bc"
-            ]
-        ]
-    },
-    {
         "id": "652d47ec.dbea38",
         "type": "mqtt out",
         "z": "4b279b3e.b560d4",
@@ -2417,8 +1991,8 @@
         "qos": "",
         "retain": "",
         "broker": "b7fc869.1c84e78",
-        "x": 895.8335838317871,
-        "y": 419.0000262260437,
+        "x": 880.8335609436035,
+        "y": 454.000027179718,
         "wires": []
     },
     {
@@ -2427,8 +2001,8 @@
         "z": "4b279b3e.b560d4",
         "name": "HeimKino",
         "topic": "",
-        "x": 373.83349990844727,
-        "y": 426.0000123977661,
+        "x": 358.8334770202637,
+        "y": 461.00001335144043,
         "wires": [
             [
                 "7abf5e61.839a3"
@@ -2443,8 +2017,8 @@
         "topic": "cmnd/sonoff_homecinema/power",
         "qos": "2",
         "broker": "b7fc869.1c84e78",
-        "x": 142.4444351196289,
-        "y": 565.3333988189697,
+        "x": 137.4444351196289,
+        "y": 642.3334798812866,
         "wires": [
             [
                 "6853fcb4.c96cf4"
@@ -2460,8 +2034,8 @@
         "qos": "",
         "retain": "",
         "broker": "b7fc869.1c84e78",
-        "x": 554.4444351196289,
-        "y": 565.3333988189697,
+        "x": 549.4444351196289,
+        "y": 642.3334798812866,
         "wires": []
     },
     {
@@ -2485,8 +2059,8 @@
         "offvalueType": "str",
         "officon": "",
         "offcolor": "",
-        "x": 350.4444351196289,
-        "y": 566.3333988189697,
+        "x": 345.4444351196289,
+        "y": 643.3334798812866,
         "wires": [
             [
                 "31ca2c0c.597494"
@@ -2499,18 +2073,8 @@
         "z": "4b279b3e.b560d4",
         "name": "Plugs",
         "info": "",
-        "x": 363.5000534057617,
-        "y": 379.0000238418579,
-        "wires": []
-    },
-    {
-        "id": "ffcf551a.4c48f8",
-        "type": "comment",
-        "z": "d62b2f38.d374f",
-        "name": "Home Cinema Plug",
-        "info": "",
-        "x": 128,
-        "y": 168,
+        "x": 348.5000305175781,
+        "y": 414.0000247955322,
         "wires": []
     },
     {
@@ -2548,8 +2112,8 @@
         "topic": "shellies/shelly1-944E49/relay/0",
         "qos": "2",
         "broker": "b7fc869.1c84e78",
-        "x": 160,
-        "y": 285,
+        "x": 152.22222900390625,
+        "y": 288.3333320617676,
         "wires": [
             [
                 "eea8453e.38fd28"
@@ -2599,81 +2163,13 @@
         ]
     },
     {
-        "id": "62e6d2d1.a99d2c",
-        "type": "mqtt in",
-        "z": "7ac0d37f.c1198c",
-        "name": "Bathroom Light IN",
-        "topic": "shellies/shelly1-944E49/relay/0",
-        "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 126.0173568725586,
-        "y": 99.01041412353516,
-        "wires": [
-            [
-                "bd5321c0.98359"
-            ]
-        ]
-    },
-    {
-        "id": "3f9f19fc.e6e6b6",
-        "type": "mqtt out",
-        "z": "7ac0d37f.c1198c",
-        "name": "Bathroom Light OUT",
-        "topic": "shellies/shelly1-944E49/relay/0/command",
-        "qos": "",
-        "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 498.0173568725586,
-        "y": 99.01041412353516,
-        "wires": []
-    },
-    {
-        "id": "bd5321c0.98359",
-        "type": "ui_switch",
-        "z": "7ac0d37f.c1198c",
-        "name": "",
-        "label": "Light",
-        "group": "477251ce.a4b56",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "topic": "",
-        "style": "",
-        "onvalue": "on",
-        "onvalueType": "str",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "off",
-        "offvalueType": "str",
-        "officon": "",
-        "offcolor": "",
-        "x": 311.0173568725586,
-        "y": 99.01041412353516,
-        "wires": [
-            [
-                "3f9f19fc.e6e6b6"
-            ]
-        ]
-    },
-    {
-        "id": "dd9446be.d2eb48",
-        "type": "comment",
-        "z": "7ac0d37f.c1198c",
-        "name": "Bedroom Light",
-        "info": "",
-        "x": 116.0173568725586,
-        "y": 48.010414123535156,
-        "wires": []
-    },
-    {
         "id": "385ebbb5.5eec14",
         "type": "amazon-echo-device",
         "z": "4b279b3e.b560d4",
         "name": "Bett Licht",
         "topic": "",
-        "x": 367.4796676635742,
-        "y": 592.2337293624878,
+        "x": 368.4796714782715,
+        "y": 584.2337260246277,
         "wires": [
             [
                 "801e07b7.bb7f38"
@@ -2689,76 +2185,8 @@
         "qos": "",
         "retain": "",
         "broker": "b7fc869.1c84e78",
-        "x": 571.7852249145508,
-        "y": 593.4837408065796,
-        "wires": []
-    },
-    {
-        "id": "7b150557.ade7cc",
-        "type": "mqtt in",
-        "z": "7ac0d37f.c1198c",
-        "name": "BedLight IN",
-        "topic": "cmnd/sonoff_bedlight/power",
-        "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 102.24150085449219,
-        "y": 230.01156616210938,
-        "wires": [
-            [
-                "535ae15.1e2922"
-            ]
-        ]
-    },
-    {
-        "id": "743103a7.25acac",
-        "type": "mqtt out",
-        "z": "7ac0d37f.c1198c",
-        "name": "Bed Light OUT",
-        "topic": "cmnd/sonoff_bedlight/power",
-        "qos": "",
-        "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 500.9081916809082,
-        "y": 231.12267875671387,
-        "wires": []
-    },
-    {
-        "id": "535ae15.1e2922",
-        "type": "ui_switch",
-        "z": "7ac0d37f.c1198c",
-        "name": "",
-        "label": "Bed Light",
-        "group": "477251ce.a4b56",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "topic": "",
-        "style": "",
-        "onvalue": "on",
-        "onvalueType": "str",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "off",
-        "offvalueType": "str",
-        "officon": "",
-        "offcolor": "",
-        "x": 300.2415008544922,
-        "y": 231.01156616210938,
-        "wires": [
-            [
-                "743103a7.25acac"
-            ]
-        ]
-    },
-    {
-        "id": "c014fea1.6c41c",
-        "type": "comment",
-        "z": "7ac0d37f.c1198c",
-        "name": "Bed Light",
-        "info": "",
-        "x": 95.57483673095703,
-        "y": 180.01156616210938,
+        "x": 572.785228729248,
+        "y": 585.4837374687195,
         "wires": []
     },
     {
@@ -2769,8 +2197,8 @@
         "topic": "cmnd/sonoff_bedlight/power",
         "qos": "2",
         "broker": "b7fc869.1c84e78",
-        "x": 138.90816116333008,
-        "y": 348.6535358428955,
+        "x": 133.3526153564453,
+        "y": 350.87577724456787,
         "wires": [
             [
                 "24f463b6.6bba5c"
@@ -2840,8 +2268,8 @@
         ],
         "checkall": "true",
         "outputs": 2,
-        "x": 557.6840896606445,
-        "y": 425.63543033599854,
+        "x": 542.6840667724609,
+        "y": 460.63543128967285,
         "wires": [
             [
                 "652d47ec.dbea38"
@@ -2867,8 +2295,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 727.6878204345703,
-        "y": 454.6354990005493,
+        "x": 712.6877975463867,
+        "y": 489.63549995422363,
         "wires": [
             [
                 "652d47ec.dbea38"
@@ -2883,8 +2311,8 @@
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/powerstate?newstate=1';\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 769.5175094604492,
-        "y": 507.732647895813,
+        "x": 754.5174865722656,
+        "y": 542.7326488494873,
         "wires": [
             [
                 "2138a3d4.de44cc"
@@ -2900,8 +2328,8 @@
         "ret": "obj",
         "url": "",
         "tls": "",
-        "x": 977.5136413574219,
-        "y": 508.65059757232666,
+        "x": 962.5136184692383,
+        "y": 543.650598526001,
         "wires": [
             []
         ]
@@ -2970,74 +2398,6 @@
         ]
     },
     {
-        "id": "f85ff227.e4c94",
-        "type": "mqtt in",
-        "z": "3ee9262a.061c0a",
-        "name": "Corridor Light IN",
-        "topic": "shellies/shelly1-942645/relay/0",
-        "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 106.0173568725586,
-        "y": 110,
-        "wires": [
-            [
-                "786f1552.91766c"
-            ]
-        ]
-    },
-    {
-        "id": "29347d08.d86742",
-        "type": "mqtt out",
-        "z": "3ee9262a.061c0a",
-        "name": "Corridor Light OUT",
-        "topic": "shellies/shelly1-942645/relay/0/command",
-        "qos": "",
-        "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 478.0173568725586,
-        "y": 110,
-        "wires": []
-    },
-    {
-        "id": "786f1552.91766c",
-        "type": "ui_switch",
-        "z": "3ee9262a.061c0a",
-        "name": "",
-        "label": "Light",
-        "group": "a534f0b7.392d3",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "topic": "",
-        "style": "",
-        "onvalue": "on",
-        "onvalueType": "str",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "off",
-        "offvalueType": "str",
-        "officon": "",
-        "offcolor": "",
-        "x": 286.0173759460449,
-        "y": 110.00000381469727,
-        "wires": [
-            [
-                "29347d08.d86742"
-            ]
-        ]
-    },
-    {
-        "id": "d489e70b.d0c5d8",
-        "type": "comment",
-        "z": "3ee9262a.061c0a",
-        "name": "Corridor Light",
-        "info": "",
-        "x": 96.0173568725586,
-        "y": 59,
-        "wires": []
-    },
-    {
         "id": "37879a78.39c2c6",
         "type": "mqtt in",
         "z": "99e96001.113a9",
@@ -3045,8 +2405,8 @@
         "topic": "shellies/shelly1-942645/relay/0",
         "qos": "2",
         "broker": "b7fc869.1c84e78",
-        "x": 142.01734924316406,
-        "y": 422.0104064941406,
+        "x": 139.7951316833496,
+        "y": 420.89929151535034,
         "wires": [
             [
                 "fb5ec5cf.1abc38"
@@ -3123,139 +2483,6 @@
         "wires": []
     },
     {
-        "id": "c0f99084.45742",
-        "type": "mqtt in",
-        "z": "7ac0d37f.c1198c",
-        "name": "H&T Temperature IN",
-        "topic": "shellies/shellyht-58EEB4/sensor/temperature",
-        "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 129,
-        "y": 393,
-        "wires": [
-            [
-                "9e0256b7.814088",
-                "5c051acd.93dd94"
-            ]
-        ]
-    },
-    {
-        "id": "9e0256b7.814088",
-        "type": "ui_gauge",
-        "z": "7ac0d37f.c1198c",
-        "name": "Temperature",
-        "group": "477251ce.a4b56",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "gtype": "gage",
-        "title": "Temperature",
-        "label": "Temperature",
-        "format": "{{value}}",
-        "min": "0",
-        "max": "45",
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ca3838"
-        ],
-        "x": 362.1000061035156,
-        "y": 393.0000057220459,
-        "wires": []
-    },
-    {
-        "id": "125c14aa.edee1b",
-        "type": "mqtt in",
-        "z": "7ac0d37f.c1198c",
-        "name": "H&T Humidity IN",
-        "topic": "shellies/shellyht-58EEB4/sensor/humidity",
-        "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 123,
-        "y": 496.00000190734863,
-        "wires": [
-            [
-                "36ca349d.b8540c",
-                "f450332f.039fe"
-            ]
-        ]
-    },
-    {
-        "id": "36ca349d.b8540c",
-        "type": "ui_gauge",
-        "z": "7ac0d37f.c1198c",
-        "name": "Humidity",
-        "group": "477251ce.a4b56",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "gtype": "gage",
-        "title": "Humidity",
-        "label": "Humidity",
-        "format": "{{value}}",
-        "min": "0",
-        "max": "100",
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ca3838"
-        ],
-        "x": 350.00000381469727,
-        "y": 497.00000858306885,
-        "wires": []
-    },
-    {
-        "id": "911a23c.bd1dfe",
-        "type": "mqtt in",
-        "z": "7ac0d37f.c1198c",
-        "name": "H&T Battery IN",
-        "topic": "shellies/shellyht-58EEB4/sensor/battery",
-        "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 112,
-        "y": 623.000002861023,
-        "wires": [
-            [
-                "89947cb8.c3f9f",
-                "2a0b57a4.9ed558"
-            ]
-        ]
-    },
-    {
-        "id": "89947cb8.c3f9f",
-        "type": "ui_gauge",
-        "z": "7ac0d37f.c1198c",
-        "name": "Battery",
-        "group": "477251ce.a4b56",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "gtype": "donut",
-        "title": "Battery",
-        "label": "Battery",
-        "format": "{{value}}",
-        "min": "0",
-        "max": "100",
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ca3838"
-        ],
-        "x": 339.00000381469727,
-        "y": 624.0000095367432,
-        "wires": []
-    },
-    {
-        "id": "e240febc.fa666",
-        "type": "comment",
-        "z": "7ac0d37f.c1198c",
-        "name": "H&T Sensor",
-        "info": "",
-        "x": 103,
-        "y": 344,
-        "wires": []
-    },
-    {
         "id": "78fa2931.c7aa58",
         "type": "mqtt in",
         "z": "99e96001.113a9",
@@ -3263,8 +2490,8 @@
         "topic": "shellies/shellyht-58EEB4/sensor/temperature",
         "qos": "2",
         "broker": "b7fc869.1c84e78",
-        "x": 156,
-        "y": 808.5999755859375,
+        "x": 147.6666717529297,
+        "y": 808.600004196167,
         "wires": [
             [
                 "1ea6bb02.20d5c5"
@@ -3276,12 +2503,12 @@
         "type": "ui_gauge",
         "z": "99e96001.113a9",
         "name": "Temperature",
-        "group": "49693815.953628",
-        "order": 0,
+        "group": "3ecfa11d.eb264e",
+        "order": 1,
         "width": 0,
         "height": 0,
         "gtype": "gage",
-        "title": "Temperature Bedroom",
+        "title": "",
         "label": "",
         "format": "{{value}}",
         "min": "0",
@@ -3303,11 +2530,11 @@
         "topic": "shellies/shellyht-58EEB4/sensor/humidity",
         "qos": "2",
         "broker": "b7fc869.1c84e78",
-        "x": 146,
-        "y": 880.5999755859375,
+        "x": 136.00000762939453,
+        "y": 880.5999870300293,
         "wires": [
             [
-                "788bbc1b.89b774"
+                "de90dc13.aad05"
             ]
         ]
     },
@@ -3316,12 +2543,12 @@
         "type": "ui_gauge",
         "z": "99e96001.113a9",
         "name": "Humidity",
-        "group": "49693815.953628",
-        "order": 0,
+        "group": "82ce3ed7.74938",
+        "order": 1,
         "width": 0,
         "height": 0,
         "gtype": "gage",
-        "title": "Humidity Bedroom",
+        "title": "",
         "label": "",
         "format": "{{value}}",
         "min": "0",
@@ -3331,8 +2558,8 @@
             "#e6e600",
             "#ca3838"
         ],
-        "x": 373.00000381469727,
-        "y": 881.5999822616577,
+        "x": 462.00000190734863,
+        "y": 880.5999412536621,
         "wires": []
     },
     {
@@ -3349,14 +2576,14 @@
         "id": "aacaba00.2065e8",
         "type": "template",
         "z": "1f564b0d.cd34c5",
-        "name": "format query temperature table",
+        "name": "insert into temperature",
         "field": "payload",
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
         "template": "insert into temperature_bedroom (temperature) values ($param1)",
-        "x": 603.0000152587891,
-        "y": 62.50000190734863,
+        "x": 669.3333435058594,
+        "y": 95.05556297302246,
         "wires": [
             [
                 "eb2fc448.ad19a8"
@@ -3372,36 +2599,22 @@
         "output": true,
         "perrow": false,
         "outputs": 1,
-        "x": 846.2500228881836,
-        "y": 112.25000858306885,
+        "x": 872.6943969726562,
+        "y": 112.69447064399719,
         "wires": [
-            [
-                "2bc786d5.19efca"
-            ]
+            []
         ]
-    },
-    {
-        "id": "2bc786d5.19efca",
-        "type": "debug",
-        "z": "1f564b0d.cd34c5",
-        "name": "query output",
-        "active": true,
-        "console": "false",
-        "complete": "true",
-        "x": 1018.2500305175781,
-        "y": 108.25001525878906,
-        "wires": []
     },
     {
         "id": "6f82a018.10df8",
         "type": "function",
         "z": "1f564b0d.cd34c5",
-        "name": "setup params",
+        "name": "setup params for insert temperature",
         "func": "msg.queryParameters = msg.queryParameters || {};\nmsg.queryParameters.param1 = parseFloat(msg.payload);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 361.75001525878906,
-        "y": 61.75000238418579,
+        "x": 399.0833740234375,
+        "y": 97.3055648803711,
         "wires": [
             [
                 "aacaba00.2065e8"
@@ -3416,11 +2629,12 @@
         "topic": "shellies/shellyht-58EEB4/sensor/temperature",
         "qos": "2",
         "broker": "b7fc869.1c84e78",
-        "x": 146.25001525878906,
-        "y": 62.50000858306885,
+        "x": 122.99996185302734,
+        "y": 103.61116123199463,
         "wires": [
             [
-                "6f82a018.10df8"
+                "6f82a018.10df8",
+                "9285fe37.a7f53"
             ]
         ]
     },
@@ -3428,14 +2642,14 @@
         "id": "9a12f3e5.6c90f",
         "type": "template",
         "z": "1f564b0d.cd34c5",
-        "name": "format query humidity table",
+        "name": "insert into humidity table",
         "field": "payload",
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
         "template": "insert into humidity_bedroom (humidity) values ($param1)",
-        "x": 587.5,
-        "y": 160,
+        "x": 661.0554733276367,
+        "y": 170.33336925506592,
         "wires": [
             [
                 "eb2fc448.ad19a8"
@@ -3446,12 +2660,12 @@
         "id": "233bba92.92c746",
         "type": "function",
         "z": "1f564b0d.cd34c5",
-        "name": "setup params",
-        "func": "msg.queryParameters = msg.queryParameters || {};\nmsg.queryParameters.param1 = parseFloat(msg.payload);\nreturn msg;",
+        "name": "setup params for insert humidity",
+        "func": "var offset=global.get('bedHumOffset');\nmsg.queryParameters = msg.queryParameters || {};\nmsg.queryParameters.param1 = parseFloat(msg.payload-offset);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 356.25,
-        "y": 159.25000047683716,
+        "x": 392.80562591552734,
+        "y": 170.583354473114,
         "wires": [
             [
                 "9a12f3e5.6c90f"
@@ -3466,11 +2680,12 @@
         "topic": "shellies/shellyht-58EEB4/sensor/humidity",
         "qos": "2",
         "broker": "b7fc869.1c84e78",
-        "x": 141.25,
-        "y": 160.00000476837158,
+        "x": 112.02777099609375,
+        "y": 162.0000295639038,
         "wires": [
             [
-                "233bba92.92c746"
+                "233bba92.92c746",
+                "9285fe37.a7f53"
             ]
         ]
     },
@@ -3498,8 +2713,8 @@
         "topic": "shellies/shellyht-58EEB4/sensor/humidity",
         "qos": "2",
         "broker": "b7fc869.1c84e78",
-        "x": 139.99999237060547,
-        "y": 1100.9999923706055,
+        "x": 132.2222137451172,
+        "y": 1095.4444370269775,
         "wires": [
             [
                 "2262d82b.8d4ce8"
@@ -3518,7 +2733,7 @@
         "y": 1024.9999914169312,
         "wires": [
             [
-                "ecaee482.280018"
+                "b72a2fc4.3d18c"
             ]
         ]
     },
@@ -3527,7 +2742,7 @@
         "type": "function",
         "z": "99e96001.113a9",
         "name": "Create Topic Humidity",
-        "func": "msg.topic='Humidity'\nreturn msg;",
+        "func": "msg.topic='Humidity'\nvar offset=global.get('bedHumOffset');\nmsg.payload = msg.payload - offset;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 371.00000381469727,
@@ -3542,117 +2757,25 @@
         "id": "ecaee482.280018",
         "type": "ui_chart",
         "z": "99e96001.113a9",
-        "name": "Humidity and Temperauter",
-        "group": "fd50cfde.9d0d",
-        "order": 1,
+        "name": "Bedroom Humidity",
+        "group": "82ce3ed7.74938",
+        "order": 2,
         "width": 0,
         "height": 0,
-        "label": "Bedroom Humidity and Temperauter",
+        "label": "",
         "chartType": "line",
-        "legend": "true",
+        "legend": "false",
         "xformat": "dd HH:mm",
         "interpolate": "linear",
         "nodata": "",
         "ymin": "",
         "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "10000",
+        "removeOlder": "1",
+        "removeOlderPoints": "50",
         "removeOlderUnit": "604800",
         "cutout": 0,
-        "x": 660.5000038146973,
-        "y": 1069.9999752044678,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "7b4dfa95.b1cbd4",
-        "type": "mqtt in",
-        "z": "7ac0d37f.c1198c",
-        "name": "H&T Temperature IN",
-        "topic": "shellies/shellyht-58EEB4/sensor/temperature",
-        "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 118,
-        "y": 742.800012588501,
-        "wires": [
-            [
-                "32765aed.df6726"
-            ]
-        ]
-    },
-    {
-        "id": "3fb36cd0.77d704",
-        "type": "mqtt in",
-        "z": "7ac0d37f.c1198c",
-        "name": "H&T Humidity IN",
-        "topic": "shellies/shellyht-58EEB4/sensor/humidity",
-        "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 110,
-        "y": 817.8000135421753,
-        "wires": [
-            [
-                "ae72e347.c1343"
-            ]
-        ]
-    },
-    {
-        "id": "32765aed.df6726",
-        "type": "function",
-        "z": "7ac0d37f.c1198c",
-        "name": "Create Topic Temperature",
-        "func": "msg.topic='Temperature'\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 363.50000381469727,
-        "y": 742.8000297546387,
-        "wires": [
-            [
-                "bce63642.089d48"
-            ]
-        ]
-    },
-    {
-        "id": "ae72e347.c1343",
-        "type": "function",
-        "z": "7ac0d37f.c1198c",
-        "name": "Create Topic Humidity",
-        "func": "msg.topic='Humidity'\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 341,
-        "y": 816.8000135421753,
-        "wires": [
-            [
-                "bce63642.089d48"
-            ]
-        ]
-    },
-    {
-        "id": "bce63642.089d48",
-        "type": "ui_chart",
-        "z": "7ac0d37f.c1198c",
-        "name": "Humidity and Temperauter",
-        "group": "477251ce.a4b56",
-        "order": 6,
-        "width": "0",
-        "height": "0",
-        "label": "Humidity and Temperauter",
-        "chartType": "line",
-        "legend": "true",
-        "xformat": "dd HH:mm",
-        "interpolate": "linear",
-        "nodata": "",
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "10000",
-        "removeOlderUnit": "604800",
-        "cutout": 0,
-        "x": 628.5000076293945,
-        "y": 781.8000116348267,
+        "x": 615.5000038146973,
+        "y": 1099.0000457763672,
         "wires": [
             [],
             []
@@ -3678,13 +2801,13 @@
         "id": "8ce34d79.0583f",
         "type": "ui_gauge",
         "z": "99e96001.113a9",
-        "name": "Battery",
-        "group": "fd50cfde.9d0d",
+        "name": "Battery H&T",
+        "group": "49693815.953628",
         "order": 2,
         "width": 0,
         "height": 0,
         "gtype": "donut",
-        "title": "Battery H&T Bed Sensor",
+        "title": "Battery H&T",
         "label": "",
         "format": "{{value}}",
         "min": "0",
@@ -3697,34 +2820,6 @@
         "x": 363.00000381469727,
         "y": 946.5999822616577,
         "wires": []
-    },
-    {
-        "id": "94e6a61a.5cde08",
-        "type": "telegram sender",
-        "z": "7ac0d37f.c1198c",
-        "name": "",
-        "bot": "72efc60c.f74b78",
-        "x": 594.0000076293945,
-        "y": 677.0000114440918,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2a0b57a4.9ed558",
-        "type": "function",
-        "z": "7ac0d37f.c1198c",
-        "name": "Check Battery state",
-        "func": "const batteryState = msg.payload;\nmsg.payload = {};\nif (batteryState  == 10)\n{\n    msg.payload = {\n        chatId: '390062931',\n        type: 'message',\n        content: 'Battery of Bedroom H&T sensor less then ' + batteryState + '%'\n    }\n}\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 371.40000915527344,
-        "y": 678.0000133514404,
-        "wires": [
-            [
-                "94e6a61a.5cde08"
-            ]
-        ]
     },
     {
         "id": "67d7a32b.4cdebc",
@@ -3793,34 +2888,6 @@
         ]
     },
     {
-        "id": "5c051acd.93dd94",
-        "type": "function",
-        "z": "7ac0d37f.c1198c",
-        "name": "set bedTemperature",
-        "func": "global.set('bedTemperature',msg.payload);",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 396.50000762939453,
-        "y": 441.0000057220459,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f450332f.039fe",
-        "type": "function",
-        "z": "7ac0d37f.c1198c",
-        "name": "setbedHumidity",
-        "func": "global.set('bedHumidity',msg.payload);",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 380.50000762939453,
-        "y": 559.0000085830688,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "4cd6bd3b.217824",
         "type": "amazon-echo-device",
         "z": "4b279b3e.b560d4",
@@ -3850,8 +2917,8 @@
         "z": "4b279b3e.b560d4",
         "name": "",
         "bot": "72efc60c.f74b78",
-        "x": 831.9333152770996,
-        "y": 2679.40006364882,
+        "x": 837.9332675933838,
+        "y": 2676.3999938964844,
         "wires": [
             []
         ]
@@ -3864,12 +2931,604 @@
         "func": "msg.payload = {\n    chatId: '390062931',\n    type: 'message',\n    content: 'Bedroom \\nTemperature: ' + global.get('bedTemperature') + '°C \\n' + 'Humidity: ' + global.get('bedHumidity') + '%'\n}\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
-        "x": 624.333366394043,
-        "y": 2678.733316421509,
+        "x": 610.333366394043,
+        "y": 2675.7334899902344,
         "wires": [
             [
                 "375ece9b.d68862"
             ]
         ]
+    },
+    {
+        "id": "b72a2fc4.3d18c",
+        "type": "ui_chart",
+        "z": "99e96001.113a9",
+        "name": "Bedroom Temperature",
+        "group": "3ecfa11d.eb264e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "50",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "x": 646.017333984375,
+        "y": 1025.7882370948792,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "de90dc13.aad05",
+        "type": "function",
+        "z": "99e96001.113a9",
+        "name": "offset",
+        "func": "var offset=global.get('bedHumOffset');\nmsg.payload = msg.payload - offset;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 313.5174026489258,
+        "y": 881.3576993942261,
+        "wires": [
+            [
+                "788bbc1b.89b774"
+            ]
+        ]
+    },
+    {
+        "id": "8d5a313f.4de37",
+        "type": "template",
+        "z": "1f564b0d.cd34c5",
+        "name": "select from humidity",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "select avg(humidity), min(humidity), max(humidity) from humidity_bedroom\nwhere date > current_date - interval '7 days'",
+        "x": 575.5729026794434,
+        "y": 240.34381675720215,
+        "wires": [
+            [
+                "d5d6e360.2dd1"
+            ]
+        ]
+    },
+    {
+        "id": "9285fe37.a7f53",
+        "type": "function",
+        "z": "1f564b0d.cd34c5",
+        "name": "setup params",
+        "func": "msg.queryParameters = msg.queryParameters || {};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 343.3229064941406,
+        "y": 304.593789100647,
+        "wires": [
+            [
+                "8d5a313f.4de37",
+                "852cbae4.6edc18"
+            ]
+        ]
+    },
+    {
+        "id": "6a9a2d99.bf8794",
+        "type": "ui_text",
+        "z": "1f564b0d.cd34c5",
+        "group": "82ce3ed7.74938",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Humidity AVG",
+        "label": "AVG: ",
+        "format": "{{msg.payload[0].avg}}",
+        "layout": "row-center",
+        "x": 1011.6319732666016,
+        "y": 216.1424560546875,
+        "wires": []
+    },
+    {
+        "id": "570f4577.7a291c",
+        "type": "ui_text",
+        "z": "1f564b0d.cd34c5",
+        "group": "82ce3ed7.74938",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Humidity MIN",
+        "label": "MIN: ",
+        "format": "{{msg.payload[0].min}}",
+        "layout": "row-center",
+        "x": 1008.6840362548828,
+        "y": 258.34380626678467,
+        "wires": []
+    },
+    {
+        "id": "56e1bb53.1b1e94",
+        "type": "ui_text",
+        "z": "1f564b0d.cd34c5",
+        "group": "82ce3ed7.74938",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "Humidity MAX",
+        "label": "MAX: ",
+        "format": "{{msg.payload[0].max}}",
+        "layout": "row-center",
+        "x": 1013.6840286254883,
+        "y": 299.3438034057617,
+        "wires": []
+    },
+    {
+        "id": "852cbae4.6edc18",
+        "type": "template",
+        "z": "1f564b0d.cd34c5",
+        "name": "select from temperature",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "select avg(temperature), min(temperature), max(temperature) from temperature_bedroom\nwhere date > current_date - interval '7 days'",
+        "x": 579.572940826416,
+        "y": 361.34376335144043,
+        "wires": [
+            [
+                "d16939b1.037928"
+            ]
+        ]
+    },
+    {
+        "id": "d5d6e360.2dd1",
+        "type": "postgres",
+        "z": "1f564b0d.cd34c5",
+        "postgresdb": "6eb1c2a3.521c7c",
+        "name": "",
+        "output": true,
+        "perrow": false,
+        "outputs": 1,
+        "x": 773.5729103088379,
+        "y": 240.34379482269287,
+        "wires": [
+            [
+                "6a9a2d99.bf8794",
+                "570f4577.7a291c",
+                "56e1bb53.1b1e94",
+                "72a66095.172b9"
+            ]
+        ]
+    },
+    {
+        "id": "d16939b1.037928",
+        "type": "postgres",
+        "z": "1f564b0d.cd34c5",
+        "postgresdb": "6eb1c2a3.521c7c",
+        "name": "",
+        "output": true,
+        "perrow": false,
+        "outputs": 1,
+        "x": 785.5729026794434,
+        "y": 360.3437747955322,
+        "wires": [
+            [
+                "27f228b1.0a9338",
+                "f9e432b1.b8f85",
+                "c64098bb.30c6c8",
+                "500c320e.1d0fdc"
+            ]
+        ]
+    },
+    {
+        "id": "27f228b1.0a9338",
+        "type": "ui_text",
+        "z": "1f564b0d.cd34c5",
+        "group": "3ecfa11d.eb264e",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Temperature AVG",
+        "label": "AVG: ",
+        "format": "{{msg.payload[0].avg}}",
+        "layout": "row-center",
+        "x": 1022.128490447998,
+        "y": 347.34374809265137,
+        "wires": []
+    },
+    {
+        "id": "f9e432b1.b8f85",
+        "type": "ui_text",
+        "z": "1f564b0d.cd34c5",
+        "group": "3ecfa11d.eb264e",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Temperature MIN",
+        "label": "MIN: ",
+        "format": "{{msg.payload[0].min}}",
+        "layout": "row-center",
+        "x": 1022.128490447998,
+        "y": 389.34374809265137,
+        "wires": []
+    },
+    {
+        "id": "c64098bb.30c6c8",
+        "type": "ui_text",
+        "z": "1f564b0d.cd34c5",
+        "group": "3ecfa11d.eb264e",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "Temperature MAX",
+        "label": "MAX: ",
+        "format": "{{msg.payload[0].max}}",
+        "layout": "row-center",
+        "x": 1022.128490447998,
+        "y": 433.34374809265137,
+        "wires": []
+    },
+    {
+        "id": "500c320e.1d0fdc",
+        "type": "ui_text",
+        "z": "1f564b0d.cd34c5",
+        "group": "3ecfa11d.eb264e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Status from last 7 days",
+        "label": "Status from last 7 days",
+        "format": "",
+        "layout": "row-center",
+        "x": 1029.2952013015747,
+        "y": 477.031268119812,
+        "wires": []
+    },
+    {
+        "id": "72a66095.172b9",
+        "type": "ui_text",
+        "z": "1f564b0d.cd34c5",
+        "group": "82ce3ed7.74938",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Status from last 7 days",
+        "label": "Status from last 7 days",
+        "format": "",
+        "layout": "row-center",
+        "x": 1035.3021049499512,
+        "y": 179.02780723571777,
+        "wires": []
+    },
+    {
+        "id": "d514e484.907df8",
+        "type": "amazon-echo-device",
+        "z": "4b279b3e.b560d4",
+        "name": "Endfeuchter",
+        "topic": "",
+        "x": 377.00000762939453,
+        "y": 640.000027179718,
+        "wires": [
+            [
+                "b00d9983.aefa78"
+            ]
+        ]
+    },
+    {
+        "id": "b00d9983.aefa78",
+        "type": "mqtt out",
+        "z": "4b279b3e.b560d4",
+        "name": "Endfeuchter OUT",
+        "topic": "shellies/shelly1-B9DD3A/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 570.9999580383301,
+        "y": 640.9999847412109,
+        "wires": []
+    },
+    {
+        "id": "6ff7a90f.d766e8",
+        "type": "mqtt in",
+        "z": "99e96001.113a9",
+        "name": "Dehumidifier IN",
+        "topic": "shellies/shelly1-B9DD3A/relay/0",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 137,
+        "y": 490.3999938964844,
+        "wires": [
+            [
+                "c70bbdc5.5d8f7"
+            ]
+        ]
+    },
+    {
+        "id": "4a6e4b8b.210c94",
+        "type": "mqtt out",
+        "z": "99e96001.113a9",
+        "name": "Dehumidifier OUT",
+        "topic": "shellies/shelly1-B9DD3A/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 550.0000076293945,
+        "y": 489.4000005722046,
+        "wires": []
+    },
+    {
+        "id": "c70bbdc5.5d8f7",
+        "type": "ui_switch",
+        "z": "99e96001.113a9",
+        "name": "",
+        "label": "Dehumidifier",
+        "group": "eb2441b4.1ea54",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "topic": "",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 331.00003814697266,
+        "y": 490.39998841285706,
+        "wires": [
+            [
+                "4a6e4b8b.210c94"
+            ]
+        ]
+    },
+    {
+        "id": "d0a688ef.6af858",
+        "type": "mqtt in",
+        "z": "1f564b0d.cd34c5",
+        "name": "H&T Battery IN",
+        "topic": "shellies/shellyht-58EEB4/sensor/battery",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 96.33332824707031,
+        "y": 545.0000438690186,
+        "wires": [
+            [
+                "1e77baf6.d12bf5"
+            ]
+        ]
+    },
+    {
+        "id": "1f995d01.400cf3",
+        "type": "mqtt in",
+        "z": "1f564b0d.cd34c5",
+        "name": "H&T Humidity IN",
+        "topic": "shellies/shellyht-58EEB4/sensor/humidity",
+        "qos": "2",
+        "broker": "b7fc869.1c84e78",
+        "x": 94.3333511352539,
+        "y": 633.1333293914795,
+        "wires": [
+            [
+                "d2b4eef3.9f311"
+            ]
+        ]
+    },
+    {
+        "id": "e19e2895.4d9dd8",
+        "type": "telegram sender",
+        "z": "1f564b0d.cd34c5",
+        "name": "",
+        "bot": "72efc60c.f74b78",
+        "x": 665.1110668182373,
+        "y": 543.222508430481,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1e77baf6.d12bf5",
+        "type": "function",
+        "z": "1f564b0d.cd34c5",
+        "name": "Check Battery state",
+        "func": "const batteryState = msg.payload;\nmsg.payload = {};\nif (batteryState  == 10)\n{\n    msg.payload = {\n        chatId: '390062931',\n        type: 'message',\n        content: 'Battery of Bedroom H&T sensor less then ' + batteryState + '%'\n    }\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 338.51112365722656,
+        "y": 542.222318649292,
+        "wires": [
+            [
+                "3a4e963c.4caf7a"
+            ]
+        ]
+    },
+    {
+        "id": "3d415ee2.63e4d2",
+        "type": "telegram sender",
+        "z": "1f564b0d.cd34c5",
+        "name": "",
+        "bot": "72efc60c.f74b78",
+        "x": 775.7951698303223,
+        "y": 676.8996572494507,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d2b4eef3.9f311",
+        "type": "function",
+        "z": "1f564b0d.cd34c5",
+        "name": "Send Humidity warning",
+        "func": "var offset=global.get('bedHumOffset');\nconst humidityValue = msg.payload - offset;\nmsg.payload = {};\nif (humidityValue >= 60)\n{\n    msg.payload = {\n        chatId: '390062931',\n        type: 'message',\n        content: 'Humidity: ' + humidityValue + '%. Dehumidifier started.',\n        action: true\n    }\n}\nif (humidityValue <= 50)\n{\n    msg.payload = {\n        chatId: '390062931',\n        type: 'message',\n        content: 'Humidity: ' + humidityValue + '%. Dehumidifier stopped.',\n        action: false\n    }\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 353.7952079772949,
+        "y": 630.5661897659302,
+        "wires": [
+            [
+                "727b8d3b.aa1a34"
+            ]
+        ]
+    },
+    {
+        "id": "727b8d3b.aa1a34",
+        "type": "switch",
+        "z": "1f564b0d.cd34c5",
+        "name": "",
+        "property": "payload.action",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "outputs": 2,
+        "x": 560.9722661972046,
+        "y": 630.5836305618286,
+        "wires": [
+            [
+                "3d415ee2.63e4d2",
+                "38476a23.46f266"
+            ],
+            [
+                "3d415ee2.63e4d2",
+                "38476a23.46f266"
+            ]
+        ]
+    },
+    {
+        "id": "3a4e963c.4caf7a",
+        "type": "switch",
+        "z": "1f564b0d.cd34c5",
+        "name": "",
+        "property": "payload.chatId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "outputs": 1,
+        "x": 499.6284866333008,
+        "y": 543.1425523757935,
+        "wires": [
+            [
+                "e19e2895.4d9dd8"
+            ]
+        ]
+    },
+    {
+        "id": "1336744c.ce083c",
+        "type": "mqtt out",
+        "z": "1f564b0d.cd34c5",
+        "name": "Dehumidifier OUT",
+        "topic": "shellies/shelly1-B9DD3A/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 1026.7778854370117,
+        "y": 624.3557710647583,
+        "wires": []
+    },
+    {
+        "id": "38476a23.46f266",
+        "type": "function",
+        "z": "1f564b0d.cd34c5",
+        "name": "create state for shelly",
+        "func": "if (msg.payload.action === true) {\n    msg.payload = 'on';\n}\nif (msg.payload.action === false) {\n    msg.payload = 'off';\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 784.6111640930176,
+        "y": 626.0223035812378,
+        "wires": [
+            [
+                "1336744c.ce083c"
+            ]
+        ]
+    },
+    {
+        "id": "89e2f150.c48bf",
+        "type": "comment",
+        "z": "1f564b0d.cd34c5",
+        "name": "To and From Postgres DB",
+        "info": "",
+        "x": 133.05555725097656,
+        "y": 55.555564880371094,
+        "wires": []
+    },
+    {
+        "id": "92f570ea.f2dd2",
+        "type": "comment",
+        "z": "1f564b0d.cd34c5",
+        "name": "H&T Functions",
+        "info": "",
+        "x": 92.22219848632812,
+        "y": 496.11105728149414,
+        "wires": []
+    },
+    {
+        "id": "3ef9d1a6.2e348e",
+        "type": "function",
+        "z": "e0207c67.5fe73",
+        "name": "BedHumidityOffset",
+        "func": "global.set('bedHumOffset',10);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 373.33331298828125,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5c1f1c1b.0190e4",
+        "type": "inject",
+        "z": "e0207c67.5fe73",
+        "name": "",
+        "topic": "",
+        "payload": "bedHumOffset",
+        "payloadType": "global",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "x": 140.33331298828125,
+        "y": 280,
+        "wires": [
+            [
+                "3ef9d1a6.2e348e"
+            ]
+        ]
+    },
+    {
+        "id": "394c1073.18b48",
+        "type": "comment",
+        "z": "1f564b0d.cd34c5",
+        "name": "select",
+        "info": "",
+        "x": 319.44441986083984,
+        "y": 265.55559730529785,
+        "wires": []
+    },
+    {
+        "id": "60286bfa.655374",
+        "type": "comment",
+        "z": "1f564b0d.cd34c5",
+        "name": "insert",
+        "info": "",
+        "x": 310.55554962158203,
+        "y": 56.666683197021484,
+        "wires": []
     }
 ]

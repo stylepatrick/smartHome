@@ -12,6 +12,8 @@ npm install node-red-contrib-amazon-echo
 npm install node-red-dashboard
 npm install node-red-contrib-re-postgres
 npm install node-red-contrib-telegrambot
+npm install node-red-contrib-interval-length
+npm install node-red-contrib-time-range-switch
 ```
 
 #### Docker:

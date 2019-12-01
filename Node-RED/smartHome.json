@@ -147,7 +147,7 @@
         "width": "6"
     },
     {
-        "id": "c058537c.6e9c5",
+        "id": "bec7ad3a.a6778",
         "type": "ui_group",
         "z": "",
         "name": "Dehumidifier",
@@ -187,8 +187,7 @@
                 "8ea30fd0.4f335",
                 "385ebbb5.5eec14",
                 "76da33c1.1a60fc",
-                "4cd6bd3b.217824",
-                "d514e484.907df8"
+                "4cd6bd3b.217824"
             ]
         ]
     },
@@ -2592,8 +2591,8 @@
         "format": "handlebars",
         "syntax": "mustache",
         "template": "insert into temperature_bedroom (temperature) values ($param1)",
-        "x": 669.3333435058594,
-        "y": 95.05556297302246,
+        "x": 667.3334045410156,
+        "y": 131.05556774139404,
         "wires": [
             [
                 "eb2fc448.ad19a8"
@@ -2609,8 +2608,8 @@
         "output": true,
         "perrow": false,
         "outputs": 1,
-        "x": 872.6943969726562,
-        "y": 112.69447064399719,
+        "x": 862.6943969726562,
+        "y": 144.69447135925293,
         "wires": [
             []
         ]
@@ -2623,8 +2622,8 @@
         "func": "msg.queryParameters = msg.queryParameters || {};\nmsg.queryParameters.param1 = parseFloat(msg.payload);\nglobal.set('bedTemperature',msg.payload);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 399.0833740234375,
-        "y": 97.3055648803711,
+        "x": 400.0833740234375,
+        "y": 133.30556774139404,
         "wires": [
             [
                 "aacaba00.2065e8"
@@ -2639,8 +2638,8 @@
         "topic": "shellies/shellyht-58EEB4/sensor/temperature",
         "qos": "2",
         "broker": "b7fc869.1c84e78",
-        "x": 122.99996185302734,
-        "y": 103.61116123199463,
+        "x": 124.99996185302734,
+        "y": 131.61115884780884,
         "wires": [
             [
                 "6f82a018.10df8",
@@ -2658,8 +2657,8 @@
         "format": "handlebars",
         "syntax": "mustache",
         "template": "insert into humidity_bedroom (humidity) values ($param1)",
-        "x": 661.0554733276367,
-        "y": 170.33336925506592,
+        "x": 666.0554733276367,
+        "y": 180.33337593078613,
         "wires": [
             [
                 "eb2fc448.ad19a8"
@@ -2674,8 +2673,8 @@
         "func": "var offset=global.get('bedHumOffset');\nmsg.queryParameters = msg.queryParameters || {};\nmsg.queryParameters.param1 = parseFloat(msg.payload-offset);\nglobal.set('bedHumidity',msg.payload-offset);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 392.80562591552734,
-        "y": 170.583354473114,
+        "x": 392.8056411743164,
+        "y": 182.58336448669434,
         "wires": [
             [
                 "9a12f3e5.6c90f"
@@ -2690,8 +2689,8 @@
         "topic": "shellies/shellyht-58EEB4/sensor/humidity",
         "qos": "2",
         "broker": "b7fc869.1c84e78",
-        "x": 112.02777099609375,
-        "y": 162.0000295639038,
+        "x": 115.02777099609375,
+        "y": 181.00002670288086,
         "wires": [
             [
                 "233bba92.92c746",
@@ -3037,9 +3036,9 @@
         "width": 0,
         "height": 0,
         "name": "Humidity AVG",
-        "label": "AVG: ",
+        "label": "AVG",
         "format": "{{msg.payload[0].avg}}",
-        "layout": "row-center",
+        "layout": "row-spread",
         "x": 1011.6319732666016,
         "y": 216.1424560546875,
         "wires": []
@@ -3053,9 +3052,9 @@
         "width": 0,
         "height": 0,
         "name": "Humidity MIN",
-        "label": "MIN: ",
+        "label": "MIN",
         "format": "{{msg.payload[0].min}}",
-        "layout": "row-center",
+        "layout": "row-spread",
         "x": 1008.6840362548828,
         "y": 258.34380626678467,
         "wires": []
@@ -3069,9 +3068,9 @@
         "width": 0,
         "height": 0,
         "name": "Humidity MAX",
-        "label": "MAX: ",
+        "label": "MAX",
         "format": "{{msg.payload[0].max}}",
-        "layout": "row-center",
+        "layout": "row-spread",
         "x": 1013.6840286254883,
         "y": 299.3438034057617,
         "wires": []
@@ -3143,9 +3142,9 @@
         "width": 0,
         "height": 0,
         "name": "Temperature AVG",
-        "label": "AVG: ",
+        "label": "AVG",
         "format": "{{msg.payload[0].avg}}",
-        "layout": "row-center",
+        "layout": "row-spread",
         "x": 1022.128490447998,
         "y": 347.34374809265137,
         "wires": []
@@ -3159,9 +3158,9 @@
         "width": 0,
         "height": 0,
         "name": "Temperature MIN",
-        "label": "MIN: ",
+        "label": "MIN",
         "format": "{{msg.payload[0].min}}",
-        "layout": "row-center",
+        "layout": "row-spread",
         "x": 1022.128490447998,
         "y": 389.34374809265137,
         "wires": []
@@ -3175,9 +3174,9 @@
         "width": 0,
         "height": 0,
         "name": "Temperature MAX",
-        "label": "MAX: ",
+        "label": "MAX:",
         "format": "{{msg.payload[0].max}}",
-        "layout": "row-center",
+        "layout": "row-spread",
         "x": 1022.128490447998,
         "y": 433.34374809265137,
         "wires": []
@@ -3215,33 +3214,6 @@
         "wires": []
     },
     {
-        "id": "d514e484.907df8",
-        "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
-        "name": "Endfeuchter",
-        "topic": "",
-        "x": 377.00000762939453,
-        "y": 640.000027179718,
-        "wires": [
-            [
-                "b00d9983.aefa78"
-            ]
-        ]
-    },
-    {
-        "id": "b00d9983.aefa78",
-        "type": "mqtt out",
-        "z": "4b279b3e.b560d4",
-        "name": "Endfeuchter OUT",
-        "topic": "shellies/shelly1-B9DD3A/relay/0/command",
-        "qos": "",
-        "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 570.9999580383301,
-        "y": 640.9999847412109,
-        "wires": []
-    },
-    {
         "id": "d0a688ef.6af858",
         "type": "mqtt in",
         "z": "1f564b0d.cd34c5",
@@ -3249,8 +3221,8 @@
         "topic": "shellies/shellyht-58EEB4/sensor/battery",
         "qos": "2",
         "broker": "b7fc869.1c84e78",
-        "x": 96.33332824707031,
-        "y": 545.0000438690186,
+        "x": 129.11112785339355,
+        "y": 1080.0000658035278,
         "wires": [
             [
                 "1e77baf6.d12bf5"
@@ -3265,8 +3237,8 @@
         "topic": "shellies/shellyht-58EEB4/sensor/humidity",
         "qos": "2",
         "broker": "b7fc869.1c84e78",
-        "x": 94.3333511352539,
-        "y": 630.1333103179932,
+        "x": 101.3333511352539,
+        "y": 633.1333103179932,
         "wires": [
             [
                 "d2b4eef3.9f311"
@@ -3279,8 +3251,8 @@
         "z": "1f564b0d.cd34c5",
         "name": "",
         "bot": "72efc60c.f74b78",
-        "x": 665.1110668182373,
-        "y": 543.222508430481,
+        "x": 689.8888740539551,
+        "y": 1082.2225270271301,
         "wires": [
             []
         ]
@@ -3293,8 +3265,8 @@
         "func": "const batteryState = msg.payload;\nmsg.payload = {};\nif (batteryState  == 10)\n{\n    msg.payload = {\n        chatId: '390062931',\n        type: 'message',\n        content: 'Battery of Bedroom H&T sensor less then ' + batteryState + '%'\n    }\n}\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
-        "x": 338.51112365722656,
-        "y": 542.222318649292,
+        "x": 351.28891944885254,
+        "y": 1080.2223320007324,
         "wires": [
             [
                 "3a4e963c.4caf7a"
@@ -3309,8 +3281,8 @@
         "func": "var dehumState=global.get('dehumState');\nvar humidityValue =  global.get('bedHumidity');\nmsg.payload = {};\nif (humidityValue >= 60 && dehumState == 'off')\n{\n    msg.payload = {\n        chatId: '390062931',\n        type: 'message',\n        content: 'Humidity: ' +  humidityValue + '%. Dehumidifier started.',\n        action: true\n    }\n}\nif (humidityValue <= 50 && dehumState == 'on')\n{\n    msg.payload = {\n       action: false\n    }\n}\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
-        "x": 353.7952079772949,
-        "y": 630.5661897659302,
+        "x": 435.79522705078125,
+        "y": 632.5661582946777,
         "wires": [
             [
                 "727b8d3b.aa1a34"
@@ -3334,14 +3306,13 @@
         ],
         "checkall": "true",
         "outputs": 2,
-        "x": 560.9722661972046,
-        "y": 630.5836305618286,
+        "x": 612.9722747802734,
+        "y": 629.5835905075073,
         "wires": [
             [
                 "2cc71e8e.02bb42"
             ],
             [
-                "fea80488.e951f8",
                 "739e6086.010b3"
             ]
         ]
@@ -3360,8 +3331,8 @@
         ],
         "checkall": "true",
         "outputs": 1,
-        "x": 499.6284866333008,
-        "y": 543.1425523757935,
+        "x": 524.4063053131104,
+        "y": 1082.1425457000732,
         "wires": [
             [
                 "e19e2895.4d9dd8"
@@ -3377,8 +3348,8 @@
         "qos": "",
         "retain": "",
         "broker": "b7fc869.1c84e78",
-        "x": 1244.7779235839844,
-        "y": 611.3557949066162,
+        "x": 1225.777946472168,
+        "y": 617.3557949066162,
         "wires": []
     },
     {
@@ -3389,8 +3360,8 @@
         "func": "if (msg.payload) {\n    msg.payload = 'on';\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 948.6111335754395,
-        "y": 594.0222501754761,
+        "x": 1006.6111450195312,
+        "y": 617.0222988128662,
         "wires": [
             [
                 "1336744c.ce083c"
@@ -3401,9 +3372,9 @@
         "id": "89e2f150.c48bf",
         "type": "comment",
         "z": "1f564b0d.cd34c5",
-        "name": "To and From Postgres DB",
+        "name": "Humidity and Temperature To and From Postgres DB",
         "info": "",
-        "x": 133.05555725097656,
+        "x": 213.05555725097656,
         "y": 55.555564880371094,
         "wires": []
     },
@@ -3411,10 +3382,10 @@
         "id": "92f570ea.f2dd2",
         "type": "comment",
         "z": "1f564b0d.cd34c5",
-        "name": "H&T Functions",
+        "name": "H&T Battery Notification",
         "info": "",
-        "x": 92.22219848632812,
-        "y": 496.11105728149414,
+        "x": 136.99999809265137,
+        "y": 1038.1110696792603,
         "wires": []
     },
     {
@@ -3466,8 +3437,8 @@
         "z": "1f564b0d.cd34c5",
         "name": "insert",
         "info": "",
-        "x": 310.55554962158203,
-        "y": 56.666683197021484,
+        "x": 308.5555725097656,
+        "y": 94.6666841506958,
         "wires": []
     },
     {
@@ -3481,8 +3452,8 @@
         "endTime": "20:30",
         "startOffset": "-60",
         "endOffset": "-60",
-        "x": 725.1000137329102,
-        "y": 601.200008392334,
+        "x": 777.1000595092773,
+        "y": 624.1999969482422,
         "wires": [
             [
                 "739e6086.010b3",
@@ -3500,11 +3471,11 @@
         "func": "if (msg.payload) {\n    msg.payload = 'off';\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 949.8000030517578,
-        "y": 634.0000343322754,
+        "x": 1666.8003425598145,
+        "y": 781.000048160553,
         "wires": [
             [
-                "1336744c.ce083c"
+                "5017d34d.29b15c"
             ]
         ]
     },
@@ -3516,8 +3487,8 @@
         "topic": "shellies/shelly1-B9DD3A/relay/0",
         "qos": "2",
         "broker": "b7fc869.1c84e78",
-        "x": 90,
-        "y": 769.4000339508057,
+        "x": 104.5,
+        "y": 919.4000873565674,
         "wires": [
             [
                 "e76aab69.695b08"
@@ -3530,8 +3501,8 @@
         "z": "1f564b0d.cd34c5",
         "name": "",
         "bot": "72efc60c.f74b78",
-        "x": 1616.0002326965332,
-        "y": 679.3999366760254,
+        "x": 1914.0004653930664,
+        "y": 633.3999483585358,
         "wires": [
             []
         ]
@@ -3577,8 +3548,8 @@
         "func": "global.set('dehumState',msg.payload);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 315.5,
-        "y": 770.0000457763672,
+        "x": 330,
+        "y": 920.0000991821289,
         "wires": [
             []
         ]
@@ -3592,71 +3563,13 @@
         "payload": "",
         "payloadType": "date",
         "repeat": "",
-        "crontab": "30 19 * * 1,2,3,4,5",
+        "crontab": "30 19 * * *",
         "once": false,
-        "x": 113.10000610351562,
-        "y": 920.3999996185303,
+        "x": 587.1000442504883,
+        "y": 734.3999485969543,
         "wires": [
             [
-                "77f97d15.2804d4",
-                "f5b64e07.5c90a"
-            ]
-        ]
-    },
-    {
-        "id": "77f97d15.2804d4",
-        "type": "function",
-        "z": "1f564b0d.cd34c5",
-        "name": "create state for shelly",
-        "func": "msg.payload = 'off';\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 352,
-        "y": 917.3999881744385,
-        "wires": [
-            [
-                "42b7333.15ac3cc"
-            ]
-        ]
-    },
-    {
-        "id": "42b7333.15ac3cc",
-        "type": "mqtt out",
-        "z": "1f564b0d.cd34c5",
-        "name": "Dehumidifier OUT",
-        "topic": "shellies/shelly1-B9DD3A/relay/0/command",
-        "qos": "",
-        "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 589.4000091552734,
-        "y": 918.3999996185303,
-        "wires": []
-    },
-    {
-        "id": "20855fb7.bb99b",
-        "type": "telegram sender",
-        "z": "1f564b0d.cd34c5",
-        "name": "",
-        "bot": "72efc60c.f74b78",
-        "x": 589,
-        "y": 1011.3999881744385,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f5b64e07.5c90a",
-        "type": "function",
-        "z": "1f564b0d.cd34c5",
-        "name": "Send Humidity warning",
-        "func": "var dehumState=global.get('dehumState');\nvar humidityValue = global.get('bedHumidity');\nmsg.payload = {};\nif (dehumState == 'on')\n{\n    msg.payload = {\n        chatId: '390062931',\n        type: 'message',\n        content: 'Dehumidifier stopped. Humidity still ' + humidityValue + '%. Please manually start to continue.',\n    }\n}\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 355,
-        "y": 1011.3999881744385,
-        "wires": [
-            [
-                "20855fb7.bb99b"
+                "739e6086.010b3"
             ]
         ]
     },
@@ -3666,18 +3579,18 @@
         "z": "1f564b0d.cd34c5",
         "name": "Save Dehumidifier State",
         "info": "",
-        "x": 116.5,
-        "y": 720.7999973297119,
+        "x": 131,
+        "y": 870.8000507354736,
         "wires": []
     },
     {
         "id": "91c92758.c79018",
         "type": "comment",
         "z": "1f564b0d.cd34c5",
-        "name": "Routine to Stop Dehumidifier",
+        "name": "Stop Dehumidifier periodically",
         "info": "",
-        "x": 126.5,
-        "y": 878.7999515533447,
+        "x": 592.4999542236328,
+        "y": 687.7998638153076,
         "wires": []
     },
     {
@@ -3697,12 +3610,12 @@
         "msgTimeoutUnit": "msecs",
         "reset": false,
         "startup": false,
-        "msgField": "payload.interval",
+        "msgField": "payload",
         "timestampField": "timestamp",
         "repeatTimeout": false,
         "name": "run time",
-        "x": 680.5000076293945,
-        "y": 690.5999851226807,
+        "x": 935.5000991821289,
+        "y": 737.6001806259155,
         "wires": [
             [
                 "c376fc56.2027b"
@@ -3715,11 +3628,11 @@
         "type": "function",
         "z": "1f564b0d.cd34c5",
         "name": "crete telegram message",
-        "func": "var time = msg.payload.interval;\nmsg.payload = {};\nmsg.payload = {\nchatId: '390062931',\ntype: 'message',\ncontent: 'Humidity: ' +  global.get('bedHumidity') + '%. Dehumidifier stopped after ' + time\n}\nreturn msg;",
+        "func": "var time = msg.payload.interval;\nvar humidity = global.get('bedHumidity');\nmsg.payload = {};\nif (humidity >= 50)\n{\n    msg.payload = {\n    chatId: '390062931',\n    type: 'message',\n    content: 'Humidity: ' + humidity  + '%. Dehumidifier stopped to earlie because of bedtime. Run time: ' + time\n    }\n}\nmsg.payload = {\nchatId: '390062931',\ntype: 'message',\ncontent: 'Humidity: ' + humidity  + '%. Dehumidifier stopped after ' + time\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1382.2999725341797,
-        "y": 678.6000347137451,
+        "x": 1687.3000793457031,
+        "y": 634.6001436710358,
         "wires": [
             [
                 "53a32f76.3bf8f"
@@ -3732,8 +3645,8 @@
         "z": "1f564b0d.cd34c5",
         "name": "",
         "bot": "72efc60c.f74b78",
-        "x": 929.8000106811523,
-        "y": 545.6000080704689,
+        "x": 1002.7999877929688,
+        "y": 654.6000804901123,
         "wires": [
             []
         ]
@@ -3747,10 +3660,10 @@
         "payload": "",
         "payloadType": "date",
         "repeat": "",
-        "crontab": "00 08 * * *",
+        "crontab": "05 08 * * *",
         "once": false,
-        "x": 108,
-        "y": 680.0000095367432,
+        "x": 139,
+        "y": 730.0000104904175,
         "wires": [
             [
                 "d2b4eef3.9f311"
@@ -3761,16 +3674,16 @@
         "id": "5716261d.404e78",
         "type": "ui_text",
         "z": "1f564b0d.cd34c5",
-        "group": "c058537c.6e9c5",
+        "group": "bec7ad3a.a6778",
         "order": 2,
         "width": 0,
         "height": 0,
         "name": "last run time",
-        "label": "Last run time:",
+        "label": "Last run time",
         "format": "{{msg.payload.interval}} - {{msg.payload.date}}",
-        "layout": "row-center",
-        "x": 1347.5000667572021,
-        "y": 784.1999893188477,
+        "layout": "row-spread",
+        "x": 1638.5002670288086,
+        "y": 733.1999492645264,
         "wires": []
     },
     {
@@ -3785,49 +3698,7 @@
         "y": 1257.4000244140625,
         "wires": [
             [
-                "17c2f9aa.38f166"
-            ]
-        ]
-    },
-    {
-        "id": "9fa654ed.e597b8",
-        "type": "mqtt out",
-        "z": "99e96001.113a9",
-        "name": "Dehumidifier OUT",
-        "topic": "shellies/shelly1-B9DD3A/relay/0/command",
-        "qos": "",
-        "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 554.0000076293945,
-        "y": 1256.4000310897827,
-        "wires": []
-    },
-    {
-        "id": "17c2f9aa.38f166",
-        "type": "ui_switch",
-        "z": "99e96001.113a9",
-        "name": "",
-        "label": "Dehumidifier",
-        "group": "c058537c.6e9c5",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "topic": "",
-        "style": "",
-        "onvalue": "on",
-        "onvalueType": "str",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "off",
-        "offvalueType": "str",
-        "officon": "",
-        "offcolor": "",
-        "x": 335.00003814697266,
-        "y": 1257.4000189304352,
-        "wires": [
-            [
-                "9fa654ed.e597b8"
+                "6d25a590.62641c"
             ]
         ]
     },
@@ -3851,8 +3722,8 @@
         "format": "handlebars",
         "syntax": "mustache",
         "template": "insert into dehumidifier (run_time) values ($param1)",
-        "x": 1665.9999961853027,
-        "y": 735.000020980835,
+        "x": 1955.0002746582031,
+        "y": 686.9999980926514,
         "wires": [
             [
                 "fe2de155.657ff"
@@ -3868,8 +3739,8 @@
         "output": true,
         "perrow": false,
         "outputs": 1,
-        "x": 1850.3612060546875,
-        "y": 734.6389026641846,
+        "x": 2135.3614082336426,
+        "y": 686.6389617919922,
         "wires": [
             []
         ]
@@ -3882,8 +3753,8 @@
         "func": "msg.queryParameters = msg.queryParameters || {};\nmsg.queryParameters.param1 = msg.payload.interval;\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
-        "x": 1404.74995803833,
-        "y": 734.2500114440918,
+        "x": 1700.7501678466797,
+        "y": 687.2499980926514,
         "wires": [
             [
                 "1723b950.168a67"
@@ -3895,11 +3766,11 @@
         "type": "function",
         "z": "1f564b0d.cd34c5",
         "name": "get dehumstate",
-        "func": "msg.payload.dehumState=global.get('dehumState');\nmsg.payload.date = new Date();\nreturn msg;",
+        "func": "var time = msg.payload;\nvar date = new Date().toISOString().slice(0,10);\nmsg.payload = {};\nmsg.payload = {\n    interval: time,\n    dehumState: global.get('dehumState'),\n    date: date\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 881.0999641418457,
-        "y": 718.6000366210938,
+        "x": 1160.1002731323242,
+        "y": 730.6002173423767,
         "wires": [
             [
                 "27efdc2b.144d34"
@@ -3911,7 +3782,7 @@
         "type": "switch",
         "z": "1f564b0d.cd34c5",
         "name": "check dehumstate",
-        "property": "payload.dehumstate",
+        "property": "payload.dehumState",
         "propertyType": "msg",
         "rules": [
             {
@@ -3922,13 +3793,14 @@
         ],
         "checkall": "true",
         "outputs": 1,
-        "x": 1107.0999908447266,
-        "y": 719.6000347137451,
+        "x": 1354.100154876709,
+        "y": 730.6001915931702,
         "wires": [
             [
                 "1b3893ff.f161dc",
                 "ae4b9c8.ca4606",
-                "5716261d.404e78"
+                "5716261d.404e78",
+                "fea80488.e951f8"
             ]
         ]
     },
@@ -3938,8 +3810,57 @@
         "z": "1f564b0d.cd34c5",
         "name": "needed because injection is made by the time range function",
         "info": "",
-        "x": 1006.5,
-        "y": 674.5999870300293,
+        "x": 1256.5000305175781,
+        "y": 693.6001319885254,
+        "wires": []
+    },
+    {
+        "id": "6d25a590.62641c",
+        "type": "ui_text",
+        "z": "99e96001.113a9",
+        "group": "bec7ad3a.a6778",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 319.10000228881836,
+        "y": 1260.2001399993896,
+        "wires": []
+    },
+    {
+        "id": "88cac95f.687d98",
+        "type": "comment",
+        "z": "1f564b0d.cd34c5",
+        "name": "Start Dehumidifier periodically",
+        "info": "",
+        "x": 136.99999237060547,
+        "y": 686.8000106811523,
+        "wires": []
+    },
+    {
+        "id": "5017d34d.29b15c",
+        "type": "mqtt out",
+        "z": "1f564b0d.cd34c5",
+        "name": "Dehumidifier OUT",
+        "topic": "shellies/shelly1-B9DD3A/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "b7fc869.1c84e78",
+        "x": 1893.8004684448242,
+        "y": 781.3999500274658,
+        "wires": []
+    },
+    {
+        "id": "528191ec.72ee8",
+        "type": "comment",
+        "z": "1f564b0d.cd34c5",
+        "name": "Dehumidifier Logic",
+        "info": "",
+        "x": 111,
+        "y": 577,
         "wires": []
     }
 ]

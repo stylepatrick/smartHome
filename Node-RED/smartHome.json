@@ -3563,7 +3563,7 @@
         "payload": "",
         "payloadType": "date",
         "repeat": "",
-        "crontab": "30 19 * * *",
+        "crontab": "35 19 * * *",
         "once": false,
         "x": 587.1000442504883,
         "y": 734.3999485969543,
@@ -3614,8 +3614,8 @@
         "timestampField": "timestamp",
         "repeatTimeout": false,
         "name": "run time",
-        "x": 935.5000991821289,
-        "y": 737.6001806259155,
+        "x": 935.5001106262207,
+        "y": 735.6001567840576,
         "wires": [
             [
                 "c376fc56.2027b"

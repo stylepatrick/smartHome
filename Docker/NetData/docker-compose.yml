@@ -1,0 +1,17 @@
+version: "3.2"
+services:
+  netdata:
+    container_name: netdata
+    image: netdata/netdata
+    restart: always
+    ports:
+      - 19999:19999
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "10"

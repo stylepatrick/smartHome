@@ -1,0 +1,58 @@
+version: '3.2'
+services:
+  grafana:
+    container_name: grafana
+    image: fg2it/grafana-armhf:v4.1.2
+    restart: always
+    ports:
+      - 3100:3000
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - grafana-conf:/etc/grafana
+      - grafana-log:/var/log/grafana
+      - grafana-sys:/sys/fs/cgroup
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "10"
+
+  influx:
+    container_name: influxdb
+    image: influxdb
+    restart: always
+    volumes:
+      - influx-data:/var/lib/influxdb
+    ports:
+      - 8086:8086
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "10"
+
+    #To create auth you need to run docker exec -it influx influx
+    #Query: CREATE USER admin WITH PASSWORD 'pass' WITH ALL PRIVILEGES
+    #Command: auth
+    #Command: create database monitor
+    #Then it will works :)
+    
+  telegraf:
+    container_name: telegraf
+    restart: always
+    image: telegraf:latest
+    volumes:
+      - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "10"
+
+volumes:
+  grafana-data:
+  grafana-conf:
+  grafana-log:
+  grafana-sys:
+  influx-data:

@@ -1,0 +1,45 @@
+version: "3.2"
+services:
+  nodered:
+    container_name: nodered
+    image: nodered/node-red
+    privileged: true
+    restart: always
+    ports:
+      - "1880:1880"
+      - "80:80"
+    network_mode: "host"
+    user: root
+    volumes:
+      - nodered-data:/data
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "10"
+  eclipse-mosquitto:
+    container_name: eclipse-mosquitto
+    restart: always
+    image: eclipse-mosquitto
+    volumes:
+      - mosquitto-config:/mosquitto/config
+      - mosquitto-log:/mosquitto/log:rw
+      - mosquitto-data:/mosquitto/data
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    ports:
+      - "1883:1883"
+    network_mode: host
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "10"
+        
+volumes:
+  nodered-data:
+  mosquitto-config:
+  mosquitto-log:
+  mosquitto-data:

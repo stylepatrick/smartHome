@@ -1,55 +1,124 @@
 [
     {
-        "id": "e0207c67.5fe73",
+        "id": "f387a27c.808d3",
         "type": "tab",
         "label": "GLOBAL"
     },
     {
-        "id": "4b279b3e.b560d4",
+        "id": "9bfc0359.871c9",
         "type": "tab",
         "label": "Alexa Commands"
     },
     {
-        "id": "2186aa43.d8c126",
-        "type": "tab",
-        "label": "Dashboard Home Cinema"
-    },
-    {
-        "id": "99e96001.113a9",
+        "id": "7dbbdbf3.365084",
         "type": "tab",
         "label": "Dashboard States"
     },
     {
-        "id": "1f564b0d.cd34c5",
+        "id": "14dd6c8.d5f3494",
         "type": "tab",
         "label": "H&T Sensor"
     },
     {
-        "id": "de157ea5.02ed8",
+        "id": "20687cba.1c3764",
         "type": "ui_base",
-        "name": "Smart Home",
-        "theme": "theme-dark"
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#4B7930",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#4B7930",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#6db046",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#4b7930",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "cyan",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Smart Home",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "false",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
     },
     {
-        "id": "b7fc869.1c84e78",
-        "type": "mqtt-broker",
-        "z": "",
-        "broker": "192.168.0.254",
-        "port": "1883",
-        "clientid": "",
-        "usetls": false,
-        "compatmode": true,
-        "keepalive": "60",
-        "cleansession": true,
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": "",
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": ""
-    },
-    {
-        "id": "46fad4f8.93fd6c",
+        "id": "fb60bcec.96eb2",
         "type": "ui_tab",
         "z": "",
         "name": "Home Cinema",
@@ -57,45 +126,47 @@
         "order": 7
     },
     {
-        "id": "9718b566.666db8",
+        "id": "b1ec29cf.e84df8",
         "type": "ui_tab",
         "z": "",
-        "name": "Status",
+        "name": "Smart Home",
         "icon": "dashboard",
-        "order": 1
+        "order": 1,
+        "disabled": false,
+        "hidden": false
     },
     {
-        "id": "eb2441b4.1ea54",
+        "id": "a4375fdd.d3a7c",
         "type": "ui_group",
         "z": "",
         "name": "Lights & Home Cinema",
-        "tab": "9718b566.666db8",
+        "tab": "b1ec29cf.e84df8",
         "order": 1,
         "disp": true,
         "width": "6"
     },
     {
-        "id": "49693815.953628",
+        "id": "807503c.b0528",
         "type": "ui_group",
         "z": "",
         "name": "Sensors",
-        "tab": "9718b566.666db8",
+        "tab": "b1ec29cf.e84df8",
         "order": 5,
         "disp": true,
         "width": "6"
     },
     {
-        "id": "37c12700.472dea",
+        "id": "71724fbb.12ba3",
         "type": "ui_group",
         "z": "",
         "name": "OpenWebif",
-        "tab": "46fad4f8.93fd6c",
+        "tab": "fb60bcec.96eb2",
         "order": 5,
         "disp": true,
         "width": "6"
     },
     {
-        "id": "6eb1c2a3.521c7c",
+        "id": "bacb1987.c1aa28",
         "type": "postgresdb",
         "z": "",
         "hostname": "localhost",
@@ -104,7 +175,7 @@
         "ssl": false
     },
     {
-        "id": "72efc60c.f74b78",
+        "id": "3d3d8fed.cc3ab",
         "type": "telegram bot",
         "z": "",
         "botname": "MySmartHome",
@@ -127,115 +198,133 @@
         "verboselogging": false
     },
     {
-        "id": "3ecfa11d.eb264e",
+        "id": "3d318576.51704a",
         "type": "ui_group",
         "z": "",
         "name": "Temperature",
-        "tab": "9718b566.666db8",
+        "tab": "b1ec29cf.e84df8",
         "order": 2,
         "disp": true,
         "width": "6"
     },
     {
-        "id": "82ce3ed7.74938",
+        "id": "42efb286.84806c",
         "type": "ui_group",
         "z": "",
         "name": "Humidity",
-        "tab": "9718b566.666db8",
+        "tab": "b1ec29cf.e84df8",
         "order": 3,
         "disp": true,
         "width": "6"
     },
     {
-        "id": "bec7ad3a.a6778",
+        "id": "d155d55d.4664c8",
         "type": "ui_group",
         "z": "",
         "name": "Dehumidifier",
-        "tab": "9718b566.666db8",
+        "tab": "b1ec29cf.e84df8",
         "order": 4,
         "disp": true,
         "width": "6"
     },
     {
-        "id": "5c8d0313.8d196c",
+        "id": "2aba1eb9.69a842",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "SmartHome MQTT",
+        "broker": "192.168.0.150",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "4f82fdb9.222414",
         "type": "amazon-echo-hub",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "port": "80",
-        "enableinput": false,
         "x": 112.5,
         "y": 1071.0000162124634,
         "wires": [
             [
-                "a0a28272.a558b",
-                "89381f11.6b7eb",
-                "8d236e16.62acd",
-                "ecc98b83.4025e8",
-                "98a2753b.48f028",
-                "e133c169.3cf4b",
-                "db5470ea.84713",
-                "6dcb948.f3ea46c",
-                "900bde.588f042",
-                "4f50b3a4.52500c",
-                "f5189ce6.c02c9",
-                "bbf1f4b0.0bb5d8",
-                "c5fe2965.bd3828",
-                "7f35d4ee.0dd56c",
-                "d5c07f63.1781c",
-                "1cb64fe.7c9e7b",
-                "52d439aa.976af8",
-                "a05d95ed.b874e8",
-                "8ea30fd0.4f335",
-                "385ebbb5.5eec14",
-                "76da33c1.1a60fc",
-                "4cd6bd3b.217824"
+                "40e611bd.22063",
+                "e039f50f.01c6c8",
+                "54a3d62.d77cc28",
+                "dd70e66b.f604d8",
+                "cc7c14f4.849af8",
+                "9537d359.0d72b",
+                "5719257e.b2b08c",
+                "5ec97954.28b088",
+                "75771b89.0c5934",
+                "1cec15e0.5e87aa",
+                "11d5b744.b19569",
+                "f50a44cf.00c058",
+                "f5f8ab64.000618",
+                "7a3d1af6.25ad14",
+                "44087d44.f23024",
+                "ea534a02.e68c88",
+                "ee3619f2.485b08",
+                "9bc9a3c3.acec1",
+                "784d926b.7d63bc"
             ]
         ]
     },
     {
-        "id": "a0a28272.a558b",
+        "id": "40e611bd.22063",
         "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Wohnzimmer Licht",
         "topic": "",
-        "x": 376.50000381469727,
-        "y": 80.5,
+        "x": 370,
+        "y": 80,
         "wires": [
             [
-                "eb3edbef.0c21c8"
+                "d834a5ae.c86768"
             ]
         ]
     },
     {
-        "id": "eb3edbef.0c21c8",
+        "id": "d834a5ae.c86768",
         "type": "mqtt out",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Living Room Light OUT",
         "topic": "shellies/shelly1-B9CFBD/relay/0/command",
         "qos": "",
         "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 620.5000038146973,
-        "y": 80.5,
+        "broker": "2aba1eb9.69a842",
+        "x": 630,
+        "y": 80,
         "wires": []
     },
     {
-        "id": "57541dd4.5a2d14",
+        "id": "465a87bd.caa558",
         "type": "function",
-        "z": "e0207c67.5fe73",
+        "z": "f387a27c.808d3",
         "name": "DreamboxIP",
         "func": "global.set('dreamboxip','http://192.168.0.199');\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 368,
-        "y": 59,
+        "x": 390,
+        "y": 40,
         "wires": [
             []
         ]
     },
     {
-        "id": "17b6dc59.b61654",
+        "id": "2112417f.d7464e",
         "type": "inject",
-        "z": "e0207c67.5fe73",
+        "z": "f387a27c.808d3",
         "name": "",
         "topic": "",
         "payload": "dreamboxip",
@@ -243,239 +332,239 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "x": 145,
-        "y": 59,
+        "x": 130,
+        "y": 40,
         "wires": [
             [
-                "57541dd4.5a2d14"
+                "465a87bd.caa558"
             ]
         ]
     },
     {
-        "id": "89381f11.6b7eb",
+        "id": "e039f50f.01c6c8",
         "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Küche Licht",
         "topic": "",
-        "x": 360.50000190734863,
-        "y": 142.00000286102295,
+        "x": 350,
+        "y": 140,
         "wires": [
             [
-                "63481d71.390174"
+                "559df12a.16adf"
             ]
         ]
     },
     {
-        "id": "63481d71.390174",
+        "id": "559df12a.16adf",
         "type": "mqtt out",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Kitchen Room Light OUT",
         "topic": "shellies/shelly1-76F642/relay/0/command",
         "qos": "",
         "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 607.7500038146973,
-        "y": 140.50000190734863,
+        "broker": "2aba1eb9.69a842",
+        "x": 630,
+        "y": 140,
         "wires": []
     },
     {
-        "id": "8d236e16.62acd",
+        "id": "54a3d62.d77cc28",
         "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Badezimmer Licht",
         "topic": "",
-        "x": 376.75000381469727,
-        "y": 202.50000381469727,
+        "x": 370,
+        "y": 200,
         "wires": [
             [
-                "2edc1c6b.a2e5c4"
+                "ef042d7f.b88e8"
             ]
         ]
     },
     {
-        "id": "2edc1c6b.a2e5c4",
+        "id": "ef042d7f.b88e8",
         "type": "mqtt out",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Bathroom Light OUT",
         "topic": "shellies/shelly1-B9D598/relay/0/command",
         "qos": "",
         "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 608.5000038146973,
-        "y": 203.75000286102295,
+        "broker": "2aba1eb9.69a842",
+        "x": 640,
+        "y": 200,
         "wires": []
     },
     {
-        "id": "8d35563e.da2788",
+        "id": "83bd0ad4.632298",
         "type": "http request",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "method": "GET",
         "ret": "obj",
         "url": "",
         "tls": "",
-        "x": 1355.3333587646484,
-        "y": 843.3334527015686,
+        "x": 1350,
+        "y": 820,
         "wires": [
             []
         ]
     },
     {
-        "id": "d09a5c90.a8dac",
+        "id": "6b24220f.cf438c",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL for Standby",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=116';\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1131.3372650146484,
-        "y": 842.4154839515686,
+        "x": 1130,
+        "y": 820,
         "wires": [
             [
-                "8d35563e.da2788"
+                "83bd0ad4.632298"
             ]
         ]
     },
     {
-        "id": "ecc98b83.4025e8",
+        "id": "dd70e66b.f604d8",
         "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Dreambox",
         "topic": "",
-        "x": 372.5833740234375,
-        "y": 795.3334717750549,
+        "x": 350,
+        "y": 760,
         "wires": [
             [
-                "80df6a5.4dd0498",
-                "2e0f6e22.4d8f72"
+                "81f6f220.05e62",
+                "e11bb6d9.3a92d8"
             ]
         ]
     },
     {
-        "id": "98a2753b.48f028",
+        "id": "cc7c14f4.849af8",
         "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Sound",
         "topic": "",
-        "x": 361.33335876464844,
-        "y": 884.3334527015686,
+        "x": 330,
+        "y": 880,
         "wires": [
             [
-                "3e6bd1a3.908c1e"
+                "a1560361.149c9"
             ]
         ]
     },
     {
-        "id": "3e6bd1a3.908c1e",
+        "id": "a1560361.149c9",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL with Volume",
         "func": "var ip=global.get('dreamboxip');\nvar value;\nif(msg.payload === \"on\"){\n    value = 80;\n}\nif (msg.payload === \"off\"){\n    value = 40;\n}\n\nmsg.url = ip + '/web/vol?set=set' + value;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 561.3528900146484,
-        "y": 884.4388909339905,
+        "x": 550,
+        "y": 880,
         "wires": [
             [
-                "b29c0716.2c42a8"
+                "983099ea.9d40e8"
             ]
         ]
     },
     {
-        "id": "b29c0716.2c42a8",
+        "id": "983099ea.9d40e8",
         "type": "http request",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "method": "GET",
         "ret": "txt",
         "url": "",
         "tls": "",
-        "x": 778.3333587646484,
-        "y": 883.3334527015686,
+        "x": 770,
+        "y": 880,
         "wires": [
             []
         ]
     },
     {
-        "id": "e133c169.3cf4b",
+        "id": "9537d359.0d72b",
         "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Recording",
         "topic": "",
-        "x": 372.33335876464844,
-        "y": 947.3334527015686,
+        "x": 350,
+        "y": 940,
         "wires": [
             [
-                "37e144a1.bbe6ec"
+                "ce5ab3fb.cf802"
             ]
         ]
     },
     {
-        "id": "52c8c98.9a06738",
+        "id": "7f4b1ee5.195ac",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL for Recording Start",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=167';\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 728.3333587646484,
-        "y": 943.3334527015686,
+        "x": 710,
+        "y": 940,
         "wires": [
             [
-                "a4ce3d87.29bb5"
+                "27bb7b9c.67ca84"
             ]
         ]
     },
     {
-        "id": "a4ce3d87.29bb5",
+        "id": "27bb7b9c.67ca84",
         "type": "http request",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "method": "GET",
         "ret": "txt",
         "url": "",
         "tls": "",
-        "x": 953.3333587646484,
-        "y": 944.3334527015686,
+        "x": 970,
+        "y": 940,
         "wires": [
             []
         ]
     },
     {
-        "id": "5f015a91.76c804",
+        "id": "46e6b43c.e713ac",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL for OK",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=352';\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 852.3333587646484,
-        "y": 994.3334527015686,
+        "x": 850,
+        "y": 1000,
         "wires": [
             [
-                "4c1a4ce5.613be4"
+                "a8035193.1559c"
             ]
         ]
     },
     {
-        "id": "4c1a4ce5.613be4",
+        "id": "a8035193.1559c",
         "type": "http request",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "method": "GET",
         "ret": "txt",
         "url": "",
         "tls": "",
-        "x": 1040.3333587646484,
-        "y": 994.3334527015686,
+        "x": 1070,
+        "y": 1000,
         "wires": [
             []
         ]
     },
     {
-        "id": "fde13890.fe1b48",
+        "id": "9b9716eb.497118",
         "type": "delay",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "pauseType": "delay",
         "timeout": "5",
@@ -487,18 +576,18 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 671.3333587646484,
-        "y": 993.3334527015686,
+        "x": 660,
+        "y": 1000,
         "wires": [
             [
-                "5f015a91.76c804"
+                "46e6b43c.e713ac"
             ]
         ]
     },
     {
-        "id": "37e144a1.bbe6ec",
+        "id": "ce5ab3fb.cf802",
         "type": "switch",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -516,86 +605,86 @@
         ],
         "checkall": "true",
         "outputs": 2,
-        "x": 515.3333587646484,
-        "y": 948.3334527015686,
+        "x": 510,
+        "y": 940,
         "wires": [
             [
-                "52c8c98.9a06738",
-                "fde13890.fe1b48"
+                "7f4b1ee5.195ac",
+                "9b9716eb.497118"
             ],
             [
-                "bdce2d5f.adb23",
-                "a1bb0198.0f52b",
-                "32762292.19d2ae"
+                "b48a81c2.d9918",
+                "5f3e7080.c7b91",
+                "7feeb144.01e95"
             ]
         ]
     },
     {
-        "id": "bdce2d5f.adb23",
+        "id": "b48a81c2.d9918",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL for Recording Stop",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=167';\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 722.3333587646484,
-        "y": 1069.3334527015686,
+        "x": 710,
+        "y": 1060,
         "wires": [
             [
-                "a36bf574.462f58"
+                "eaece320.8eebd"
             ]
         ]
     },
     {
-        "id": "a36bf574.462f58",
+        "id": "eaece320.8eebd",
         "type": "http request",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "method": "GET",
         "ret": "txt",
         "url": "",
         "tls": "",
-        "x": 947.3333587646484,
-        "y": 1069.3334527015686,
+        "x": 950,
+        "y": 1060,
         "wires": [
             []
         ]
     },
     {
-        "id": "f91771cf.6c35c",
+        "id": "d9e1890f.35a838",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL for OK",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=352';\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 844.3333587646484,
-        "y": 1120.3334527015686,
+        "x": 850,
+        "y": 1120,
         "wires": [
             [
-                "9374c392.7d5f9"
+                "c6cc8deb.bd305"
             ]
         ]
     },
     {
-        "id": "9374c392.7d5f9",
+        "id": "c6cc8deb.bd305",
         "type": "http request",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "method": "GET",
         "ret": "txt",
         "url": "",
         "tls": "",
-        "x": 1023.3333587646484,
-        "y": 1121.3334527015686,
+        "x": 1050,
+        "y": 1120,
         "wires": [
             []
         ]
     },
     {
-        "id": "a1bb0198.0f52b",
+        "id": "5f3e7080.c7b91",
         "type": "delay",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "pauseType": "delay",
         "timeout": "5",
@@ -607,49 +696,49 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 654.3333587646484,
-        "y": 1120.3334527015686,
+        "x": 660,
+        "y": 1120,
         "wires": [
             [
-                "f91771cf.6c35c"
+                "d9e1890f.35a838"
             ]
         ]
     },
     {
-        "id": "aed32e6b.b1bbc",
+        "id": "2ef75b6e.dcde74",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL for OK",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=352';\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 843.3333587646484,
-        "y": 1180.3334527015686,
+        "x": 870,
+        "y": 1180,
         "wires": [
             [
-                "d40315cf.827ca8"
+                "f0d96902.301a98"
             ]
         ]
     },
     {
-        "id": "d40315cf.827ca8",
+        "id": "f0d96902.301a98",
         "type": "http request",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "method": "GET",
         "ret": "txt",
         "url": "",
         "tls": "",
-        "x": 1019.3333587646484,
-        "y": 1179.3334527015686,
+        "x": 1070,
+        "y": 1180,
         "wires": [
             []
         ]
     },
     {
-        "id": "32762292.19d2ae",
+        "id": "7feeb144.01e95",
         "type": "delay",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "pauseType": "delay",
         "timeout": "10",
@@ -661,63 +750,63 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 664.3333587646484,
-        "y": 1181.3334527015686,
+        "x": 670,
+        "y": 1180,
         "wires": [
             [
-                "aed32e6b.b1bbc"
+                "2ef75b6e.dcde74"
             ]
         ]
     },
     {
-        "id": "c9aa0e78.874a5",
+        "id": "c8acae8f.6db5e",
         "type": "http request",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "method": "GET",
         "ret": "obj",
         "url": "",
         "tls": "",
-        "x": 861.3333587646484,
-        "y": 1255.3334527015686,
+        "x": 910,
+        "y": 1240,
         "wires": [
             []
         ]
     },
     {
-        "id": "67d1cb65.ae8dd4",
+        "id": "20b11b30.c60dc4",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL for Info",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=358';\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 665.3372650146484,
-        "y": 1254.4154839515686,
+        "x": 690,
+        "y": 1240,
         "wires": [
             [
-                "c9aa0e78.874a5"
+                "c8acae8f.6db5e"
             ]
         ]
     },
     {
-        "id": "db5470ea.84713",
+        "id": "5719257e.b2b08c",
         "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Senderinfo",
         "topic": "",
         "x": 350.83338928222656,
         "y": 1252.833411693573,
         "wires": [
             [
-                "cc2dd57c.af33f8"
+                "39057e9e.21f092"
             ]
         ]
     },
     {
-        "id": "cc2dd57c.af33f8",
+        "id": "39057e9e.21f092",
         "type": "switch",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -739,93 +828,93 @@
         "y": 1254.3334527015686,
         "wires": [
             [
-                "67d1cb65.ae8dd4"
+                "20b11b30.c60dc4"
             ],
             [
-                "941135e7.4180a8"
+                "786ba42d.7725ec"
             ]
         ]
     },
     {
-        "id": "941135e7.4180a8",
+        "id": "786ba42d.7725ec",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL with Exit",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=174';\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 673.3333587646484,
-        "y": 1315.3334527015686,
+        "x": 700,
+        "y": 1280,
         "wires": [
             [
-                "7bfc7870.72b358"
+                "9e3748e8.258d78"
             ]
         ]
     },
     {
-        "id": "7bfc7870.72b358",
+        "id": "9e3748e8.258d78",
         "type": "http request",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "method": "GET",
         "ret": "obj",
         "url": "",
         "tls": "",
-        "x": 874.3333587646484,
-        "y": 1313.3334527015686,
+        "x": 910,
+        "y": 1280,
         "wires": [
             []
         ]
     },
     {
-        "id": "9d4b3ca9.60245",
+        "id": "4369ff29.75c62",
         "type": "http request",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "method": "GET",
         "ret": "obj",
         "url": "",
         "tls": "",
-        "x": 913.3333435058594,
-        "y": 1394.047712802887,
+        "x": 910,
+        "y": 1380,
         "wires": [
             []
         ]
     },
     {
-        "id": "386ab4f5.11f9cc",
+        "id": "b46340d2.c6d",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL for PVR",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=393';\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 724.3372497558594,
-        "y": 1395.129744052887,
+        "x": 700,
+        "y": 1380,
         "wires": [
             [
-                "9d4b3ca9.60245"
+                "4369ff29.75c62"
             ]
         ]
     },
     {
-        "id": "6dcb948.f3ea46c",
+        "id": "5ec97954.28b088",
         "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Filme",
         "topic": "",
-        "x": 379.1904983520508,
-        "y": 1396.047767162323,
+        "x": 330,
+        "y": 1400,
         "wires": [
             [
-                "1e396e42.00bfe2"
+                "22ecb791.6b09e8"
             ]
         ]
     },
     {
-        "id": "1e396e42.00bfe2",
+        "id": "22ecb791.6b09e8",
         "type": "switch",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -843,66 +932,66 @@
         ],
         "checkall": "true",
         "outputs": 2,
-        "x": 539.3333435058594,
-        "y": 1397.047712802887,
+        "x": 510,
+        "y": 1400,
         "wires": [
             [
-                "386ab4f5.11f9cc"
+                "b46340d2.c6d"
             ],
             [
-                "a3197578.564288"
+                "69dd562c.877088"
             ]
         ]
     },
     {
-        "id": "a3197578.564288",
+        "id": "69dd562c.877088",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL with Exit",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=174';\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 728.3333435058594,
-        "y": 1448.047712802887,
+        "x": 700,
+        "y": 1420,
         "wires": [
             [
-                "bb0eda0c.a23028"
+                "d8eafd27.dd873"
             ]
         ]
     },
     {
-        "id": "bb0eda0c.a23028",
+        "id": "d8eafd27.dd873",
         "type": "http request",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "method": "GET",
         "ret": "obj",
         "url": "",
         "tls": "",
-        "x": 923.3333435058594,
-        "y": 1448.047712802887,
+        "x": 910,
+        "y": 1420,
         "wires": [
             []
         ]
     },
     {
-        "id": "900bde.588f042",
+        "id": "75771b89.0c5934",
         "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Filmwiedergabe",
         "topic": "",
-        "x": 404.33336639404297,
-        "y": 1540.3334679603577,
+        "x": 360,
+        "y": 1540,
         "wires": [
             [
-                "c33ae2dc.33efe"
+                "26aadd17.482ff2"
             ]
         ]
     },
     {
-        "id": "c33ae2dc.33efe",
+        "id": "26aadd17.482ff2",
         "type": "switch",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "property": "payload",
         "propertyType": "msg",
@@ -920,82 +1009,82 @@
         ],
         "checkall": "true",
         "outputs": 2,
-        "x": 552.333366394043,
-        "y": 1541.3334679603577,
+        "x": 530,
+        "y": 1540,
         "wires": [
             [],
             [
-                "8c9e769e.dd5e78",
-                "f8416136.77316"
+                "a9ceaff4.7cb26",
+                "d924b9a6.447a08"
             ]
         ]
     },
     {
-        "id": "8c9e769e.dd5e78",
+        "id": "a9ceaff4.7cb26",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL with MovieStop",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=128';\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 757.333366394043,
-        "y": 1534.3334679603577,
+        "x": 740,
+        "y": 1520,
         "wires": [
             [
-                "edbc3b44.4355a8"
+                "7abb53ec.4411cc"
             ]
         ]
     },
     {
-        "id": "edbc3b44.4355a8",
+        "id": "7abb53ec.4411cc",
         "type": "http request",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "method": "GET",
         "ret": "obj",
         "url": "",
         "tls": "",
-        "x": 977.333366394043,
-        "y": 1533.3334679603577,
+        "x": 970,
+        "y": 1520,
         "wires": [
             []
         ]
     },
     {
-        "id": "c975be1a.b4ec8",
+        "id": "41bd7726.5007b8",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL with Exit",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=174';\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 905.333366394043,
-        "y": 1589.3334679603577,
+        "x": 920,
+        "y": 1560,
         "wires": [
             [
-                "4f50fcbd.2ba4a4"
+                "4b9704e1.d6e46c"
             ]
         ]
     },
     {
-        "id": "4f50fcbd.2ba4a4",
+        "id": "4b9704e1.d6e46c",
         "type": "http request",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "method": "GET",
         "ret": "obj",
         "url": "",
         "tls": "",
-        "x": 1097.333366394043,
-        "y": 1589.3334679603577,
+        "x": 1150,
+        "y": 1560,
         "wires": [
             []
         ]
     },
     {
-        "id": "f8416136.77316",
+        "id": "d924b9a6.447a08",
         "type": "delay",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "pauseType": "delay",
         "timeout": "15",
@@ -1007,110 +1096,110 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 711.333366394043,
-        "y": 1590.3334679603577,
+        "x": 710,
+        "y": 1560,
         "wires": [
             [
-                "c975be1a.b4ec8"
+                "41bd7726.5007b8"
             ]
         ]
     },
     {
-        "id": "c53db748.4868c8",
+        "id": "61889be7.1556f4",
         "type": "http request",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "method": "GET",
         "ret": "obj",
         "url": "",
         "tls": "",
-        "x": 784.3333511352539,
-        "y": 1654.833424091339,
+        "x": 770,
+        "y": 1660,
         "wires": [
             []
         ]
     },
     {
-        "id": "5bbd9bdf.02c354",
+        "id": "92d94e55.57876",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL for Pause",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=207';\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 570.3372573852539,
-        "y": 1655.915455341339,
+        "x": 560,
+        "y": 1660,
         "wires": [
             [
-                "c53db748.4868c8"
+                "61889be7.1556f4"
             ]
         ]
     },
     {
-        "id": "4f50b3a4.52500c",
+        "id": "1cec15e0.5e87aa",
         "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Pause",
         "topic": "",
-        "x": 378.3333511352539,
-        "y": 1654.833424091339,
+        "x": 330,
+        "y": 1660,
         "wires": [
             [
-                "5bbd9bdf.02c354"
+                "92d94e55.57876"
             ]
         ]
     },
     {
-        "id": "80df6a5.4dd0498",
+        "id": "81f6f220.05e62",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL Statusinfo",
         "func": "msg.action = msg.payload;\n\nvar ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/statusinfo';\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 618.3333587646484,
-        "y": 790.3334527015686,
+        "x": 600,
+        "y": 760,
         "wires": [
             [
-                "c1ec66f5.06f4c8"
+                "4aebb34.6375f4c"
             ]
         ]
     },
     {
-        "id": "c1ec66f5.06f4c8",
+        "id": "4aebb34.6375f4c",
         "type": "http request",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "method": "GET",
         "ret": "obj",
         "url": "",
         "tls": "",
-        "x": 816.3333587646484,
-        "y": 790.3334527015686,
+        "x": 810,
+        "y": 760,
         "wires": [
             [
-                "1ecaabea.e80804"
+                "a5338041.31e4"
             ]
         ]
     },
     {
-        "id": "1ecaabea.e80804",
+        "id": "a5338041.31e4",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create inStandy Value",
         "func": "if (msg.action === 'on' && msg.payload.inStandby === 'false')\n{\n    global.set('inStandby','on_false');\n}\nif (msg.action === 'on' && msg.payload.inStandby === 'true')\n{\n    global.set('inStandby','on_true');\n}\nif (msg.action === 'off' && msg.payload.inStandby === 'false')\n{\n    global.set('inStandby','off_true');\n}\nif (msg.action === 'off' && msg.payload.inStandby === 'true')\n{\n    global.set('inStandby','off_false');\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1010.3333587646484,
-        "y": 790.3334527015686,
+        "x": 1020,
+        "y": 760,
         "wires": [
             []
         ]
     },
     {
-        "id": "38d81076.f311",
+        "id": "28a5a713.48f358",
         "type": "switch",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "property": "inStandby",
         "propertyType": "global",
@@ -1138,23 +1227,23 @@
         ],
         "checkall": "true",
         "outputs": 4,
-        "x": 917.3333587646484,
-        "y": 845.3334527015686,
+        "x": 910,
+        "y": 820,
         "wires": [
             [
-                "d09a5c90.a8dac"
+                "6b24220f.cf438c"
             ],
             [],
             [
-                "d09a5c90.a8dac"
+                "6b24220f.cf438c"
             ],
             []
         ]
     },
     {
-        "id": "2e0f6e22.4d8f72",
+        "id": "e11bb6d9.3a92d8",
         "type": "delay",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "pauseType": "delay",
         "timeout": "5",
@@ -1166,70 +1255,71 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 592.3333587646484,
-        "y": 844.3334527015686,
+        "x": 580,
+        "y": 820,
         "wires": [
             [
-                "38d81076.f311"
+                "28a5a713.48f358"
             ]
         ]
     },
     {
-        "id": "8c81d1ad.58ccf",
+        "id": "56a4d33e.dea74c",
         "type": "comment",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Lights",
         "info": "",
-        "x": 122,
-        "y": 53,
+        "x": 110,
+        "y": 40,
         "wires": []
     },
     {
-        "id": "73d58e31.6ab8f",
+        "id": "9d8bde54.cc351",
         "type": "comment",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Home Cinema",
         "info": "",
-        "x": 132.4444351196289,
-        "y": 584.3334798812866,
+        "x": 130,
+        "y": 480,
         "wires": []
     },
     {
-        "id": "75319ad8.6b24c4",
+        "id": "27c723da.a8cedc",
         "type": "mqtt in",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Bathroom Light IN",
         "topic": "shellies/shelly1-B9D598/relay/0",
         "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 159,
-        "y": 103,
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 150,
+        "y": 80,
         "wires": [
             [
-                "ffd6c143.2fdc3"
+                "345c2877.6139e8"
             ]
         ]
     },
     {
-        "id": "2b70adc5.7462c2",
+        "id": "28d1c726.11fd38",
         "type": "mqtt out",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Bathroom Light OUT",
         "topic": "shellies/shelly1-B9D598/relay/0/command",
         "qos": "",
         "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 572,
-        "y": 101,
+        "broker": "2aba1eb9.69a842",
+        "x": 580,
+        "y": 80,
         "wires": []
     },
     {
-        "id": "ffd6c143.2fdc3",
+        "id": "345c2877.6139e8",
         "type": "ui_switch",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "",
         "label": "Badezimmer",
-        "group": "eb2441b4.1ea54",
+        "group": "a4375fdd.d3a7c",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -1244,50 +1334,51 @@
         "offvalueType": "str",
         "officon": "",
         "offcolor": "",
-        "x": 362.7142868041992,
-        "y": 102.42857360839844,
+        "x": 350,
+        "y": 80,
         "wires": [
             [
-                "2b70adc5.7462c2"
+                "28d1c726.11fd38"
             ]
         ]
     },
     {
-        "id": "b9792a89.ad1568",
+        "id": "58d70e89.5d081",
         "type": "mqtt in",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Kitchen Room Light IN",
         "topic": "shellies/shelly1-76F642/relay/0",
         "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 168,
-        "y": 167,
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 160,
+        "y": 140,
         "wires": [
             [
-                "8af6284f.2cb648"
+                "3e9f5496.7f1e0c"
             ]
         ]
     },
     {
-        "id": "14d4822f.f6642e",
+        "id": "2c96be81.0ec592",
         "type": "mqtt out",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Kitchen Room Light OUT",
         "topic": "shellies/shelly1-76F642/relay/0/command",
         "qos": "",
         "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 561,
-        "y": 167,
+        "broker": "2aba1eb9.69a842",
+        "x": 570,
+        "y": 140,
         "wires": []
     },
     {
-        "id": "8af6284f.2cb648",
+        "id": "3e9f5496.7f1e0c",
         "type": "ui_switch",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "",
         "label": "Küche",
-        "group": "eb2441b4.1ea54",
+        "group": "a4375fdd.d3a7c",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -1302,50 +1393,51 @@
         "offvalueType": "str",
         "officon": "",
         "offcolor": "",
-        "x": 347,
-        "y": 167,
+        "x": 330,
+        "y": 140,
         "wires": [
             [
-                "14d4822f.f6642e"
+                "2c96be81.0ec592"
             ]
         ]
     },
     {
-        "id": "fd4e8834.7d7f48",
+        "id": "4397bea3.f923b",
         "type": "mqtt in",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Living Room Light IN",
         "topic": "shellies/shelly1-B9CFBD/relay/0",
         "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 156.77778244018555,
-        "y": 229.00000762939453,
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 150,
+        "y": 200,
         "wires": [
             [
-                "e3337fa3.ec6eb"
+                "f2a66d66.98512"
             ]
         ]
     },
     {
-        "id": "f1771a84.de40d8",
+        "id": "27488ff.f64427",
         "type": "mqtt out",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Living Room Light OUT",
         "topic": "shellies/shelly1-B9CFBD/relay/0/command",
         "qos": "",
         "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 561,
-        "y": 229,
+        "broker": "2aba1eb9.69a842",
+        "x": 570,
+        "y": 200,
         "wires": []
     },
     {
-        "id": "e3337fa3.ec6eb",
+        "id": "f2a66d66.98512",
         "type": "ui_switch",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "",
         "label": "Wohnzimmer",
-        "group": "eb2441b4.1ea54",
+        "group": "a4375fdd.d3a7c",
         "order": 3,
         "width": 0,
         "height": 0,
@@ -1360,18 +1452,18 @@
         "offvalueType": "str",
         "officon": "",
         "offcolor": "",
-        "x": 351,
-        "y": 229,
+        "x": 350,
+        "y": 200,
         "wires": [
             [
-                "f1771a84.de40d8"
+                "27488ff.f64427"
             ]
         ]
     },
     {
-        "id": "6b51d13d.9021b",
+        "id": "b9818492.ecb128",
         "type": "delay",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "pauseType": "delay",
         "timeout": "1000",
@@ -1383,18 +1475,18 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 578.8511979239328,
-        "y": 1848.8640257971629,
+        "x": 560,
+        "y": 1840,
         "wires": [
             [
-                "643147e5.c799e8"
+                "5f249e75.6d47b"
             ]
         ]
     },
     {
-        "id": "18568c3f.97dcf4",
+        "id": "593d0c24.dc43c4",
         "type": "delay",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "pauseType": "delay",
         "timeout": "500",
@@ -1406,18 +1498,18 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 568.5177781241281,
-        "y": 1811.8004939215525,
+        "x": 560,
+        "y": 1800,
         "wires": [
             [
-                "5a3b939.fbc5c6c"
+                "5b087b43.496ce4"
             ]
         ]
     },
     {
-        "id": "f4082d5.fdc66d",
+        "id": "10e83fe1.98a5f",
         "type": "delay",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "pauseType": "delay",
         "timeout": "1000",
@@ -1429,18 +1521,18 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 582.3828866141183,
-        "y": 1954.3878352301463,
+        "x": 560,
+        "y": 1940,
         "wires": [
             [
-                "9f816356.6f3cb"
+                "a57ea2bb.9a458"
             ]
         ]
     },
     {
-        "id": "89fb2fa8.7f4d1",
+        "id": "deb0dd2e.ece32",
         "type": "delay",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "pauseType": "delay",
         "timeout": "500",
@@ -1452,18 +1544,18 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 574.747972215925,
-        "y": 1917.324354852949,
+        "x": 560,
+        "y": 1900,
         "wires": [
             [
-                "5a3b939.fbc5c6c"
+                "5b087b43.496ce4"
             ]
         ]
     },
     {
-        "id": "a6e6a29f.f0f86",
+        "id": "ca9d2609.c0aa88",
         "type": "delay",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "pauseType": "delay",
         "timeout": "1000",
@@ -1475,18 +1567,18 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 589.9225518362863,
-        "y": 2154.689423288618,
+        "x": 580,
+        "y": 2160,
         "wires": [
             [
-                "ae703056.8d4c8"
+                "cd80d05d.29df5"
             ]
         ]
     },
     {
-        "id": "7b334f6e.911f",
+        "id": "7aa97cdd.8e7234",
         "type": "delay",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "pauseType": "delay",
         "timeout": "500",
@@ -1498,34 +1590,34 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 579.589296068464,
-        "y": 2117.943395342146,
+        "x": 580,
+        "y": 2120,
         "wires": [
             [
-                "ae703056.8d4c8"
+                "cd80d05d.29df5"
             ]
         ]
     },
     {
-        "id": "f5189ce6.c02c9",
+        "id": "11d5b744.b19569",
         "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "HomeSkyCinema",
         "topic": "",
         "x": 370.24600764683316,
         "y": 2132.8574244635447,
         "wires": [
             [
-                "7b334f6e.911f",
-                "a6e6a29f.f0f86",
-                "6e618358.4005cc"
+                "7aa97cdd.8e7234",
+                "ca9d2609.c0aa88",
+                "574fe08e.bf9f3"
             ]
         ]
     },
     {
-        "id": "a31c4be8.50c7d8",
+        "id": "b3df39b1.93afe8",
         "type": "delay",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "pauseType": "delay",
         "timeout": "1000",
@@ -1537,18 +1629,18 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 583.7004029410226,
-        "y": 2063.9592878477915,
+        "x": 560,
+        "y": 2040,
         "wires": [
             [
-                "7f69ddfd.962af4"
+                "c03c386b.02efe8"
             ]
         ]
     },
     {
-        "id": "12f6f351.69ee7d",
+        "id": "b43efc2c.b408e",
         "type": "delay",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "pauseType": "delay",
         "timeout": "500",
@@ -1560,18 +1652,18 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 575.5892579214914,
-        "y": 2025.9433104651316,
+        "x": 560,
+        "y": 2000,
         "wires": [
             [
-                "5a3b939.fbc5c6c"
+                "5b087b43.496ce4"
             ]
         ]
     },
     {
-        "id": "1da73feb.ce108",
+        "id": "2378da79.fa33a6",
         "type": "delay",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "pauseType": "delay",
         "timeout": "1000",
@@ -1583,18 +1675,18 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 591.1289269583566,
-        "y": 2263.9274794714793,
+        "x": 580,
+        "y": 2300,
         "wires": [
             [
-                "a772bf3a.f6b2f"
+                "a57ea2bb.9a458"
             ]
         ]
     },
     {
-        "id": "2fc1189e.2077f8",
+        "id": "b10832f6.011e9",
         "type": "delay",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "pauseType": "delay",
         "timeout": "500",
@@ -1606,190 +1698,66 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 581.5892521994455,
-        "y": 2227.657573427473,
+        "x": 580,
+        "y": 2260,
         "wires": [
             [
-                "ae703056.8d4c8"
+                "cd80d05d.29df5"
             ]
         ]
     },
     {
-        "id": "bbf1f4b0.0bb5d8",
+        "id": "f50a44cf.00c058",
         "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
-        "name": "HomeSkyCinemaPlusEins",
-        "topic": "",
-        "x": 359.6745812552316,
-        "y": 2244.6191002982005,
-        "wires": [
-            [
-                "2fc1189e.2077f8",
-                "1da73feb.ce108",
-                "6e618358.4005cc"
-            ]
-        ]
-    },
-    {
-        "id": "f30c5eb1.69a45",
-        "type": "delay",
-        "z": "4b279b3e.b560d4",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "1000",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 588.7639090674264,
-        "y": 2371.8956267493113,
-        "wires": [
-            [
-                "7f69ddfd.962af4"
-            ]
-        ]
-    },
-    {
-        "id": "90e874e2.d93998",
-        "type": "delay",
-        "z": "4b279b3e.b560d4",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "500",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 578.9067313330514,
-        "y": 2337.054449762617,
-        "wires": [
-            [
-                "ae703056.8d4c8"
-            ]
-        ]
-    },
-    {
-        "id": "c5fe2965.bd3828",
-        "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
-        "name": "HomeSkyCinemaPlusVieUndZwanzig",
-        "topic": "",
-        "x": 321.75394221714566,
-        "y": 2356.0793807165965,
-        "wires": [
-            [
-                "90e874e2.d93998",
-                "f30c5eb1.69a45",
-                "6e618358.4005cc"
-            ]
-        ]
-    },
-    {
-        "id": "602d42b1.b1488c",
-        "type": "delay",
-        "z": "4b279b3e.b560d4",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "1000",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 582.922605242048,
-        "y": 2477.0068022864207,
-        "wires": [
-            [
-                "9f816356.6f3cb"
-            ]
-        ]
-    },
-    {
-        "id": "5db05974.84cd38",
-        "type": "delay",
-        "z": "4b279b3e.b560d4",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "500",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 575.9226205008371,
-        "y": 2442.6417548315867,
-        "wires": [
-            [
-                "ae703056.8d4c8"
-            ]
-        ]
-    },
-    {
-        "id": "7f35d4ee.0dd56c",
-        "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "HomeSkyAction",
         "topic": "",
-        "x": 390.07142421177457,
-        "y": 2457.5556141989573,
+        "x": 360,
+        "y": 2280,
         "wires": [
             [
-                "5db05974.84cd38",
-                "602d42b1.b1488c",
-                "6e618358.4005cc"
+                "b10832f6.011e9",
+                "2378da79.fa33a6",
+                "574fe08e.bf9f3"
             ]
         ]
     },
     {
-        "id": "d5c07f63.1781c",
+        "id": "f5f8ab64.000618",
         "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "HomeTelevision",
         "topic": "",
-        "x": 372.1824624197824,
-        "y": 1930.952531542097,
+        "x": 360,
+        "y": 1920,
         "wires": [
             [
-                "89fb2fa8.7f4d1",
-                "f4082d5.fdc66d",
-                "598fc28b.0d659c"
+                "deb0dd2e.ece32",
+                "10e83fe1.98a5f",
+                "6a7985cc.0e6dbc"
             ]
         ]
     },
     {
-        "id": "1cb64fe.7c9e7b",
+        "id": "7a3d1af6.25ad14",
         "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "HomeSatEins",
         "topic": "",
-        "x": 378.3729989188058,
-        "y": 2040.7937895911082,
+        "x": 360,
+        "y": 2020,
         "wires": [
             [
-                "12f6f351.69ee7d",
-                "a31c4be8.50c7d8",
-                "598fc28b.0d659c"
+                "b43efc2c.b408e",
+                "b3df39b1.93afe8",
+                "6a7985cc.0e6dbc"
             ]
         ]
     },
     {
-        "id": "598fc28b.0d659c",
+        "id": "6a7985cc.0e6dbc",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL for 1 key",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=2';\n\nreturn msg;",
         "outputs": 1,
@@ -1798,14 +1766,14 @@
         "y": 1966.50794506073,
         "wires": [
             [
-                "730ffdfe.b60ba4"
+                "bd1b6972.b20118"
             ]
         ]
     },
     {
-        "id": "6e618358.4005cc",
+        "id": "574fe08e.bf9f3",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL for 2 key",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=3';\n\nreturn msg;",
         "outputs": 1,
@@ -1814,14 +1782,14 @@
         "y": 2006.507926940918,
         "wires": [
             [
-                "730ffdfe.b60ba4"
+                "bd1b6972.b20118"
             ]
         ]
     },
     {
-        "id": "590084ed.846fbc",
+        "id": "b4b4f113.5060c",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL for 3 key",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=4';\n\nreturn msg;",
         "outputs": 1,
@@ -1830,14 +1798,14 @@
         "y": 2044.7618861198425,
         "wires": [
             [
-                "730ffdfe.b60ba4"
+                "bd1b6972.b20118"
             ]
         ]
     },
     {
-        "id": "ae703056.8d4c8",
+        "id": "cd80d05d.29df5",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL for 4 key",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=5';\n\nreturn msg;",
         "outputs": 1,
@@ -1846,14 +1814,14 @@
         "y": 2082.222264289856,
         "wires": [
             [
-                "730ffdfe.b60ba4"
+                "bd1b6972.b20118"
             ]
         ]
     },
     {
-        "id": "a772bf3a.f6b2f",
+        "id": "38dd0484.9955bc",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL for 5 key",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=6';\n\nreturn msg;",
         "outputs": 1,
@@ -1862,14 +1830,14 @@
         "y": 2117.936532020569,
         "wires": [
             [
-                "730ffdfe.b60ba4"
+                "bd1b6972.b20118"
             ]
         ]
     },
     {
-        "id": "7f69ddfd.962af4",
+        "id": "c03c386b.02efe8",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL for 6 key",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=7';\n\nreturn msg;",
         "outputs": 1,
@@ -1878,14 +1846,14 @@
         "y": 2155.079300880432,
         "wires": [
             [
-                "730ffdfe.b60ba4"
+                "bd1b6972.b20118"
             ]
         ]
     },
     {
-        "id": "9f816356.6f3cb",
+        "id": "a57ea2bb.9a458",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL for 7 key",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=8';\n\nreturn msg;",
         "outputs": 1,
@@ -1894,14 +1862,14 @@
         "y": 2195.07931804657,
         "wires": [
             [
-                "730ffdfe.b60ba4"
+                "bd1b6972.b20118"
             ]
         ]
     },
     {
-        "id": "643147e5.c799e8",
+        "id": "5f249e75.6d47b",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL for 8 key",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=9';\n\nreturn msg;",
         "outputs": 1,
@@ -1910,14 +1878,14 @@
         "y": 2235.0793867111206,
         "wires": [
             [
-                "730ffdfe.b60ba4"
+                "bd1b6972.b20118"
             ]
         ]
     },
     {
-        "id": "5a3b939.fbc5c6c",
+        "id": "5b087b43.496ce4",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL for 9 key",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/remotecontrol?command=10';\n\nreturn msg;",
         "outputs": 1,
@@ -1926,14 +1894,14 @@
         "y": 2273.650866508484,
         "wires": [
             [
-                "730ffdfe.b60ba4"
+                "bd1b6972.b20118"
             ]
         ]
     },
     {
-        "id": "730ffdfe.b60ba4",
+        "id": "bd1b6972.b20118",
         "type": "http request",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "method": "GET",
         "ret": "obj",
@@ -1946,35 +1914,35 @@
         ]
     },
     {
-        "id": "52d439aa.976af8",
+        "id": "44087d44.f23024",
         "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "HomePro",
         "topic": "",
-        "x": 359.6428124564035,
-        "y": 1824.7619893210276,
+        "x": 340,
+        "y": 1820,
         "wires": [
             [
-                "598fc28b.0d659c",
-                "18568c3f.97dcf4",
-                "6b51d13d.9021b"
+                "6a7985cc.0e6dbc",
+                "593d0c24.dc43c4",
+                "b9818492.ecb128"
             ]
         ]
     },
     {
-        "id": "92bf1865.004978",
+        "id": "84752832.3c2e98",
         "type": "comment",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Dreambox Channels",
         "info": "",
-        "x": 389.64283752441406,
-        "y": 1761.9048862457275,
+        "x": 370,
+        "y": 1760,
         "wires": []
     },
     {
-        "id": "64e2cd46.adf624",
+        "id": "c67118a2.f9b9c8",
         "type": "comment",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Lights",
         "info": "",
         "x": 331.5,
@@ -1982,78 +1950,79 @@
         "wires": []
     },
     {
-        "id": "a9764f48.bcedf",
+        "id": "424bde01.5d536",
         "type": "comment",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Dreambox Commands",
         "info": "",
-        "x": 391.6666564941406,
-        "y": 726.2500519752502,
+        "x": 380,
+        "y": 720,
         "wires": []
     },
     {
-        "id": "652d47ec.dbea38",
+        "id": "a9708e5a.eaa55",
         "type": "mqtt out",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "HeimKino OUT",
         "topic": "cmnd/sonoff_homecinema/power",
         "qos": "",
         "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 880.8335609436035,
-        "y": 454.000027179718,
+        "broker": "2aba1eb9.69a842",
+        "x": 880,
+        "y": 460,
         "wires": []
     },
     {
-        "id": "a05d95ed.b874e8",
+        "id": "ea534a02.e68c88",
         "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "HeimKino",
         "topic": "",
-        "x": 358.8334770202637,
-        "y": 461.00001335144043,
+        "x": 340,
+        "y": 460,
         "wires": [
             [
-                "7abf5e61.839a3"
+                "7f51712d.e1a24"
             ]
         ]
     },
     {
-        "id": "38129eb.598ff62",
+        "id": "f3c4d561.da9c48",
         "type": "mqtt in",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "HomeCinema IN",
         "topic": "cmnd/sonoff_homecinema/power",
         "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 137.4444351196289,
-        "y": 642.3334798812866,
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 140,
+        "y": 520,
         "wires": [
             [
-                "6853fcb4.c96cf4"
+                "8ca84381.f3df2"
             ]
         ]
     },
     {
-        "id": "31ca2c0c.597494",
+        "id": "bfacf34c.b714c",
         "type": "mqtt out",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "HomeCinema OUT",
         "topic": "cmnd/sonoff_homecinema/power",
         "qos": "",
         "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 549.4444351196289,
-        "y": 642.3334798812866,
+        "broker": "2aba1eb9.69a842",
+        "x": 590,
+        "y": 520,
         "wires": []
     },
     {
-        "id": "6853fcb4.c96cf4",
+        "id": "8ca84381.f3df2",
         "type": "ui_switch",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "",
         "label": "Home Cinema",
-        "group": "eb2441b4.1ea54",
+        "group": "a4375fdd.d3a7c",
         "order": 7,
         "width": 0,
         "height": 0,
@@ -2068,87 +2037,88 @@
         "offvalueType": "str",
         "officon": "",
         "offcolor": "",
-        "x": 345.4444351196289,
-        "y": 643.3334798812866,
+        "x": 360,
+        "y": 520,
         "wires": [
             [
-                "31ca2c0c.597494"
+                "bfacf34c.b714c"
             ]
         ]
     },
     {
-        "id": "d7620aea.172db8",
+        "id": "9b851951.67db58",
         "type": "comment",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Plugs",
         "info": "",
-        "x": 348.5000305175781,
-        "y": 414.0000247955322,
+        "x": 330,
+        "y": 420,
         "wires": []
     },
     {
-        "id": "8ea30fd0.4f335",
+        "id": "ee3619f2.485b08",
         "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Schlafzimmer Licht",
         "topic": "",
-        "x": 378,
-        "y": 258,
+        "x": 370,
+        "y": 260,
         "wires": [
             [
-                "31a9196f.2ddde6"
+                "b9139199.88442"
             ]
         ]
     },
     {
-        "id": "31a9196f.2ddde6",
+        "id": "b9139199.88442",
         "type": "mqtt out",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Bedroom Light OUT",
         "topic": "shellies/shelly1-944E49/relay/0/command",
         "qos": "",
         "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 604.75,
-        "y": 258.25,
+        "broker": "2aba1eb9.69a842",
+        "x": 640,
+        "y": 260,
         "wires": []
     },
     {
-        "id": "41b47532.61017c",
+        "id": "fc558756.e3f378",
         "type": "mqtt in",
-        "z": "99e96001.113a9",
-        "name": "Living Room Light IN",
+        "z": "7dbbdbf3.365084",
+        "name": "Bed Room Light IN",
         "topic": "shellies/shelly1-944E49/relay/0",
         "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 152.22222900390625,
-        "y": 288.3333320617676,
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 150,
+        "y": 260,
         "wires": [
             [
-                "eea8453e.38fd28"
+                "baeb5b0c.b5ceb8"
             ]
         ]
     },
     {
-        "id": "300fda65.cb9476",
+        "id": "c0869f0b.c0d01",
         "type": "mqtt out",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Living Room Light OUT",
         "topic": "shellies/shelly1-944E49/relay/0/command",
         "qos": "",
         "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 581.9999847412109,
-        "y": 286.00000381469727,
+        "broker": "2aba1eb9.69a842",
+        "x": 570,
+        "y": 260,
         "wires": []
     },
     {
-        "id": "eea8453e.38fd28",
+        "id": "baeb5b0c.b5ceb8",
         "type": "ui_switch",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "",
         "label": "Schlafzimmer",
-        "group": "eb2441b4.1ea54",
+        "group": "a4375fdd.d3a7c",
         "order": 4,
         "width": 0,
         "height": 0,
@@ -2163,77 +2133,78 @@
         "offvalueType": "str",
         "officon": "",
         "offcolor": "",
-        "x": 362,
-        "y": 285,
+        "x": 360,
+        "y": 260,
         "wires": [
             [
-                "300fda65.cb9476"
+                "c0869f0b.c0d01"
             ]
         ]
     },
     {
-        "id": "385ebbb5.5eec14",
+        "id": "9bc9a3c3.acec1",
         "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Bett Licht",
         "topic": "",
-        "x": 368.4796714782715,
-        "y": 584.2337260246277,
+        "x": 340,
+        "y": 600,
         "wires": [
             [
-                "801e07b7.bb7f38"
+                "dca405fb.3136f8"
             ]
         ]
     },
     {
-        "id": "801e07b7.bb7f38",
+        "id": "dca405fb.3136f8",
         "type": "mqtt out",
-        "z": "4b279b3e.b560d4",
-        "name": "Bedroom Light OUT",
-        "topic": "cmnd/sonoff_bedlight/power",
-        "qos": "",
-        "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 572.785228729248,
-        "y": 585.4837374687195,
-        "wires": []
-    },
-    {
-        "id": "7970fe91.8921f",
-        "type": "mqtt in",
-        "z": "99e96001.113a9",
-        "name": "BedLight IN",
-        "topic": "cmnd/sonoff_bedlight/power",
-        "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 133.3526153564453,
-        "y": 350.87577724456787,
-        "wires": [
-            [
-                "24f463b6.6bba5c"
-            ]
-        ]
-    },
-    {
-        "id": "874cb57a.302e18",
-        "type": "mqtt out",
-        "z": "99e96001.113a9",
+        "z": "9bfc0359.871c9",
         "name": "Bed Light OUT",
         "topic": "cmnd/sonoff_bedlight/power",
         "qos": "",
         "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 537.5748519897461,
-        "y": 349.7646484375,
+        "broker": "2aba1eb9.69a842",
+        "x": 540,
+        "y": 600,
         "wires": []
     },
     {
-        "id": "24f463b6.6bba5c",
+        "id": "5e7a1c32.d0b8f4",
+        "type": "mqtt in",
+        "z": "7dbbdbf3.365084",
+        "name": "BedLight IN",
+        "topic": "cmnd/sonoff_bedlight/power",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 130,
+        "y": 380,
+        "wires": [
+            [
+                "c6ca3f6f.6fe7"
+            ]
+        ]
+    },
+    {
+        "id": "2f2b435c.bb0c8c",
+        "type": "mqtt out",
+        "z": "7dbbdbf3.365084",
+        "name": "Bed Light OUT",
+        "topic": "cmnd/sonoff_bedlight/power",
+        "qos": "",
+        "retain": "",
+        "broker": "2aba1eb9.69a842",
+        "x": 600,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "c6ca3f6f.6fe7",
         "type": "ui_switch",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "",
         "label": "Bett Licht",
-        "group": "eb2441b4.1ea54",
+        "group": "a4375fdd.d3a7c",
         "order": 5,
         "width": 0,
         "height": 0,
@@ -2248,18 +2219,18 @@
         "offvalueType": "str",
         "officon": "",
         "offcolor": "",
-        "x": 336.9081611633301,
-        "y": 349.6535358428955,
+        "x": 340,
+        "y": 380,
         "wires": [
             [
-                "874cb57a.302e18"
+                "2f2b435c.bb0c8c"
             ]
         ]
     },
     {
-        "id": "7abf5e61.839a3",
+        "id": "7f51712d.e1a24",
         "type": "switch",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "On or Off",
         "property": "payload",
         "propertyType": "msg",
@@ -2277,22 +2248,22 @@
         ],
         "checkall": "true",
         "outputs": 2,
-        "x": 542.6840667724609,
-        "y": 460.63543128967285,
+        "x": 520,
+        "y": 460,
         "wires": [
             [
-                "652d47ec.dbea38"
+                "a9708e5a.eaa55"
             ],
             [
-                "6812a7f8.5f9048",
-                "4f664027.4456d"
+                "5ca279cb.163438",
+                "4c3146e0.388e58"
             ]
         ]
     },
     {
-        "id": "6812a7f8.5f9048",
+        "id": "5ca279cb.163438",
         "type": "delay",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "pauseType": "delay",
         "timeout": "50",
@@ -2304,144 +2275,82 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 712.6877975463867,
-        "y": 489.63549995422363,
+        "x": 690,
+        "y": 500,
         "wires": [
             [
-                "652d47ec.dbea38"
+                "a9708e5a.eaa55"
             ]
         ]
     },
     {
-        "id": "4f664027.4456d",
+        "id": "4c3146e0.388e58",
         "type": "function",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Create URL for Shutdown",
         "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/powerstate?newstate=1';\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 754.5174865722656,
-        "y": 542.7326488494873,
+        "x": 710,
+        "y": 540,
         "wires": [
             [
-                "2138a3d4.de44cc"
+                "70cdf8c1.4cd118"
             ]
         ]
     },
     {
-        "id": "2138a3d4.de44cc",
+        "id": "70cdf8c1.4cd118",
         "type": "http request",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "",
         "method": "GET",
         "ret": "obj",
         "url": "",
         "tls": "",
-        "x": 962.5136184692383,
-        "y": 543.650598526001,
+        "x": 930,
+        "y": 540,
         "wires": [
             []
         ]
     },
     {
-        "id": "72309b3a.3b8d84",
-        "type": "comment",
-        "z": "2186aa43.d8c126",
-        "name": "Embedded OpenWebif Iterface from Dreambox",
-        "info": "",
-        "x": 250.51734161376953,
-        "y": 44.9097204208374,
-        "wires": []
-    },
-    {
-        "id": "1d6dfaa.76f8d05",
-        "type": "inject",
-        "z": "2186aa43.d8c126",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "x": 161.07988357543945,
-        "y": 99.97223567962646,
-        "wires": [
-            [
-                "a1c6e1cf.240dd"
-            ]
-        ]
-    },
-    {
-        "id": "a1c6e1cf.240dd",
-        "type": "function",
-        "z": "2186aa43.d8c126",
-        "name": "Create WebIf URL for Dreambox",
-        "func": "var ip=global.get('dreamboxip');\n\nmsg.payload = ip + '/mobile';\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 403.52781677246094,
-        "y": 99.91667366027832,
-        "wires": [
-            [
-                "4a221c50.9d7064"
-            ]
-        ]
-    },
-    {
-        "id": "4a221c50.9d7064",
-        "type": "ui_template",
-        "z": "2186aa43.d8c126",
-        "group": "37c12700.472dea",
-        "name": "",
-        "order": 0,
-        "width": "0",
-        "height": "0",
-        "format": "<iframe id=\"myFrame\" height=\"600\" width=\"300\" src = \"\"></iframe>\n<script>\n(function(scope) {\n    // watch msg object from Node-RED\n    scope.$watch('msg', function(msg) {\n        // new message received\n        var x = document.getElementById('myFrame');\n        x.setAttribute('src', msg.payload); \n        });\n})(scope);\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "x": 633.5242805480957,
-        "y": 99.65628051757812,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "37879a78.39c2c6",
+        "id": "8e3ba94c.a947c8",
         "type": "mqtt in",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Corridor Light IN",
         "topic": "shellies/shelly1-942645/relay/0",
         "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 139.7951316833496,
-        "y": 420.89929151535034,
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 140,
+        "y": 320,
         "wires": [
             [
-                "fb5ec5cf.1abc38"
+                "522dd786.c6ed48"
             ]
         ]
     },
     {
-        "id": "41d5c4b1.0dddac",
+        "id": "1f1abbce.1ea2d4",
         "type": "mqtt out",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Corridor Light OUT",
         "topic": "shellies/shelly1-942645/relay/0/command",
         "qos": "",
         "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 514.0173492431641,
-        "y": 422.0104064941406,
+        "broker": "2aba1eb9.69a842",
+        "x": 590,
+        "y": 320,
         "wires": []
     },
     {
-        "id": "fb5ec5cf.1abc38",
+        "id": "522dd786.c6ed48",
         "type": "ui_switch",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "",
         "label": "Corridor",
-        "group": "eb2441b4.1ea54",
+        "group": "a4375fdd.d3a7c",
         "order": 6,
         "width": 0,
         "height": 0,
@@ -2456,63 +2365,64 @@
         "offvalueType": "str",
         "officon": "",
         "offcolor": "",
-        "x": 326.0173873901367,
-        "y": 422.0104010105133,
+        "x": 340,
+        "y": 320,
         "wires": [
             [
-                "41d5c4b1.0dddac"
+                "1f1abbce.1ea2d4"
             ]
         ]
     },
     {
-        "id": "76da33c1.1a60fc",
+        "id": "784d926b.7d63bc",
         "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Gang Licht",
         "topic": "",
-        "x": 363.0173797607422,
-        "y": 309.788236618042,
+        "x": 350,
+        "y": 320,
         "wires": [
             [
-                "ce1f41d5.f719e"
+                "a812c705.3d1cb8"
             ]
         ]
     },
     {
-        "id": "ce1f41d5.f719e",
+        "id": "a812c705.3d1cb8",
         "type": "mqtt out",
-        "z": "4b279b3e.b560d4",
+        "z": "9bfc0359.871c9",
         "name": "Corridor Light OUT",
         "topic": "shellies/shelly1-942645/relay/0/command",
         "qos": "",
         "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 585.017333984375,
-        "y": 308.7882080078125,
+        "broker": "2aba1eb9.69a842",
+        "x": 650,
+        "y": 320,
         "wires": []
     },
     {
-        "id": "78fa2931.c7aa58",
+        "id": "d0e1b001.ac392",
         "type": "mqtt in",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "H&T Temperature IN",
         "topic": "shellies/shellyht-58EEB4/sensor/temperature",
         "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 147.6666717529297,
-        "y": 808.600004196167,
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 150,
+        "y": 800,
         "wires": [
             [
-                "1ea6bb02.20d5c5"
+                "8a3b75e6.0641d8"
             ]
         ]
     },
     {
-        "id": "1ea6bb02.20d5c5",
+        "id": "8a3b75e6.0641d8",
         "type": "ui_gauge",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Temperature",
-        "group": "3ecfa11d.eb264e",
+        "group": "3d318576.51704a",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -2527,32 +2437,35 @@
             "#e6e600",
             "#ca3838"
         ],
-        "x": 389.1000061035156,
-        "y": 808.5999813079834,
+        "seg1": "",
+        "seg2": "",
+        "x": 350,
+        "y": 800,
         "wires": []
     },
     {
-        "id": "6bac1c1c.75cde4",
+        "id": "d044df15.6c2a9",
         "type": "mqtt in",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "H&T Humidity IN",
         "topic": "shellies/shellyht-58EEB4/sensor/humidity",
         "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 136.00000762939453,
-        "y": 880.5999870300293,
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 140,
+        "y": 860,
         "wires": [
             [
-                "de90dc13.aad05"
+                "77c3e63b.3a87d8"
             ]
         ]
     },
     {
-        "id": "788bbc1b.89b774",
+        "id": "b0972bd6.20c128",
         "type": "ui_gauge",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Humidity",
-        "group": "82ce3ed7.74938",
+        "group": "42efb286.84806c",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -2567,207 +2480,212 @@
             "#e6e600",
             "#ca3838"
         ],
-        "x": 462.00000190734863,
-        "y": 880.5999412536621,
+        "x": 460,
+        "y": 860,
         "wires": []
     },
     {
-        "id": "ce34d088.0e43c",
+        "id": "f20e5b25.c930e8",
         "type": "comment",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "H&T Bedroom Sensor",
         "info": "",
         "x": 160,
-        "y": 759.5999755859375,
+        "y": 760,
         "wires": []
     },
     {
-        "id": "aacaba00.2065e8",
+        "id": "ffdb497a.8456a8",
         "type": "template",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "insert into temperature",
         "field": "payload",
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
         "template": "insert into temperature_bedroom (temperature) values ($param1)",
-        "x": 667.3334045410156,
-        "y": 131.05556774139404,
+        "x": 660,
+        "y": 140,
         "wires": [
             [
-                "eb2fc448.ad19a8"
+                "3a05d870.6793e8"
             ]
         ]
     },
     {
-        "id": "eb2fc448.ad19a8",
+        "id": "3a05d870.6793e8",
         "type": "postgres",
-        "z": "1f564b0d.cd34c5",
-        "postgresdb": "6eb1c2a3.521c7c",
+        "z": "14dd6c8.d5f3494",
+        "d": true,
+        "postgresdb": "bacb1987.c1aa28",
         "name": "",
         "output": true,
         "perrow": false,
         "outputs": 1,
-        "x": 862.6943969726562,
-        "y": 144.69447135925293,
+        "x": 860,
+        "y": 160,
         "wires": [
             []
         ]
     },
     {
-        "id": "6f82a018.10df8",
+        "id": "2d7d61d2.19a6de",
         "type": "function",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "setup params for insert temperature",
         "func": "msg.queryParameters = msg.queryParameters || {};\nmsg.queryParameters.param1 = parseFloat(msg.payload);\nglobal.set('bedTemperature',msg.payload);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 400.0833740234375,
-        "y": 133.30556774139404,
+        "x": 380,
+        "y": 140,
         "wires": [
             [
-                "aacaba00.2065e8"
+                "ffdb497a.8456a8"
             ]
         ]
     },
     {
-        "id": "db5327c0.1216b8",
+        "id": "52bc828c.35a47c",
         "type": "mqtt in",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "H&T Temperature IN",
         "topic": "shellies/shellyht-58EEB4/sensor/temperature",
         "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 124.99996185302734,
-        "y": 131.61115884780884,
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 110,
+        "y": 140,
         "wires": [
             [
-                "6f82a018.10df8",
-                "9285fe37.a7f53"
+                "2d7d61d2.19a6de",
+                "a4d49818.995a48"
             ]
         ]
     },
     {
-        "id": "9a12f3e5.6c90f",
+        "id": "820145fb.ff3158",
         "type": "template",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "insert into humidity table",
         "field": "payload",
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
         "template": "insert into humidity_bedroom (humidity) values ($param1)",
-        "x": 666.0554733276367,
-        "y": 180.33337593078613,
+        "x": 650,
+        "y": 200,
         "wires": [
             [
-                "eb2fc448.ad19a8"
+                "3a05d870.6793e8"
             ]
         ]
     },
     {
-        "id": "233bba92.92c746",
+        "id": "2849adf2.bfbc42",
         "type": "function",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "setup params for insert humidity",
         "func": "var offset=global.get('bedHumOffset');\nmsg.queryParameters = msg.queryParameters || {};\nmsg.queryParameters.param1 = parseFloat(msg.payload-offset);\nglobal.set('bedHumidity',msg.payload-offset);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 392.8056411743164,
-        "y": 182.58336448669434,
+        "x": 390,
+        "y": 200,
         "wires": [
             [
-                "9a12f3e5.6c90f"
+                "820145fb.ff3158"
             ]
         ]
     },
     {
-        "id": "593a9239.6836ac",
+        "id": "b6a1da3a.1c2c58",
         "type": "mqtt in",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "H&T Humidity IN",
         "topic": "shellies/shellyht-58EEB4/sensor/humidity",
         "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 115.02777099609375,
-        "y": 181.00002670288086,
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 100,
+        "y": 200,
         "wires": [
             [
-                "233bba92.92c746",
-                "9285fe37.a7f53"
+                "2849adf2.bfbc42",
+                "a4d49818.995a48"
             ]
         ]
     },
     {
-        "id": "ab9377c2.b65d88",
+        "id": "b54c0257.93298",
         "type": "mqtt in",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "H&T Temperature IN",
         "topic": "shellies/shellyht-58EEB4/sensor/temperature",
         "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 142.99999237060547,
-        "y": 1025.9999914169312,
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 150,
+        "y": 980,
         "wires": [
             [
-                "b772fcd5.60aa2"
+                "c8688f90.6ee0e"
             ]
         ]
     },
     {
-        "id": "69c62960.d6abb8",
+        "id": "b53f296d.f0a288",
         "type": "mqtt in",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "H&T Humidity IN",
         "topic": "shellies/shellyht-58EEB4/sensor/humidity",
         "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 132.2222137451172,
-        "y": 1095.4444370269775,
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 140,
+        "y": 1040,
         "wires": [
             [
-                "2262d82b.8d4ce8"
+                "da184e2.de977b"
             ]
         ]
     },
     {
-        "id": "b772fcd5.60aa2",
+        "id": "c8688f90.6ee0e",
         "type": "function",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Create Topic Temperature",
         "func": "msg.topic='Temperature'\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 393.50000762939453,
-        "y": 1024.9999914169312,
+        "x": 370,
+        "y": 980,
         "wires": [
             [
-                "b72a2fc4.3d18c"
+                "299adbba.299984"
             ]
         ]
     },
     {
-        "id": "2262d82b.8d4ce8",
+        "id": "da184e2.de977b",
         "type": "function",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Create Topic Humidity",
         "func": "msg.topic='Humidity'\nvar offset=global.get('bedHumOffset');\nmsg.payload = msg.payload - offset;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 371.00000381469727,
-        "y": 1098.9999752044678,
+        "x": 360,
+        "y": 1040,
         "wires": [
             [
-                "ecaee482.280018"
+                "9dfb04b0.c6df38"
             ]
         ]
     },
     {
-        "id": "ecaee482.280018",
+        "id": "9dfb04b0.c6df38",
         "type": "ui_chart",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Bedroom Humidity",
-        "group": "82ce3ed7.74938",
+        "group": "42efb286.84806c",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -2783,35 +2701,37 @@
         "removeOlderPoints": "50",
         "removeOlderUnit": "604800",
         "cutout": 0,
-        "x": 615.5000038146973,
-        "y": 1099.0000457763672,
+        "outputs": 2,
+        "x": 590,
+        "y": 1040,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "732732a6.41e06c",
+        "id": "55318f8b.815e1",
         "type": "mqtt in",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "H&T Battery IN",
         "topic": "shellies/shellyht-58EEB4/sensor/battery",
         "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 136,
-        "y": 945.5999755859375,
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 140,
+        "y": 920,
         "wires": [
             [
-                "8ce34d79.0583f"
+                "bf82e6ee.d09058"
             ]
         ]
     },
     {
-        "id": "8ce34d79.0583f",
+        "id": "bf82e6ee.d09058",
         "type": "ui_gauge",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Battery H&T",
-        "group": "49693815.953628",
+        "group": "807503c.b0528",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -2826,28 +2746,28 @@
             "#e6e600",
             "#ca3838"
         ],
-        "x": 363.00000381469727,
-        "y": 946.5999822616577,
+        "x": 330,
+        "y": 920,
         "wires": []
     },
     {
-        "id": "67d7a32b.4cdebc",
+        "id": "f2e50a30.b94738",
         "type": "function",
-        "z": "e0207c67.5fe73",
+        "z": "f387a27c.808d3",
         "name": "BedTemperature",
         "func": "global.set('bedTemperature','');\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 378,
-        "y": 167,
+        "x": 370,
+        "y": 80,
         "wires": [
             []
         ]
     },
     {
-        "id": "6720086.c03f2f8",
+        "id": "299960ca.d3bbd",
         "type": "inject",
-        "z": "e0207c67.5fe73",
+        "z": "f387a27c.808d3",
         "name": "",
         "topic": "",
         "payload": "bedTemperature",
@@ -2855,32 +2775,32 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "x": 165,
-        "y": 167,
+        "x": 150,
+        "y": 80,
         "wires": [
             [
-                "67d7a32b.4cdebc"
+                "f2e50a30.b94738"
             ]
         ]
     },
     {
-        "id": "86314fcf.a3881",
+        "id": "8ae5c4a3.a8a208",
         "type": "function",
-        "z": "e0207c67.5fe73",
+        "z": "f387a27c.808d3",
         "name": "BedHumidity",
         "func": "global.set('bedHumidity','');\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 362,
-        "y": 221,
+        "x": 390,
+        "y": 120,
         "wires": [
             []
         ]
     },
     {
-        "id": "42263b24.d8ac84",
+        "id": "68af5998.3ea968",
         "type": "inject",
-        "z": "e0207c67.5fe73",
+        "z": "f387a27c.808d3",
         "name": "",
         "topic": "",
         "payload": "bedHumidity",
@@ -2888,72 +2808,20 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "x": 139,
-        "y": 221,
+        "x": 130,
+        "y": 120,
         "wires": [
             [
-                "86314fcf.a3881"
+                "8ae5c4a3.a8a208"
             ]
         ]
     },
     {
-        "id": "4cd6bd3b.217824",
-        "type": "amazon-echo-device",
-        "z": "4b279b3e.b560d4",
-        "name": "Schlafzimmersensor",
-        "topic": "",
-        "x": 354.00000762939453,
-        "y": 2675.5999422073364,
-        "wires": [
-            [
-                "e7448f9c.c4d0e"
-            ]
-        ]
-    },
-    {
-        "id": "ed038226.6912c",
-        "type": "comment",
-        "z": "4b279b3e.b560d4",
-        "name": "H&T Bedroom Sensor",
-        "info": "",
-        "x": 355.6000061035156,
-        "y": 2627.39990234375,
-        "wires": []
-    },
-    {
-        "id": "375ece9b.d68862",
-        "type": "telegram sender",
-        "z": "4b279b3e.b560d4",
-        "name": "",
-        "bot": "72efc60c.f74b78",
-        "x": 837.9332675933838,
-        "y": 2676.3999938964844,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e7448f9c.c4d0e",
-        "type": "function",
-        "z": "4b279b3e.b560d4",
-        "name": "create Telegram message",
-        "func": "msg.payload = {\n    chatId: '390062931',\n    type: 'message',\n    content: 'Bedroom \\nTemperature: ' + global.get('bedTemperature') + '°C \\n' + 'Humidity: ' + global.get('bedHumidity') + '%'\n}\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 610.333366394043,
-        "y": 2675.7334899902344,
-        "wires": [
-            [
-                "375ece9b.d68862"
-            ]
-        ]
-    },
-    {
-        "id": "b72a2fc4.3d18c",
+        "id": "299adbba.299984",
         "type": "ui_chart",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Bedroom Temperature",
-        "group": "3ecfa11d.eb264e",
+        "group": "3d318576.51704a",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -2969,51 +2837,52 @@
         "removeOlderPoints": "50",
         "removeOlderUnit": "604800",
         "cutout": 0,
-        "x": 646.017333984375,
-        "y": 1025.7882370948792,
+        "outputs": 2,
+        "x": 600,
+        "y": 980,
         "wires": [
             [],
             []
         ]
     },
     {
-        "id": "de90dc13.aad05",
+        "id": "77c3e63b.3a87d8",
         "type": "function",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "offset",
         "func": "var offset=global.get('bedHumOffset');\nmsg.payload = msg.payload - offset;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 313.5174026489258,
-        "y": 881.3576993942261,
+        "x": 310,
+        "y": 860,
         "wires": [
             [
-                "788bbc1b.89b774"
+                "b0972bd6.20c128"
             ]
         ]
     },
     {
-        "id": "8d5a313f.4de37",
+        "id": "df083d02.c3572",
         "type": "template",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "select from humidity",
         "field": "payload",
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
         "template": "select avg(humidity), min(humidity), max(humidity) from humidity_bedroom\nwhere date > current_date - interval '7 days'",
-        "x": 575.5729026794434,
-        "y": 240.34381675720215,
+        "x": 580,
+        "y": 260,
         "wires": [
             [
-                "d5d6e360.2dd1"
+                "58ee34b7.86f15c"
             ]
         ]
     },
     {
-        "id": "9285fe37.a7f53",
+        "id": "a4d49818.995a48",
         "type": "function",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "setup params",
         "func": "msg.queryParameters = msg.queryParameters || {};\nreturn msg;",
         "outputs": 1,
@@ -3022,16 +2891,16 @@
         "y": 304.593789100647,
         "wires": [
             [
-                "8d5a313f.4de37",
-                "852cbae4.6edc18"
+                "df083d02.c3572",
+                "f366e48e.2a3718"
             ]
         ]
     },
     {
-        "id": "6a9a2d99.bf8794",
+        "id": "49024466.74b72c",
         "type": "ui_text",
-        "z": "1f564b0d.cd34c5",
-        "group": "82ce3ed7.74938",
+        "z": "14dd6c8.d5f3494",
+        "group": "42efb286.84806c",
         "order": 4,
         "width": 0,
         "height": 0,
@@ -3039,15 +2908,15 @@
         "label": "AVG",
         "format": "{{msg.payload[0].avg}}",
         "layout": "row-spread",
-        "x": 1011.6319732666016,
-        "y": 216.1424560546875,
+        "x": 1020,
+        "y": 220,
         "wires": []
     },
     {
-        "id": "570f4577.7a291c",
+        "id": "448f4f8c.16c24",
         "type": "ui_text",
-        "z": "1f564b0d.cd34c5",
-        "group": "82ce3ed7.74938",
+        "z": "14dd6c8.d5f3494",
+        "group": "42efb286.84806c",
         "order": 5,
         "width": 0,
         "height": 0,
@@ -3055,15 +2924,15 @@
         "label": "MIN",
         "format": "{{msg.payload[0].min}}",
         "layout": "row-spread",
-        "x": 1008.6840362548828,
-        "y": 258.34380626678467,
+        "x": 1020,
+        "y": 260,
         "wires": []
     },
     {
-        "id": "56e1bb53.1b1e94",
+        "id": "f0e73e0c.60e04",
         "type": "ui_text",
-        "z": "1f564b0d.cd34c5",
-        "group": "82ce3ed7.74938",
+        "z": "14dd6c8.d5f3494",
+        "group": "42efb286.84806c",
         "order": 6,
         "width": 0,
         "height": 0,
@@ -3071,73 +2940,75 @@
         "label": "MAX",
         "format": "{{msg.payload[0].max}}",
         "layout": "row-spread",
-        "x": 1013.6840286254883,
-        "y": 299.3438034057617,
+        "x": 1020,
+        "y": 300,
         "wires": []
     },
     {
-        "id": "852cbae4.6edc18",
+        "id": "f366e48e.2a3718",
         "type": "template",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "select from temperature",
         "field": "payload",
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
         "template": "select avg(temperature), min(temperature), max(temperature) from temperature_bedroom\nwhere date > current_date - interval '7 days'",
-        "x": 579.572940826416,
-        "y": 361.34376335144043,
+        "x": 590,
+        "y": 340,
         "wires": [
             [
-                "d16939b1.037928"
+                "2611991c.0c2846"
             ]
         ]
     },
     {
-        "id": "d5d6e360.2dd1",
+        "id": "58ee34b7.86f15c",
         "type": "postgres",
-        "z": "1f564b0d.cd34c5",
-        "postgresdb": "6eb1c2a3.521c7c",
+        "z": "14dd6c8.d5f3494",
+        "d": true,
+        "postgresdb": "bacb1987.c1aa28",
         "name": "",
         "output": true,
         "perrow": false,
         "outputs": 1,
-        "x": 773.5729103088379,
-        "y": 240.34379482269287,
+        "x": 780,
+        "y": 260,
         "wires": [
             [
-                "6a9a2d99.bf8794",
-                "570f4577.7a291c",
-                "56e1bb53.1b1e94",
-                "72a66095.172b9"
+                "49024466.74b72c",
+                "448f4f8c.16c24",
+                "f0e73e0c.60e04",
+                "875572b5.67c77"
             ]
         ]
     },
     {
-        "id": "d16939b1.037928",
+        "id": "2611991c.0c2846",
         "type": "postgres",
-        "z": "1f564b0d.cd34c5",
-        "postgresdb": "6eb1c2a3.521c7c",
+        "z": "14dd6c8.d5f3494",
+        "d": true,
+        "postgresdb": "bacb1987.c1aa28",
         "name": "",
         "output": true,
         "perrow": false,
         "outputs": 1,
-        "x": 785.5729026794434,
-        "y": 360.3437747955322,
+        "x": 780,
+        "y": 340,
         "wires": [
             [
-                "27f228b1.0a9338",
-                "f9e432b1.b8f85",
-                "c64098bb.30c6c8",
-                "500c320e.1d0fdc"
+                "6a16242a.6957bc",
+                "ef9a7f47.4c2e5",
+                "97502026.21234",
+                "4a72b266.272fcc"
             ]
         ]
     },
     {
-        "id": "27f228b1.0a9338",
+        "id": "6a16242a.6957bc",
         "type": "ui_text",
-        "z": "1f564b0d.cd34c5",
-        "group": "3ecfa11d.eb264e",
+        "z": "14dd6c8.d5f3494",
+        "group": "3d318576.51704a",
         "order": 4,
         "width": 0,
         "height": 0,
@@ -3145,15 +3016,15 @@
         "label": "AVG",
         "format": "{{msg.payload[0].avg}}",
         "layout": "row-spread",
-        "x": 1022.128490447998,
-        "y": 347.34374809265137,
+        "x": 1030,
+        "y": 360,
         "wires": []
     },
     {
-        "id": "f9e432b1.b8f85",
+        "id": "ef9a7f47.4c2e5",
         "type": "ui_text",
-        "z": "1f564b0d.cd34c5",
-        "group": "3ecfa11d.eb264e",
+        "z": "14dd6c8.d5f3494",
+        "group": "3d318576.51704a",
         "order": 5,
         "width": 0,
         "height": 0,
@@ -3161,15 +3032,15 @@
         "label": "MIN",
         "format": "{{msg.payload[0].min}}",
         "layout": "row-spread",
-        "x": 1022.128490447998,
-        "y": 389.34374809265137,
+        "x": 1030,
+        "y": 400,
         "wires": []
     },
     {
-        "id": "c64098bb.30c6c8",
+        "id": "97502026.21234",
         "type": "ui_text",
-        "z": "1f564b0d.cd34c5",
-        "group": "3ecfa11d.eb264e",
+        "z": "14dd6c8.d5f3494",
+        "group": "3d318576.51704a",
         "order": 6,
         "width": 0,
         "height": 0,
@@ -3177,15 +3048,15 @@
         "label": "MAX:",
         "format": "{{msg.payload[0].max}}",
         "layout": "row-spread",
-        "x": 1022.128490447998,
-        "y": 433.34374809265137,
+        "x": 1030,
+        "y": 440,
         "wires": []
     },
     {
-        "id": "500c320e.1d0fdc",
+        "id": "4a72b266.272fcc",
         "type": "ui_text",
-        "z": "1f564b0d.cd34c5",
-        "group": "3ecfa11d.eb264e",
+        "z": "14dd6c8.d5f3494",
+        "group": "3d318576.51704a",
         "order": 3,
         "width": 0,
         "height": 0,
@@ -3193,15 +3064,15 @@
         "label": "Status from last 7 days",
         "format": "",
         "layout": "row-center",
-        "x": 1029.2952013015747,
-        "y": 477.031268119812,
+        "x": 1040,
+        "y": 480,
         "wires": []
     },
     {
-        "id": "72a66095.172b9",
+        "id": "875572b5.67c77",
         "type": "ui_text",
-        "z": "1f564b0d.cd34c5",
-        "group": "82ce3ed7.74938",
+        "z": "14dd6c8.d5f3494",
+        "group": "42efb286.84806c",
         "order": 3,
         "width": 0,
         "height": 0,
@@ -3209,90 +3080,92 @@
         "label": "Status from last 7 days",
         "format": "",
         "layout": "row-center",
-        "x": 1035.3021049499512,
-        "y": 179.02780723571777,
+        "x": 1040,
+        "y": 180,
         "wires": []
     },
     {
-        "id": "d0a688ef.6af858",
+        "id": "3cd68fe4.a57c7",
         "type": "mqtt in",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "H&T Battery IN",
         "topic": "shellies/shellyht-58EEB4/sensor/battery",
         "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 129.11112785339355,
-        "y": 1080.0000658035278,
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 100,
+        "y": 1060,
         "wires": [
             [
-                "1e77baf6.d12bf5"
+                "b38794e9.408c78"
             ]
         ]
     },
     {
-        "id": "1f995d01.400cf3",
+        "id": "cf82b0e8.329e3",
         "type": "mqtt in",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "H&T Humidity IN",
         "topic": "shellies/shellyht-58EEB4/sensor/humidity",
         "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 101.3333511352539,
-        "y": 633.1333103179932,
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 100,
+        "y": 620,
         "wires": [
             [
-                "d2b4eef3.9f311"
+                "e54584bd.94bb58"
             ]
         ]
     },
     {
-        "id": "e19e2895.4d9dd8",
+        "id": "87f4df7.4d9772",
         "type": "telegram sender",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "",
-        "bot": "72efc60c.f74b78",
-        "x": 689.8888740539551,
-        "y": 1082.2225270271301,
+        "bot": "3d3d8fed.cc3ab",
+        "x": 690,
+        "y": 1060,
         "wires": [
             []
         ]
     },
     {
-        "id": "1e77baf6.d12bf5",
+        "id": "b38794e9.408c78",
         "type": "function",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "Check Battery state",
         "func": "const batteryState = msg.payload;\nmsg.payload = {};\nif (batteryState  == 10)\n{\n    msg.payload = {\n        chatId: '390062931',\n        type: 'message',\n        content: 'Battery of Bedroom H&T sensor less then ' + batteryState + '%'\n    }\n}\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
-        "x": 351.28891944885254,
-        "y": 1080.2223320007324,
+        "x": 330,
+        "y": 1060,
         "wires": [
             [
-                "3a4e963c.4caf7a"
+                "292a65a7.58130a"
             ]
         ]
     },
     {
-        "id": "d2b4eef3.9f311",
+        "id": "e54584bd.94bb58",
         "type": "function",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "Send Humidity warning",
         "func": "var dehumState=global.get('dehumState');\nvar humidityValue =  global.get('bedHumidity');\nmsg.payload = {};\nif (humidityValue >= 60 && dehumState == 'off')\n{\n    msg.payload = {\n        chatId: '390062931',\n        type: 'message',\n        content: 'Humidity: ' +  humidityValue + '%. Dehumidifier started.',\n        action: true\n    }\n}\nif (humidityValue <= 50 && dehumState == 'on')\n{\n    msg.payload = {\n       action: false\n    }\n}\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
-        "x": 435.79522705078125,
-        "y": 632.5661582946777,
+        "x": 430,
+        "y": 620,
         "wires": [
             [
-                "727b8d3b.aa1a34"
+                "1f2f0294.bb442d"
             ]
         ]
     },
     {
-        "id": "727b8d3b.aa1a34",
+        "id": "1f2f0294.bb442d",
         "type": "switch",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "",
         "property": "payload.action",
         "propertyType": "msg",
@@ -3306,21 +3179,21 @@
         ],
         "checkall": "true",
         "outputs": 2,
-        "x": 612.9722747802734,
-        "y": 629.5835905075073,
+        "x": 610,
+        "y": 620,
         "wires": [
             [
-                "2cc71e8e.02bb42"
+                "505a4c7c.0a2b74"
             ],
             [
-                "739e6086.010b3"
+                "8a2a10ae.61f01"
             ]
         ]
     },
     {
-        "id": "3a4e963c.4caf7a",
+        "id": "292a65a7.58130a",
         "type": "switch",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "",
         "property": "payload.chatId",
         "propertyType": "msg",
@@ -3331,81 +3204,81 @@
         ],
         "checkall": "true",
         "outputs": 1,
-        "x": 524.4063053131104,
-        "y": 1082.1425457000732,
+        "x": 510,
+        "y": 1060,
         "wires": [
             [
-                "e19e2895.4d9dd8"
+                "87f4df7.4d9772"
             ]
         ]
     },
     {
-        "id": "1336744c.ce083c",
+        "id": "550458c6.ad4598",
         "type": "mqtt out",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "Dehumidifier OUT",
         "topic": "shellies/shelly1-B9DD3A/relay/0/command",
         "qos": "",
         "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 1225.777946472168,
-        "y": 617.3557949066162,
+        "broker": "2aba1eb9.69a842",
+        "x": 1210,
+        "y": 600,
         "wires": []
     },
     {
-        "id": "38476a23.46f266",
+        "id": "39c8ea8c.940ae6",
         "type": "function",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "create state for shelly",
         "func": "if (msg.payload) {\n    msg.payload = 'on';\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1006.6111450195312,
-        "y": 617.0222988128662,
+        "x": 1000,
+        "y": 600,
         "wires": [
             [
-                "1336744c.ce083c"
+                "550458c6.ad4598"
             ]
         ]
     },
     {
-        "id": "89e2f150.c48bf",
+        "id": "e0281d19.e90a5",
         "type": "comment",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "Humidity and Temperature To and From Postgres DB",
         "info": "",
-        "x": 213.05555725097656,
-        "y": 55.555564880371094,
+        "x": 210,
+        "y": 60,
         "wires": []
     },
     {
-        "id": "92f570ea.f2dd2",
+        "id": "87a8bebd.08a3",
         "type": "comment",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "H&T Battery Notification",
         "info": "",
-        "x": 136.99999809265137,
-        "y": 1038.1110696792603,
+        "x": 120,
+        "y": 1020,
         "wires": []
     },
     {
-        "id": "3ef9d1a6.2e348e",
+        "id": "5c286a77.f5cbf4",
         "type": "function",
-        "z": "e0207c67.5fe73",
+        "z": "f387a27c.808d3",
         "name": "BedHumidityOffset",
         "func": "global.set('bedHumOffset',10);\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 379.33331298828125,
-        "y": 348.00000381469727,
+        "x": 370,
+        "y": 200,
         "wires": [
             []
         ]
     },
     {
-        "id": "5c1f1c1b.0190e4",
+        "id": "8ae7aca3.4343c",
         "type": "inject",
-        "z": "e0207c67.5fe73",
+        "z": "f387a27c.808d3",
         "name": "",
         "topic": "",
         "payload": "bedHumOffset",
@@ -3413,118 +3286,119 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "x": 146.33331298828125,
-        "y": 348.00000381469727,
+        "x": 140,
+        "y": 200,
         "wires": [
             [
-                "3ef9d1a6.2e348e"
+                "5c286a77.f5cbf4"
             ]
         ]
     },
     {
-        "id": "394c1073.18b48",
+        "id": "c7d53b6.597eec8",
         "type": "comment",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "select",
         "info": "",
-        "x": 319.44441986083984,
-        "y": 265.55559730529785,
+        "x": 310,
+        "y": 260,
         "wires": []
     },
     {
-        "id": "60286bfa.655374",
+        "id": "618a6bce.c024b4",
         "type": "comment",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "insert",
         "info": "",
-        "x": 308.5555725097656,
-        "y": 94.6666841506958,
+        "x": 290,
+        "y": 100,
         "wires": []
     },
     {
-        "id": "2cc71e8e.02bb42",
+        "id": "505a4c7c.0a2b74",
         "type": "time-range-switch",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "",
         "lat": "",
         "lon": "",
         "startTime": "09:00",
         "endTime": "20:30",
-        "startOffset": "-60",
-        "endOffset": "-60",
-        "x": 777.1000595092773,
-        "y": 624.1999969482422,
+        "startOffset": "",
+        "endOffset": "",
+        "x": 790,
+        "y": 600,
         "wires": [
             [
-                "739e6086.010b3",
-                "36e46cfe.38d654",
-                "38476a23.46f266"
+                "8a2a10ae.61f01",
+                "71fbc899.fd04f8",
+                "39c8ea8c.940ae6"
             ],
             []
         ]
     },
     {
-        "id": "fea80488.e951f8",
+        "id": "c68731ee.e7961",
         "type": "function",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "create state for shelly",
         "func": "if (msg.payload) {\n    msg.payload = 'off';\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1666.8003425598145,
-        "y": 781.000048160553,
+        "x": 1660,
+        "y": 800,
         "wires": [
             [
-                "5017d34d.29b15c"
+                "21907e50.8103c2"
             ]
         ]
     },
     {
-        "id": "c6ce6a0e.b41628",
+        "id": "96856e01.1a2c2",
         "type": "mqtt in",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "Dehumidifier IN",
         "topic": "shellies/shelly1-B9DD3A/relay/0",
         "qos": "2",
-        "broker": "b7fc869.1c84e78",
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
         "x": 104.5,
         "y": 919.4000873565674,
         "wires": [
             [
-                "e76aab69.695b08"
+                "b0585c04.3b454"
             ]
         ]
     },
     {
-        "id": "53a32f76.3bf8f",
+        "id": "33187ec7.00f992",
         "type": "telegram sender",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "",
-        "bot": "72efc60c.f74b78",
-        "x": 1914.0004653930664,
-        "y": 633.3999483585358,
+        "bot": "3d3d8fed.cc3ab",
+        "x": 1910,
+        "y": 680,
         "wires": [
             []
         ]
     },
     {
-        "id": "2e48f6ad.a3b15a",
+        "id": "349f5d22.cf9ee2",
         "type": "function",
-        "z": "e0207c67.5fe73",
+        "z": "f387a27c.808d3",
         "name": "BedHumidity",
         "func": "global.set('dehumState','');\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 386.00000381469727,
-        "y": 293.00000381469727,
+        "x": 390,
+        "y": 160,
         "wires": [
             []
         ]
     },
     {
-        "id": "bc62a46d.7c5278",
+        "id": "85329705.e63bb8",
         "type": "inject",
-        "z": "e0207c67.5fe73",
+        "z": "f387a27c.808d3",
         "name": "",
         "topic": "",
         "payload": "dehumState",
@@ -3532,32 +3406,32 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "x": 136,
-        "y": 293,
+        "x": 130,
+        "y": 160,
         "wires": [
             [
-                "2e48f6ad.a3b15a"
+                "349f5d22.cf9ee2"
             ]
         ]
     },
     {
-        "id": "e76aab69.695b08",
+        "id": "b0585c04.3b454",
         "type": "function",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "get dehumidifier state",
         "func": "global.set('dehumState',msg.payload);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 330,
-        "y": 920.0000991821289,
+        "x": 340,
+        "y": 920,
         "wires": [
             []
         ]
     },
     {
-        "id": "ca283138.8cc93",
+        "id": "3b18c41d.a9123c",
         "type": "inject",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "Stop Dehumidifier",
         "topic": "",
         "payload": "",
@@ -3565,18 +3439,18 @@
         "repeat": "",
         "crontab": "35 19 * * *",
         "once": false,
-        "x": 587.1000442504883,
-        "y": 734.3999485969543,
+        "x": 570,
+        "y": 720,
         "wires": [
             [
-                "739e6086.010b3"
+                "8a2a10ae.61f01"
             ]
         ]
     },
     {
-        "id": "c5b11097.1d807",
+        "id": "8ebb720c.68a4",
         "type": "comment",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "Save Dehumidifier State",
         "info": "",
         "x": 131,
@@ -3584,19 +3458,19 @@
         "wires": []
     },
     {
-        "id": "91c92758.c79018",
+        "id": "526701d0.37735",
         "type": "comment",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "Stop Dehumidifier periodically",
         "info": "",
-        "x": 592.4999542236328,
-        "y": 687.7998638153076,
+        "x": 580,
+        "y": 680,
         "wires": []
     },
     {
-        "id": "739e6086.010b3",
+        "id": "8a2a10ae.61f01",
         "type": "interval-length",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "format": "human",
         "bytopic": false,
         "minimum": "",
@@ -3614,67 +3488,68 @@
         "timestampField": "timestamp",
         "repeatTimeout": false,
         "name": "run time",
-        "x": 935.5001106262207,
-        "y": 735.6001567840576,
+        "x": 920,
+        "y": 740,
         "wires": [
             [
-                "c376fc56.2027b"
+                "db131dbf.ccfd6"
             ],
             []
         ]
     },
     {
-        "id": "1b3893ff.f161dc",
+        "id": "b76646de.9f1128",
         "type": "function",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "crete telegram message",
         "func": "var time = msg.payload.interval;\nvar humidity = global.get('bedHumidity');\nmsg.payload = {};\nif (humidity >= 50)\n{\n    msg.payload = {\n    chatId: '390062931',\n    type: 'message',\n    content: 'Humidity: ' + humidity  + '%. Dehumidifier stopped to earlie because of bedtime. Run time: ' + time\n    }\n}\nmsg.payload = {\nchatId: '390062931',\ntype: 'message',\ncontent: 'Humidity: ' + humidity  + '%. Dehumidifier stopped after ' + time\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1687.3000793457031,
-        "y": 634.6001436710358,
+        "x": 1670,
+        "y": 680,
         "wires": [
             [
-                "53a32f76.3bf8f"
+                "33187ec7.00f992"
             ]
         ]
     },
     {
-        "id": "36e46cfe.38d654",
+        "id": "71fbc899.fd04f8",
         "type": "telegram sender",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "",
-        "bot": "72efc60c.f74b78",
-        "x": 1002.7999877929688,
-        "y": 654.6000804901123,
+        "bot": "3d3d8fed.cc3ab",
+        "x": 990,
+        "y": 640,
         "wires": [
             []
         ]
     },
     {
-        "id": "b27d75f9.e32608",
+        "id": "9f65eab4.50a958",
         "type": "inject",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "Start Dehumidifier",
         "topic": "",
         "payload": "",
         "payloadType": "date",
         "repeat": "",
-        "crontab": "05 08 * * *",
+        "crontab": "05 09 * * *",
         "once": false,
-        "x": 139,
-        "y": 730.0000104904175,
+        "onceDelay": "",
+        "x": 130,
+        "y": 720,
         "wires": [
             [
-                "d2b4eef3.9f311"
+                "e54584bd.94bb58"
             ]
         ]
     },
     {
-        "id": "5716261d.404e78",
+        "id": "4ab97f49.039a9",
         "type": "ui_text",
-        "z": "1f564b0d.cd34c5",
-        "group": "bec7ad3a.a6778",
+        "z": "14dd6c8.d5f3494",
+        "group": "d155d55d.4664c8",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -3682,105 +3557,107 @@
         "label": "Last run time",
         "format": "{{msg.payload.interval}} - {{msg.payload.date}}",
         "layout": "row-spread",
-        "x": 1638.5002670288086,
-        "y": 733.1999492645264,
+        "x": 1630,
+        "y": 760,
         "wires": []
     },
     {
-        "id": "5ccc96e6.5f8568",
+        "id": "992efc9a.4ad83",
         "type": "mqtt in",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Dehumidifier IN",
         "topic": "shellies/shelly1-B9DD3A/relay/0",
         "qos": "2",
-        "broker": "b7fc869.1c84e78",
-        "x": 141,
-        "y": 1257.4000244140625,
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 140,
+        "y": 660,
         "wires": [
             [
-                "6d25a590.62641c"
+                "11d80fe6.b89fc"
             ]
         ]
     },
     {
-        "id": "c572111d.bbd39",
+        "id": "4cc9133f.7128ec",
         "type": "comment",
-        "z": "99e96001.113a9",
+        "z": "7dbbdbf3.365084",
         "name": "Dehumidifier",
         "info": "",
-        "x": 122,
-        "y": 1204.4000244140625,
+        "x": 130,
+        "y": 620,
         "wires": []
     },
     {
-        "id": "1723b950.168a67",
+        "id": "feebcc56.19a65",
         "type": "template",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "insert into temperature",
         "field": "payload",
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
         "template": "insert into dehumidifier (run_time) values ($param1)",
-        "x": 1955.0002746582031,
-        "y": 686.9999980926514,
+        "x": 1960,
+        "y": 720,
         "wires": [
             [
-                "fe2de155.657ff"
+                "96771e49.14b8f"
             ]
         ]
     },
     {
-        "id": "fe2de155.657ff",
+        "id": "96771e49.14b8f",
         "type": "postgres",
-        "z": "1f564b0d.cd34c5",
-        "postgresdb": "6eb1c2a3.521c7c",
+        "z": "14dd6c8.d5f3494",
+        "d": true,
+        "postgresdb": "bacb1987.c1aa28",
         "name": "",
         "output": true,
         "perrow": false,
         "outputs": 1,
-        "x": 2135.3614082336426,
-        "y": 686.6389617919922,
+        "x": 2140,
+        "y": 720,
         "wires": [
             []
         ]
     },
     {
-        "id": "ae4b9c8.ca4606",
+        "id": "92b009f4.c72ef8",
         "type": "function",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "setup params for insert run time",
         "func": "msg.queryParameters = msg.queryParameters || {};\nmsg.queryParameters.param1 = msg.payload.interval;\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
-        "x": 1700.7501678466797,
-        "y": 687.2499980926514,
+        "x": 1690,
+        "y": 720,
         "wires": [
             [
-                "1723b950.168a67"
+                "feebcc56.19a65"
             ]
         ]
     },
     {
-        "id": "c376fc56.2027b",
+        "id": "db131dbf.ccfd6",
         "type": "function",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "get dehumstate",
         "func": "var time = msg.payload;\nvar date = new Date().toISOString().slice(0,10);\nmsg.payload = {};\nmsg.payload = {\n    interval: time,\n    dehumState: global.get('dehumState'),\n    date: date\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1160.1002731323242,
-        "y": 730.6002173423767,
+        "x": 1120,
+        "y": 740,
         "wires": [
             [
-                "27efdc2b.144d34"
+                "b3189ff5.c4461"
             ]
         ]
     },
     {
-        "id": "27efdc2b.144d34",
+        "id": "b3189ff5.c4461",
         "type": "switch",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "check dehumstate",
         "property": "payload.dehumState",
         "propertyType": "msg",
@@ -3793,32 +3670,32 @@
         ],
         "checkall": "true",
         "outputs": 1,
-        "x": 1354.100154876709,
-        "y": 730.6001915931702,
+        "x": 1350,
+        "y": 740,
         "wires": [
             [
-                "1b3893ff.f161dc",
-                "ae4b9c8.ca4606",
-                "5716261d.404e78",
-                "fea80488.e951f8"
+                "b76646de.9f1128",
+                "92b009f4.c72ef8",
+                "4ab97f49.039a9",
+                "c68731ee.e7961"
             ]
         ]
     },
     {
-        "id": "92565edb.f7967",
+        "id": "5025da71.0cb244",
         "type": "comment",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "needed because injection is made by the time range function",
         "info": "",
-        "x": 1256.5000305175781,
-        "y": 693.6001319885254,
+        "x": 1260,
+        "y": 700,
         "wires": []
     },
     {
-        "id": "6d25a590.62641c",
+        "id": "11d80fe6.b89fc",
         "type": "ui_text",
-        "z": "99e96001.113a9",
-        "group": "bec7ad3a.a6778",
+        "z": "7dbbdbf3.365084",
+        "group": "d155d55d.4664c8",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -3826,41 +3703,41 @@
         "label": "Status",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 319.10000228881836,
-        "y": 1260.2001399993896,
+        "x": 310,
+        "y": 660,
         "wires": []
     },
     {
-        "id": "88cac95f.687d98",
+        "id": "179938ad.b20247",
         "type": "comment",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "Start Dehumidifier periodically",
         "info": "",
-        "x": 136.99999237060547,
-        "y": 686.8000106811523,
+        "x": 140,
+        "y": 680,
         "wires": []
     },
     {
-        "id": "5017d34d.29b15c",
+        "id": "21907e50.8103c2",
         "type": "mqtt out",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "Dehumidifier OUT",
         "topic": "shellies/shelly1-B9DD3A/relay/0/command",
         "qos": "",
         "retain": "",
-        "broker": "b7fc869.1c84e78",
-        "x": 1893.8004684448242,
-        "y": 781.3999500274658,
+        "broker": "2aba1eb9.69a842",
+        "x": 1890,
+        "y": 800,
         "wires": []
     },
     {
-        "id": "528191ec.72ee8",
+        "id": "21182e2f.01cf52",
         "type": "comment",
-        "z": "1f564b0d.cd34c5",
+        "z": "14dd6c8.d5f3494",
         "name": "Dehumidifier Logic",
         "info": "",
-        "x": 111,
-        "y": 577,
+        "x": 110,
+        "y": 580,
         "wires": []
     }
 ]

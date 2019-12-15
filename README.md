@@ -1,6 +1,6 @@
 # SmartHome Project
 
-The Project can run on a Raspberry Pi. 
+The Project can run on a Raspberry Pi 4 (4GB). 
 
 #### Node-RED:
 Use the smartHome.json file to import all the configs into Node-RED. Project was made with Node-RED Version v.0.16.1
@@ -16,5 +16,16 @@ npm install node-red-contrib-interval-length
 npm install node-red-contrib-time-range-switch
 ```
 
-#### Docker:
-docker-compose.yml file to pull the docker images. Config of parameters and properties are made.
+#### Eclipse Mosquitto:
+Used to build mqtt broker connection to shelly devices and sonoff devices.
+
+#### Portainer:
+To maintain docker via a WebInterface.
+
+#### NetData:
+Used to get out a short summary of the performance of the host system.
+
+#### Grafana/Telegraf/InfluxDb:
+Used for monitoring of performance from host system and docker system.
+Each docker Container can be monitored in detail.
+Telegraf is writing the data into influxdb. From there Grafana is building the dashboards.

@@ -368,7 +368,7 @@
         "func": "global.set('dreamboxip','http://192.168.0.199');\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 390,
+        "x": 470,
         "y": 100,
         "wires": [
             []
@@ -2477,7 +2477,7 @@
         "datatype": "auto",
         "broker": "2aba1eb9.69a842",
         "x": 150,
-        "y": 800,
+        "y": 700,
         "wires": [
             [
                 "8a3b75e6.0641d8"
@@ -2507,7 +2507,7 @@
         "seg1": "",
         "seg2": "",
         "x": 390,
-        "y": 800,
+        "y": 700,
         "wires": []
     },
     {
@@ -2520,7 +2520,7 @@
         "datatype": "auto",
         "broker": "2aba1eb9.69a842",
         "x": 140,
-        "y": 860,
+        "y": 760,
         "wires": [
             [
                 "77c3e63b.3a87d8"
@@ -2550,7 +2550,7 @@
         "seg1": "",
         "seg2": "",
         "x": 500,
-        "y": 860,
+        "y": 760,
         "wires": []
     },
     {
@@ -2560,7 +2560,7 @@
         "name": "H&T Bedroom Sensor",
         "info": "",
         "x": 160,
-        "y": 760,
+        "y": 660,
         "wires": []
     },
     {
@@ -2588,7 +2588,7 @@
         "datatype": "auto",
         "broker": "2aba1eb9.69a842",
         "x": 150,
-        "y": 980,
+        "y": 880,
         "wires": [
             [
                 "c8688f90.6ee0e"
@@ -2605,7 +2605,7 @@
         "datatype": "auto",
         "broker": "2aba1eb9.69a842",
         "x": 140,
-        "y": 1040,
+        "y": 940,
         "wires": [
             [
                 "da184e2.de977b"
@@ -2621,7 +2621,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 370,
-        "y": 980,
+        "y": 880,
         "wires": [
             [
                 "299adbba.299984"
@@ -2637,7 +2637,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 360,
-        "y": 1040,
+        "y": 940,
         "wires": [
             [
                 "9dfb04b0.c6df38"
@@ -2681,7 +2681,7 @@
         "useOldStyle": true,
         "outputs": 1,
         "x": 620,
-        "y": 1040,
+        "y": 940,
         "wires": [
             []
         ]
@@ -2696,7 +2696,7 @@
         "datatype": "auto",
         "broker": "2aba1eb9.69a842",
         "x": 140,
-        "y": 920,
+        "y": 820,
         "wires": [
             [
                 "bf82e6ee.d09058"
@@ -2726,7 +2726,7 @@
         "seg1": "",
         "seg2": "",
         "x": 370,
-        "y": 920,
+        "y": 820,
         "wires": []
     },
     {
@@ -2737,7 +2737,7 @@
         "func": "global.set('bedTemperature','');\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 370,
+        "x": 460,
         "y": 140,
         "wires": [
             []
@@ -2770,7 +2770,7 @@
         "func": "global.set('bedHumidity','');\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 390,
+        "x": 470,
         "y": 180,
         "wires": [
             []
@@ -2832,7 +2832,7 @@
         "useOldStyle": true,
         "outputs": 1,
         "x": 630,
-        "y": 980,
+        "y": 880,
         "wires": [
             []
         ]
@@ -2846,7 +2846,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 310,
-        "y": 860,
+        "y": 760,
         "wires": [
             [
                 "b0972bd6.20c128"
@@ -2857,9 +2857,9 @@
         "id": "e0281d19.e90a5",
         "type": "comment",
         "z": "14dd6c8.d5f3494",
-        "name": "insert to DB",
+        "name": "insert to DB sensor values",
         "info": "",
-        "x": 90,
+        "x": 130,
         "y": 60,
         "wires": []
     },
@@ -2871,7 +2871,7 @@
         "func": "global.set('bedHumOffset',10);\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 370,
+        "x": 450,
         "y": 260,
         "wires": [
             []
@@ -2904,7 +2904,7 @@
         "func": "global.set('dehumState','');\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 390,
+        "x": 470,
         "y": 220,
         "wires": [
             []
@@ -2930,49 +2930,6 @@
         ]
     },
     {
-        "id": "992efc9a.4ad83",
-        "type": "mqtt in",
-        "z": "7dbbdbf3.365084",
-        "name": "Dehumidifier IN",
-        "topic": "shellies/shelly1-B9DD3A/relay/0",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "2aba1eb9.69a842",
-        "x": 140,
-        "y": 660,
-        "wires": [
-            [
-                "11d80fe6.b89fc"
-            ]
-        ]
-    },
-    {
-        "id": "4cc9133f.7128ec",
-        "type": "comment",
-        "z": "7dbbdbf3.365084",
-        "name": "Dehumidifier",
-        "info": "",
-        "x": 130,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "11d80fe6.b89fc",
-        "type": "ui_text",
-        "z": "7dbbdbf3.365084",
-        "group": "d155d55d.4664c8",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Status",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 310,
-        "y": 660,
-        "wires": []
-    },
-    {
         "id": "e02c79b9.be8138",
         "type": "mqtt in",
         "z": "7dbbdbf3.365084",
@@ -2982,7 +2939,7 @@
         "datatype": "json",
         "broker": "2aba1eb9.69a842",
         "x": 180,
-        "y": 1220,
+        "y": 1120,
         "wires": [
             [
                 "4f7cade6.043b74",
@@ -3017,7 +2974,7 @@
         "seg1": "",
         "seg2": "",
         "x": 770,
-        "y": 1220,
+        "y": 1120,
         "wires": []
     },
     {
@@ -3039,7 +2996,7 @@
         "ymin": "",
         "ymax": "",
         "removeOlder": "1",
-        "removeOlderPoints": "50",
+        "removeOlderPoints": "150",
         "removeOlderUnit": "604800",
         "cutout": 0,
         "useOneColor": false,
@@ -3057,7 +3014,7 @@
         "useOldStyle": true,
         "outputs": 1,
         "x": 800,
-        "y": 1340,
+        "y": 1240,
         "wires": [
             []
         ]
@@ -3069,7 +3026,7 @@
         "name": "BME280 Sensor Sonoff Plug",
         "info": "",
         "x": 180,
-        "y": 1180,
+        "y": 1080,
         "wires": []
     },
     {
@@ -3081,7 +3038,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 460,
-        "y": 1220,
+        "y": 1120,
         "wires": [
             [
                 "3fbbb962.6c7c76"
@@ -3097,7 +3054,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 440,
-        "y": 1260,
+        "y": 1160,
         "wires": [
             [
                 "295a034f.41864c"
@@ -3113,7 +3070,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 470,
-        "y": 1340,
+        "y": 1240,
         "wires": [
             [
                 "d066f18b.1f778"
@@ -3129,7 +3086,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 460,
-        "y": 1380,
+        "y": 1280,
         "wires": [
             [
                 "389facf0.7fe1f4"
@@ -3155,7 +3112,7 @@
         "ymin": "",
         "ymax": "",
         "removeOlder": "1",
-        "removeOlderPoints": "50",
+        "removeOlderPoints": "150",
         "removeOlderUnit": "604800",
         "cutout": 0,
         "useOneColor": false,
@@ -3173,7 +3130,7 @@
         "useOldStyle": true,
         "outputs": 1,
         "x": 780,
-        "y": 1380,
+        "y": 1280,
         "wires": [
             []
         ]
@@ -3187,7 +3144,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 460,
-        "y": 1420,
+        "y": 1320,
         "wires": [
             [
                 "2244dc8f.477504"
@@ -3213,7 +3170,7 @@
         "ymin": "",
         "ymax": "",
         "removeOlder": "1",
-        "removeOlderPoints": "50",
+        "removeOlderPoints": "150",
         "removeOlderUnit": "604800",
         "cutout": 0,
         "useOneColor": false,
@@ -3231,7 +3188,7 @@
         "useOldStyle": true,
         "outputs": 1,
         "x": 780,
-        "y": 1420,
+        "y": 1320,
         "wires": [
             []
         ]
@@ -3259,7 +3216,7 @@
         "seg1": "",
         "seg2": "",
         "x": 760,
-        "y": 1260,
+        "y": 1160,
         "wires": []
     },
     {
@@ -3271,7 +3228,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 440,
-        "y": 1300,
+        "y": 1200,
         "wires": [
             [
                 "9912eeb5.468a1"
@@ -3301,7 +3258,7 @@
         "seg1": "",
         "seg2": "",
         "x": 760,
-        "y": 1300,
+        "y": 1200,
         "wires": []
     },
     {
@@ -3335,7 +3292,7 @@
         "datatype": "auto",
         "broker": "2aba1eb9.69a842",
         "x": 110,
-        "y": 520,
+        "y": 660,
         "wires": [
             [
                 "1e5d7034.64cf2"
@@ -3352,7 +3309,7 @@
         "datatype": "auto",
         "broker": "2aba1eb9.69a842",
         "x": 100,
-        "y": 580,
+        "y": 720,
         "wires": [
             [
                 "ed34477a.047578"
@@ -3368,7 +3325,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 460,
-        "y": 520,
+        "y": 660,
         "wires": [
             []
         ]
@@ -3382,7 +3339,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 470,
-        "y": 580,
+        "y": 720,
         "wires": [
             []
         ]
@@ -3394,7 +3351,7 @@
         "name": "Save input values global",
         "info": "",
         "x": 130,
-        "y": 480,
+        "y": 620,
         "wires": []
     },
     {
@@ -3485,7 +3442,7 @@
         "datatype": "json",
         "broker": "2aba1eb9.69a842",
         "x": 140,
-        "y": 640,
+        "y": 780,
         "wires": [
             [
                 "b73ce511.4e7678",
@@ -3503,7 +3460,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 450,
-        "y": 640,
+        "y": 780,
         "wires": [
             []
         ]
@@ -3517,7 +3474,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 460,
-        "y": 680,
+        "y": 820,
         "wires": [
             []
         ]
@@ -3531,7 +3488,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 440,
-        "y": 720,
+        "y": 860,
         "wires": [
             []
         ]
@@ -3544,7 +3501,7 @@
         "func": "global.set('livingTemperature','');\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 370,
+        "x": 450,
         "y": 300,
         "wires": [
             []
@@ -3578,7 +3535,7 @@
         "func": "global.set('livingHumidity','');\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 380,
+        "x": 460,
         "y": 340,
         "wires": [
             []
@@ -3612,7 +3569,7 @@
         "func": "global.set('livingPressure','');\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 380,
+        "x": 460,
         "y": 380,
         "wires": [
             []
@@ -3647,7 +3604,7 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "select avg(temperature) as avg_temp, min(temperature) as min_temp, max(temperature) as max_temp, avg(humidity) as avg_humi, min(humidity) as min_humi, max(humidity) as max_humi from state_bedroom\nwhere date > current_date - interval '7 days'",
+        "template": "select avg(temperature) as avg_temp, min(temperature) as min_temp, max(temperature) as max_temp, avg(humidity) as avg_humi, min(humidity) as min_humi, max(humidity) as max_humi from state_bedroom\nwhere date > current_date - interval '1 days'",
         "x": 560,
         "y": 180,
         "wires": [
@@ -3914,7 +3871,7 @@
         "type": "mqtt out",
         "z": "8ae7b656.b0c538",
         "name": "Dehumidifier OUT",
-        "topic": "shellies/shelly1-B9DD3A/relay/0/command",
+        "topic": "shellies/shelly1pm-76B578/relay/0/command",
         "qos": "",
         "retain": "",
         "broker": "2aba1eb9.69a842",
@@ -4052,7 +4009,7 @@
         "type": "function",
         "z": "8ae7b656.b0c538",
         "name": "crete telegram message",
-        "func": "var time = msg.payload.interval;\nvar humidity = global.get('bedHumidity');\nmsg.payload = {};\nif (humidity >= 50)\n{\n    msg.payload = {\n    chatId: '390062931',\n    type: 'message',\n    content: 'Humidity: ' + humidity  + '%. Dehumidifier stopped to earlie because of bedtime. Run time: ' + time\n    }\n}\nmsg.payload = {\nchatId: '390062931',\ntype: 'message',\ncontent: 'Humidity: ' + humidity  + '%. Dehumidifier stopped after ' + time\n}\nreturn msg;",
+        "func": "var time = msg.payload.interval;\nvar humidity = global.get('bedHumidity');\nvar costs = parseFloat(global.get('currentCostDehumidifier') - global.get('oldCostDehumidifier')).toFixed(2);\nvar kwhusage = parseFloat(global.get('currentKWhDehumidifier') - global.get('oldKWhDehumidifier')).toFixed(2);\nmsg.payload = {};\nif (humidity >= 50)\n{\n    msg.payload = {\n    chatId: '390062931',\n    type: 'message',\n    content: 'Humidity: ' + humidity  + '%. Dehumidifier stopped to earlie because of bedtime. Run time: ' + time + '. Costs: ' + costs + '€. Usage: ' + kwhusage + ' KWh.'\n    }\n}\nmsg.payload = {\nchatId: '390062931',\ntype: 'message',\ncontent: 'Humidity: ' + humidity  + '%. Dehumidifier stopped after ' + time + '. Costs: ' + costs + '€. Usage: ' + kwhusage + ' KWh.'\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 1690,
@@ -4120,7 +4077,7 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "insert into dehumidifier (run_time) values ($param1)",
+        "template": "insert into state_dehumidifier (run_duration, costs, kwhusage) values ($param1, $param2, $param3)",
         "x": 1980,
         "y": 200,
         "wires": [
@@ -4149,7 +4106,7 @@
         "type": "function",
         "z": "8ae7b656.b0c538",
         "name": "setup params for insert run time",
-        "func": "msg.queryParameters = msg.queryParameters || {};\nmsg.queryParameters.param1 = msg.payload.interval;\nreturn msg;\n\n",
+        "func": "msg.queryParameters = msg.queryParameters || {};\nmsg.queryParameters.param1 = msg.payload.interval;\nmsg.queryParameters.param2 = global.get('currentCostDehumidifier') - global.get('oldCostDehumidifier');\nmsg.queryParameters.param3 = global.get('currentKWhDehumidifier') - global.get('oldKWhDehumidifier');\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "x": 1710,
@@ -4228,7 +4185,7 @@
         "type": "mqtt out",
         "z": "8ae7b656.b0c538",
         "name": "Dehumidifier OUT",
-        "topic": "shellies/shelly1-B9DD3A/relay/0/command",
+        "topic": "shellies/shelly1pm-76B578/relay/0/command",
         "qos": "",
         "retain": "",
         "broker": "2aba1eb9.69a842",
@@ -4251,12 +4208,12 @@
         "type": "mqtt in",
         "z": "f387a27c.808d3",
         "name": "Dehumidifier IN",
-        "topic": "shellies/shelly1-B9DD3A/relay/0",
+        "topic": "shellies/shelly1pm-76B578/relay/0",
         "qos": "2",
         "datatype": "auto",
         "broker": "2aba1eb9.69a842",
         "x": 100,
-        "y": 780,
+        "y": 920,
         "wires": [
             [
                 "676b2b8a.cee034"
@@ -4272,7 +4229,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 450,
-        "y": 780,
+        "y": 920,
         "wires": [
             []
         ]
@@ -4287,7 +4244,7 @@
         "datatype": "auto",
         "broker": "2aba1eb9.69a842",
         "x": 100,
-        "y": 960,
+        "y": 1060,
         "wires": [
             [
                 "c2b23085.bde5f"
@@ -4301,7 +4258,7 @@
         "name": "",
         "bot": "3d3d8fed.cc3ab",
         "x": 690,
-        "y": 960,
+        "y": 1060,
         "wires": [
             []
         ]
@@ -4315,7 +4272,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 330,
-        "y": 960,
+        "y": 1060,
         "wires": [
             [
                 "8d313252.86d8"
@@ -4337,7 +4294,7 @@
         "checkall": "true",
         "outputs": 1,
         "x": 510,
-        "y": 960,
+        "y": 1060,
         "wires": [
             [
                 "66895466.daf0ec"
@@ -4351,7 +4308,7 @@
         "name": "H&T Battery Notification",
         "info": "",
         "x": 120,
-        "y": 920,
+        "y": 1020,
         "wires": []
     },
     {
@@ -4378,13 +4335,13 @@
         "id": "46798401.e2dcdc",
         "type": "template",
         "z": "9f53e779.d130a8",
-        "name": "select from bedroom",
+        "name": "select from livingroom",
         "field": "payload",
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "select avg(temperature) as avg_temp, min(temperature) as min_temp, max(temperature) as max_temp, avg(humidity) as avg_humi, min(humidity) as min_humi, max(humidity) as max_humi, avg(pressure) as avg_press, min(pressure) as min_press, max(pressure) as max_press from state_livingroom\nwhere date > current_date - interval '7 days'",
-        "x": 500,
+        "template": "select avg(temperature) as avg_temp, min(temperature) as min_temp, max(temperature) as max_temp, avg(humidity) as avg_humi, min(humidity) as min_humi, max(humidity) as max_humi, avg(pressure) as avg_press, min(pressure) as min_press, max(pressure) as max_press from state_livingroom\nwhere date > current_date - interval '1 days'",
+        "x": 520,
         "y": 1020,
         "wires": [
             [
@@ -5116,6 +5073,310 @@
         "wires": [
             [
                 "934294f7.e63f18"
+            ]
+        ]
+    },
+    {
+        "id": "46d9f14e.4b08a",
+        "type": "mqtt in",
+        "z": "7dbbdbf3.365084",
+        "name": "Dehumidifier IN",
+        "topic": "shellies/shelly1pm-76B578/relay/0/power",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 120,
+        "y": 1480,
+        "wires": [
+            [
+                "f868e6a5.3a7d18"
+            ]
+        ]
+    },
+    {
+        "id": "f868e6a5.3a7d18",
+        "type": "ui_gauge",
+        "z": "7dbbdbf3.365084",
+        "name": "Watt usage",
+        "group": "d155d55d.4664c8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Watt",
+        "label": "W",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "350",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 550,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "7691b590.cb687c",
+        "type": "mqtt in",
+        "z": "7dbbdbf3.365084",
+        "name": "Dehumidifier IN",
+        "topic": "shellies/shelly1pm-76B578/relay/0/energy",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 120,
+        "y": 1540,
+        "wires": [
+            [
+                "39b236dd.03c8ea",
+                "e07b4650.34c078"
+            ]
+        ]
+    },
+    {
+        "id": "79fab9ee.8d60b8",
+        "type": "ui_text",
+        "z": "7dbbdbf3.365084",
+        "group": "d155d55d.4664c8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Total usage in KWh",
+        "label": "Total usage in KWh",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 730,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "9eea7923.63fb68",
+        "type": "mqtt in",
+        "z": "7dbbdbf3.365084",
+        "name": "Dehumidifier IN",
+        "topic": "shellies/shelly1pm-76B578/temperature",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 120,
+        "y": 1640,
+        "wires": [
+            [
+                "3ef37bb4.889e24"
+            ]
+        ]
+    },
+    {
+        "id": "3ef37bb4.889e24",
+        "type": "ui_text",
+        "z": "7dbbdbf3.365084",
+        "group": "d155d55d.4664c8",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Internal device temperature",
+        "label": "Internal device temperature",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 600,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "3b1e2336.d3c51c",
+        "type": "comment",
+        "z": "7dbbdbf3.365084",
+        "name": "Shelly 1PM Dehumidifier",
+        "info": "",
+        "x": 150,
+        "y": 1440,
+        "wires": []
+    },
+    {
+        "id": "39b236dd.03c8ea",
+        "type": "function",
+        "z": "7dbbdbf3.365084",
+        "name": "convert Wmin in KWhours and set global variables",
+        "func": "msg.payload = parseFloat((msg.payload * 0.017) * 0.001).toFixed(2);\nvar dehumState=global.get('dehumState');\nif (dehumState == 'on') {\n    global.set('currentKWhDehumidifier',msg.payload);\n}\nif (dehumState == 'off') {\n    global.set('oldKWhDehumidifier',msg.payload);\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 430,
+        "y": 1540,
+        "wires": [
+            [
+                "79fab9ee.8d60b8"
+            ]
+        ]
+    },
+    {
+        "id": "e39b97d2.f937b8",
+        "type": "ui_text",
+        "z": "7dbbdbf3.365084",
+        "group": "d155d55d.4664c8",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Total usage in KWh",
+        "label": "Total costs in €",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 730,
+        "y": 1580,
+        "wires": []
+    },
+    {
+        "id": "e07b4650.34c078",
+        "type": "function",
+        "z": "7dbbdbf3.365084",
+        "name": "calculate total costs and set global variables",
+        "func": "msg.payload = parseFloat(((msg.payload * 0.017) * 0.001) * 0.23).toFixed(2);\nvar dehumState=global.get('dehumState');\nif (dehumState == 'on') {\n    global.set('currentCostDehumidifier',msg.payload);\n}\nif (dehumState == 'off') {\n    global.set('oldCostDehumidifier',msg.payload);\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 410,
+        "y": 1580,
+        "wires": [
+            [
+                "e39b97d2.f937b8"
+            ]
+        ]
+    },
+    {
+        "id": "a63b698a.ef5028",
+        "type": "function",
+        "z": "f387a27c.808d3",
+        "name": "CurrentCostDehumidifier",
+        "func": "global.set('currentCostDehumidifier','');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 430,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "21441b28.a7f804",
+        "type": "inject",
+        "z": "f387a27c.808d3",
+        "name": "",
+        "topic": "",
+        "payload": "currentCostDehumidifier",
+        "payloadType": "global",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "x": 170,
+        "y": 420,
+        "wires": [
+            [
+                "a63b698a.ef5028"
+            ]
+        ]
+    },
+    {
+        "id": "ebf16ed5.08b0a",
+        "type": "function",
+        "z": "f387a27c.808d3",
+        "name": "OldCostDehumidifier",
+        "func": "global.set('oldCostDehumidifier','');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 440,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "19fe547f.5748ac",
+        "type": "inject",
+        "z": "f387a27c.808d3",
+        "name": "",
+        "topic": "",
+        "payload": "oldCostDehumidifier",
+        "payloadType": "global",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "x": 160,
+        "y": 460,
+        "wires": [
+            [
+                "ebf16ed5.08b0a"
+            ]
+        ]
+    },
+    {
+        "id": "6132d82f.bdd2f8",
+        "type": "function",
+        "z": "f387a27c.808d3",
+        "name": "CurrentKWhDehumidifier",
+        "func": "global.set('currentKWhDehumidifier','');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 430,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f9a7ed10.3469a",
+        "type": "inject",
+        "z": "f387a27c.808d3",
+        "name": "",
+        "topic": "",
+        "payload": "currentKWhDehumidifier",
+        "payloadType": "global",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "x": 170,
+        "y": 500,
+        "wires": [
+            [
+                "6132d82f.bdd2f8"
+            ]
+        ]
+    },
+    {
+        "id": "8126dc33.e6241",
+        "type": "function",
+        "z": "f387a27c.808d3",
+        "name": "OldKWhDehumidifier",
+        "func": "global.set('oldKWhDehumidifier','');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 440,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b0aa6b90.a62338",
+        "type": "inject",
+        "z": "f387a27c.808d3",
+        "name": "",
+        "topic": "",
+        "payload": "oldKWhDehumidifier",
+        "payloadType": "global",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "x": 160,
+        "y": 540,
+        "wires": [
+            [
+                "8126dc33.e6241"
             ]
         ]
     }

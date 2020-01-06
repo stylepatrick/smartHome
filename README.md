@@ -1,4 +1,4 @@
-# SmartHome Project
+# SmartHome Project with Sonoff and Shelly devices works also with Amazon Echo.
 
 The Project can run on a Raspberry Pi 4 (4GB). 
 

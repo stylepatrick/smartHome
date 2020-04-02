@@ -48,7 +48,7 @@
             },
             "darkTheme": {
                 "default": "#097479",
-                "baseColor": "#097479",
+                "baseColor": "#ff8040",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
                 "edited": true,
                 "reset": false
@@ -56,50 +56,50 @@
             "customTheme": {
                 "name": "Untitled Theme 1",
                 "default": "#4B7930",
-                "baseColor": "#4B7930",
+                "baseColor": "#3799aa",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
                 "reset": false
             },
             "themeState": {
                 "base-color": {
                     "default": "#4B7930",
-                    "value": "#4B7930",
-                    "edited": false
+                    "value": "#3799aa",
+                    "edited": true
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#4B7930",
+                    "value": "#3799aa",
                     "edited": false
                 },
                 "page-backgroundColor": {
-                    "value": "#111111",
-                    "edited": false
+                    "value": "#c8c8c8",
+                    "edited": true
                 },
                 "page-sidebar-backgroundColor": {
-                    "value": "#000000",
+                    "value": "#ffffff",
                     "edited": false
                 },
                 "group-textColor": {
-                    "value": "#6db046",
+                    "value": "#61bccc",
                     "edited": false
                 },
                 "group-borderColor": {
-                    "value": "#555555",
+                    "value": "#ffffff",
                     "edited": false
                 },
                 "group-backgroundColor": {
-                    "value": "#333333",
+                    "value": "#ffffff",
                     "edited": false
                 },
                 "widget-textColor": {
-                    "value": "#eeeeee",
+                    "value": "#111111",
                     "edited": false
                 },
                 "widget-backgroundColor": {
-                    "value": "#4b7930",
+                    "value": "#3799aa",
                     "edited": false
                 },
                 "widget-borderColor": {
-                    "value": "#333333",
+                    "value": "#ffffff",
                     "edited": false
                 },
                 "base-font": {
@@ -2054,8 +2054,8 @@
         "qos": "2",
         "datatype": "auto",
         "broker": "2aba1eb9.69a842",
-        "x": 140,
-        "y": 520,
+        "x": 140.00001907348633,
+        "y": 525.7142667770386,
         "wires": [
             [
                 "8ca84381.f3df2"
@@ -2071,7 +2071,7 @@
         "qos": "",
         "retain": "",
         "broker": "2aba1eb9.69a842",
-        "x": 590,
+        "x": 950,
         "y": 520,
         "wires": []
     },
@@ -2098,11 +2098,11 @@
         "offvalueType": "str",
         "officon": "",
         "offcolor": "",
-        "x": 360,
-        "y": 520,
+        "x": 360.0000190734863,
+        "y": 525.7142667770386,
         "wires": [
             [
-                "bfacf34c.b714c"
+                "4bbf3aaf.6a16d4"
             ]
         ]
     },
@@ -2312,6 +2312,7 @@
             }
         ],
         "checkall": "true",
+        "repair": false,
         "outputs": 2,
         "x": 520,
         "y": 460,
@@ -2477,7 +2478,7 @@
         "datatype": "auto",
         "broker": "2aba1eb9.69a842",
         "x": 150,
-        "y": 700,
+        "y": 720,
         "wires": [
             [
                 "8a3b75e6.0641d8"
@@ -2507,7 +2508,7 @@
         "seg1": "",
         "seg2": "",
         "x": 390,
-        "y": 700,
+        "y": 720,
         "wires": []
     },
     {
@@ -2520,7 +2521,7 @@
         "datatype": "auto",
         "broker": "2aba1eb9.69a842",
         "x": 140,
-        "y": 760,
+        "y": 780,
         "wires": [
             [
                 "77c3e63b.3a87d8"
@@ -2550,7 +2551,7 @@
         "seg1": "",
         "seg2": "",
         "x": 500,
-        "y": 760,
+        "y": 780,
         "wires": []
     },
     {
@@ -2560,7 +2561,7 @@
         "name": "H&T Bedroom Sensor",
         "info": "",
         "x": 160,
-        "y": 660,
+        "y": 680,
         "wires": []
     },
     {
@@ -2588,7 +2589,7 @@
         "datatype": "auto",
         "broker": "2aba1eb9.69a842",
         "x": 150,
-        "y": 880,
+        "y": 900,
         "wires": [
             [
                 "c8688f90.6ee0e"
@@ -2605,7 +2606,7 @@
         "datatype": "auto",
         "broker": "2aba1eb9.69a842",
         "x": 140,
-        "y": 940,
+        "y": 960,
         "wires": [
             [
                 "da184e2.de977b"
@@ -2621,7 +2622,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 370,
-        "y": 880,
+        "y": 900,
         "wires": [
             [
                 "299adbba.299984"
@@ -2637,7 +2638,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 360,
-        "y": 940,
+        "y": 960,
         "wires": [
             [
                 "9dfb04b0.c6df38"
@@ -2681,7 +2682,7 @@
         "useOldStyle": true,
         "outputs": 1,
         "x": 620,
-        "y": 940,
+        "y": 960,
         "wires": [
             []
         ]
@@ -2696,7 +2697,7 @@
         "datatype": "auto",
         "broker": "2aba1eb9.69a842",
         "x": 140,
-        "y": 820,
+        "y": 840,
         "wires": [
             [
                 "bf82e6ee.d09058"
@@ -2726,7 +2727,7 @@
         "seg1": "",
         "seg2": "",
         "x": 370,
-        "y": 820,
+        "y": 840,
         "wires": []
     },
     {
@@ -2832,7 +2833,7 @@
         "useOldStyle": true,
         "outputs": 1,
         "x": 630,
-        "y": 880,
+        "y": 900,
         "wires": [
             []
         ]
@@ -2846,7 +2847,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 310,
-        "y": 760,
+        "y": 780,
         "wires": [
             [
                 "b0972bd6.20c128"
@@ -2947,7 +2948,8 @@
                 "105b93ae.146bdc",
                 "1ed553b3.e05a8c",
                 "4a472bcb.3258a4",
-                "bce29b5a.a51d68"
+                "bce29b5a.a51d68",
+                "21e7ba50.1b31c6"
             ]
         ]
     },
@@ -3827,7 +3829,7 @@
         "type": "function",
         "z": "8ae7b656.b0c538",
         "name": "Send Humidity warning",
-        "func": "var dehumState=global.get('dehumState');\nvar humidityValue =  global.get('bedHumidity');\nmsg.payload = {};\nif (humidityValue >= 60 && dehumState == 'off')\n{\n    msg.payload = {\n        chatId: '390062931',\n        type: 'message',\n        content: 'Humidity: ' +  humidityValue + '%. Dehumidifier started.',\n        action: true\n    }\n}\nif (humidityValue <= 50 && dehumState == 'on')\n{\n    msg.payload = {\n       action: false\n    }\n}\nreturn msg;\n",
+        "func": "var dehumState=global.get('dehumState');\nvar humidityValue =  global.get('bedHumidity');\nmsg.payload = {};\nif (humidityValue >= 60 && dehumState == 'off')\n{\n    msg.payload = {\n        chatId: '390062931',\n        type: 'message',\n        content: 'Bedroom Humidity: ' +  humidityValue + '%. Dehumidifier started.',\n        action: true\n    }\n}\nif (humidityValue <= 50 && dehumState == 'on')\n{\n    msg.payload = {\n       action: false\n    }\n}\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "x": 450,
@@ -4009,7 +4011,7 @@
         "type": "function",
         "z": "8ae7b656.b0c538",
         "name": "crete telegram message",
-        "func": "var time = msg.payload.interval;\nvar humidity = global.get('bedHumidity');\nvar costs = parseFloat(global.get('currentCostDehumidifier') - global.get('oldCostDehumidifier')).toFixed(2);\nvar kwhusage = parseFloat(global.get('currentKWhDehumidifier') - global.get('oldKWhDehumidifier')).toFixed(2);\nmsg.payload = {};\nif (humidity >= 50)\n{\n    msg.payload = {\n    chatId: '390062931',\n    type: 'message',\n    content: 'Humidity: ' + humidity  + '%. Dehumidifier stopped to earlie because of bedtime. Run time: ' + time + '. Costs: ' + costs + '€. Usage: ' + kwhusage + ' KWh.'\n    }\n}\nmsg.payload = {\nchatId: '390062931',\ntype: 'message',\ncontent: 'Humidity: ' + humidity  + '%. Dehumidifier stopped after ' + time + '. Costs: ' + costs + '€. Usage: ' + kwhusage + ' KWh.'\n}\nreturn msg;",
+        "func": "var time = msg.payload.interval;\nvar humidity = global.get('bedHumidity');\nvar costs = parseFloat(global.get('currentCostDehumidifier') - global.get('oldCostDehumidifier')).toFixed(2);\nvar kwhusage = parseFloat(global.get('currentKWhDehumidifier') - global.get('oldKWhDehumidifier')).toFixed(2);\nmsg.payload = {};\nif (humidity >= 50)\n{\n    msg.payload = {\n    chatId: '390062931',\n    type: 'message',\n    content: 'Bedroom Humidity: ' + humidity  + '%. Dehumidifier stopped to earlie because of bedtime. Run time: ' + time + '. Costs: ' + costs + '€. Usage: ' + kwhusage + ' KWh.'\n    }\n}\nmsg.payload = {\nchatId: '390062931',\ntype: 'message',\ncontent: 'Humidity: ' + humidity  + '%. Dehumidifier stopped after ' + time + '. Costs: ' + costs + '€. Usage: ' + kwhusage + ' KWh.'\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 1690,
@@ -4646,12 +4648,12 @@
         "id": "c3103c17.730f1",
         "type": "ui_chart",
         "z": "9f53e779.d130a8",
-        "name": "Temperature Bed-Room Last Week Graph",
+        "name": "Temperature Bed-Room Last seven days Graph",
         "group": "1190da66.7981e6",
         "order": 5,
         "width": 0,
         "height": 0,
-        "label": "Bedroom - Last week",
+        "label": "Bedroom - Last seven days",
         "chartType": "line",
         "legend": "false",
         "xformat": "dd HH:mm",
@@ -4678,7 +4680,7 @@
         ],
         "useOldStyle": true,
         "outputs": 1,
-        "x": 1500,
+        "x": 1520,
         "y": 440,
         "wires": [
             []
@@ -4736,12 +4738,12 @@
         "id": "42240a10.ee9fc4",
         "type": "ui_chart",
         "z": "9f53e779.d130a8",
-        "name": "Humidity Bed-Room Last Week Graph",
+        "name": "Humidity Bed-Room Last seven days Graph",
         "group": "79846c2f.e66d64",
         "order": 5,
         "width": 0,
         "height": 0,
-        "label": "Bedroom - Last week",
+        "label": "Bedroom - Last seven days",
         "chartType": "line",
         "legend": "false",
         "xformat": "dd HH:mm",
@@ -4768,7 +4770,7 @@
         ],
         "useOldStyle": true,
         "outputs": 1,
-        "x": 1490,
+        "x": 1510,
         "y": 580,
         "wires": [
             []
@@ -4826,12 +4828,12 @@
         "id": "b575d0c2.6347f",
         "type": "ui_chart",
         "z": "9f53e779.d130a8",
-        "name": "Temperature Living-Room Last Week Graph",
+        "name": "Temperature Living-Room Last seven days Graph",
         "group": "1190da66.7981e6",
         "order": 5,
         "width": 0,
         "height": 0,
-        "label": "Livingroom - Last week",
+        "label": "Livingroom - Last seven days",
         "chartType": "line",
         "legend": "false",
         "xformat": "dd HH:mm",
@@ -4858,7 +4860,7 @@
         ],
         "useOldStyle": true,
         "outputs": 1,
-        "x": 1430,
+        "x": 1450,
         "y": 1320,
         "wires": [
             []
@@ -4916,12 +4918,12 @@
         "id": "9d8f68a.3117d98",
         "type": "ui_chart",
         "z": "9f53e779.d130a8",
-        "name": "Humidity Living-Room Last Week Graph",
+        "name": "Humidity Living-Room Last seven days Graph",
         "group": "79846c2f.e66d64",
         "order": 5,
         "width": 0,
         "height": 0,
-        "label": "Livingroom - Last week",
+        "label": "Livingroom - Last seven days",
         "chartType": "line",
         "legend": "false",
         "xformat": "dd HH:mm",
@@ -4948,7 +4950,7 @@
         ],
         "useOldStyle": true,
         "outputs": 1,
-        "x": 1420,
+        "x": 1440,
         "y": 1460,
         "wires": [
             []
@@ -5006,12 +5008,12 @@
         "id": "934294f7.e63f18",
         "type": "ui_chart",
         "z": "9f53e779.d130a8",
-        "name": "Pressure Living-Room Last Week Graph",
+        "name": "Pressure Living-Room Last seven days Graph",
         "group": "b82cd984.91e4e8",
         "order": 5,
         "width": 0,
         "height": 0,
-        "label": "Livingroom - Last week",
+        "label": "Livingroom - Last seven days",
         "chartType": "line",
         "legend": "false",
         "xformat": "dd HH:mm",
@@ -5038,7 +5040,7 @@
         ],
         "useOldStyle": true,
         "outputs": 1,
-        "x": 1420,
+        "x": 1440,
         "y": 1600,
         "wires": [
             []
@@ -5378,6 +5380,122 @@
             [
                 "8126dc33.e6241"
             ]
+        ]
+    },
+    {
+        "id": "ff70b6e4.32cf78",
+        "type": "telegram sender",
+        "z": "7dbbdbf3.365084",
+        "name": "",
+        "bot": "3d3d8fed.cc3ab",
+        "x": 810,
+        "y": 1360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "21e7ba50.1b31c6",
+        "type": "function",
+        "z": "7dbbdbf3.365084",
+        "name": "check humidity and crete telegram message",
+        "func": "var humidity = msg.payload.BME280.Humidity;\nif (humidity >= 60)\n{\n    msg.payload = {\n    chatId: '390062931',\n    type: 'message',\n    content: 'Living Room Humidity: ' + humidity  + '%. Please open doors and windows!'\n    }\n    return msg;\n} else {\n    \n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 530,
+        "y": 1360,
+        "wires": [
+            [
+                "ff70b6e4.32cf78"
+            ]
+        ]
+    },
+    {
+        "id": "4bbf3aaf.6a16d4",
+        "type": "switch",
+        "z": "7dbbdbf3.365084",
+        "name": "on/off check",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 530.0000190734863,
+        "y": 525.7142667770386,
+        "wires": [
+            [
+                "bfacf34c.b714c"
+            ],
+            [
+                "19b36b80.6d3a95",
+                "ced2b623.085578"
+            ]
+        ]
+    },
+    {
+        "id": "19b36b80.6d3a95",
+        "type": "delay",
+        "z": "7dbbdbf3.365084",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "50",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 730,
+        "y": 560,
+        "wires": [
+            [
+                "bfacf34c.b714c"
+            ]
+        ]
+    },
+    {
+        "id": "ced2b623.085578",
+        "type": "function",
+        "z": "7dbbdbf3.365084",
+        "name": "Create URL for Shutdown",
+        "func": "var ip=global.get('dreamboxip');\n\nmsg.url = ip + '/api/powerstate?newstate=1';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 750,
+        "y": 620,
+        "wires": [
+            [
+                "91aab48e.0459e8"
+            ]
+        ]
+    },
+    {
+        "id": "91aab48e.0459e8",
+        "type": "http request",
+        "z": "7dbbdbf3.365084",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "url": "",
+        "tls": "",
+        "x": 990,
+        "y": 620,
+        "wires": [
+            []
         ]
     }
 ]

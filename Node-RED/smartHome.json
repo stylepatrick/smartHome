@@ -12,7 +12,9 @@
     {
         "id": "7dbbdbf3.365084",
         "type": "tab",
-        "label": "Dashboard States"
+        "label": "Dashboard States + logic",
+        "disabled": false,
+        "info": ""
     },
     {
         "id": "9f53e779.d130a8",
@@ -329,7 +331,8 @@
                 "ea534a02.e68c88",
                 "ee3619f2.485b08",
                 "9bc9a3c3.acec1",
-                "784d926b.7d63bc"
+                "784d926b.7d63bc",
+                "4275c79d.cf5c18"
             ]
         ]
     },
@@ -2028,7 +2031,7 @@
         "retain": "",
         "broker": "2aba1eb9.69a842",
         "x": 860,
-        "y": 460,
+        "y": 500,
         "wires": []
     },
     {
@@ -2038,7 +2041,7 @@
         "name": "HeimKino",
         "topic": "",
         "x": 340,
-        "y": 460,
+        "y": 500,
         "wires": [
             [
                 "7f51712d.e1a24"
@@ -2113,7 +2116,7 @@
         "name": "Plugs",
         "info": "",
         "x": 330,
-        "y": 420,
+        "y": 460,
         "wires": []
     },
     {
@@ -2211,7 +2214,7 @@
         "name": "Bett Licht",
         "topic": "",
         "x": 340,
-        "y": 600,
+        "y": 640,
         "wires": [
             [
                 "dca405fb.3136f8"
@@ -2228,7 +2231,7 @@
         "retain": "",
         "broker": "2aba1eb9.69a842",
         "x": 540,
-        "y": 600,
+        "y": 640,
         "wires": []
     },
     {
@@ -2315,7 +2318,7 @@
         "repair": false,
         "outputs": 2,
         "x": 520,
-        "y": 460,
+        "y": 500,
         "wires": [
             [
                 "a9708e5a.eaa55"
@@ -2342,7 +2345,7 @@
         "randomUnits": "seconds",
         "drop": false,
         "x": 690,
-        "y": 500,
+        "y": 540,
         "wires": [
             [
                 "a9708e5a.eaa55"
@@ -2358,7 +2361,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 710,
-        "y": 540,
+        "y": 580,
         "wires": [
             [
                 "70cdf8c1.4cd118"
@@ -2375,7 +2378,7 @@
         "url": "",
         "tls": "",
         "x": 930,
-        "y": 540,
+        "y": 580,
         "wires": [
             []
         ]
@@ -3811,6 +3814,7 @@
         "id": "8a406e.5ce06f9",
         "type": "mqtt in",
         "z": "8ae7b656.b0c538",
+        "d": true,
         "name": "H&T Humidity IN",
         "topic": "shellies/shellyht-58EEB4/sensor/humidity",
         "qos": "2",
@@ -3856,6 +3860,7 @@
             }
         ],
         "checkall": "true",
+        "repair": false,
         "outputs": 2,
         "x": 630,
         "y": 100,
@@ -3904,8 +3909,8 @@
         "name": "",
         "lat": "",
         "lon": "",
-        "startTime": "09:00",
-        "endTime": "20:30",
+        "startTime": "07:00",
+        "endTime": "17:30",
         "startOffset": "",
         "endOffset": "",
         "x": 810,
@@ -3951,13 +3956,15 @@
         "id": "17d73de8.8aa742",
         "type": "inject",
         "z": "8ae7b656.b0c538",
+        "d": true,
         "name": "Stop Dehumidifier",
         "topic": "",
         "payload": "",
         "payloadType": "date",
         "repeat": "",
-        "crontab": "35 19 * * *",
+        "crontab": "35 17 * * *",
         "once": false,
+        "onceDelay": "",
         "x": 590,
         "y": 200,
         "wires": [
@@ -4038,12 +4045,13 @@
         "id": "d80e30de.417f6",
         "type": "inject",
         "z": "8ae7b656.b0c538",
+        "d": true,
         "name": "Start Dehumidifier",
         "topic": "",
         "payload": "",
         "payloadType": "date",
         "repeat": "",
-        "crontab": "05 09 * * *",
+        "crontab": "05 07 * * *",
         "once": false,
         "onceDelay": "",
         "x": 150,
@@ -4199,9 +4207,9 @@
         "id": "f868360c.c889b8",
         "type": "comment",
         "z": "8ae7b656.b0c538",
-        "name": "Dehumidifier Logic",
+        "name": "Dehumidifier Logic Winter",
         "info": "",
-        "x": 130,
+        "x": 150,
         "y": 60,
         "wires": []
     },
@@ -5388,7 +5396,7 @@
         "z": "7dbbdbf3.365084",
         "name": "",
         "bot": "3d3d8fed.cc3ab",
-        "x": 810,
+        "x": 1110,
         "y": 1360,
         "wires": [
             []
@@ -5406,7 +5414,7 @@
         "y": 1360,
         "wires": [
             [
-                "ff70b6e4.32cf78"
+                "f8e3b4ee.140638"
             ]
         ]
     },
@@ -5496,6 +5504,306 @@
         "y": 620,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "cf08f9a5.7827b8",
+        "type": "comment",
+        "z": "8ae7b656.b0c538",
+        "name": "The time decleared must be 2 hours before the start of the dehumidifiert",
+        "info": "",
+        "x": 290,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "92d332b2.0bfbe",
+        "type": "mqtt in",
+        "z": "8ae7b656.b0c538",
+        "name": "H&T Humidity IN",
+        "topic": "shellies/shellyht-58EEB4/sensor/humidity",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 120,
+        "y": 400,
+        "wires": [
+            [
+                "f7004701.b72da8"
+            ]
+        ]
+    },
+    {
+        "id": "f7004701.b72da8",
+        "type": "function",
+        "z": "8ae7b656.b0c538",
+        "name": "Send Humidity warning",
+        "func": "var humidityValue =  global.get('bedHumidity');\nmsg.payload = {};\nif (humidityValue >= 60)\n{\n    msg.payload = {\n        chatId: '390062931',\n        type: 'message',\n        content: 'Bedroom Humidity: ' +  humidityValue + '%. Please open doors and windows.'\n    }\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 370,
+        "y": 400,
+        "wires": [
+            [
+                "9f2611aa.308fb"
+            ]
+        ]
+    },
+    {
+        "id": "9f2611aa.308fb",
+        "type": "time-range-switch",
+        "z": "8ae7b656.b0c538",
+        "name": "",
+        "lat": "",
+        "lon": "",
+        "startTime": "07:00",
+        "endTime": "17:30",
+        "startOffset": "",
+        "endOffset": "",
+        "x": 650,
+        "y": 400,
+        "wires": [
+            [
+                "5dc76a3e.17df74"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5dc76a3e.17df74",
+        "type": "telegram sender",
+        "z": "8ae7b656.b0c538",
+        "name": "",
+        "bot": "3d3d8fed.cc3ab",
+        "x": 910,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8b3a8049.f0907",
+        "type": "comment",
+        "z": "8ae7b656.b0c538",
+        "name": "Logic Summer without Dehumidifier",
+        "info": "",
+        "x": 180,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "b4fb82af.2f96f",
+        "type": "mqtt in",
+        "z": "7dbbdbf3.365084",
+        "name": "Dehumidifier IN",
+        "topic": "shellies/shelly1pm-76B578/relay/0/command",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 120,
+        "y": 1720,
+        "wires": [
+            [
+                "95c591ab.814fa"
+            ]
+        ]
+    },
+    {
+        "id": "95c591ab.814fa",
+        "type": "ui_switch",
+        "z": "7dbbdbf3.365084",
+        "name": "",
+        "label": "Dehumidifier",
+        "tooltip": "",
+        "group": "a4375fdd.d3a7c",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 330,
+        "y": 1720,
+        "wires": [
+            [
+                "71bf6e5a.a6ffe"
+            ]
+        ]
+    },
+    {
+        "id": "71bf6e5a.a6ffe",
+        "type": "mqtt out",
+        "z": "7dbbdbf3.365084",
+        "name": "Dehumidifier OUT",
+        "topic": "shellies/shelly1pm-76B578/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "2aba1eb9.69a842",
+        "x": 570,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "4275c79d.cf5c18",
+        "type": "amazon-echo-device",
+        "z": "9bfc0359.871c9",
+        "name": "Entfeuchter",
+        "topic": "",
+        "x": 350,
+        "y": 380,
+        "wires": [
+            [
+                "73f8c303.31226c"
+            ]
+        ]
+    },
+    {
+        "id": "73f8c303.31226c",
+        "type": "mqtt out",
+        "z": "9bfc0359.871c9",
+        "name": "Dehumidifier OUT",
+        "topic": "shellies/shelly1pm-76B578/relay/0/command",
+        "qos": "",
+        "retain": "",
+        "broker": "2aba1eb9.69a842",
+        "x": 650,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ed5b4b95.327188",
+        "type": "mqtt in",
+        "z": "7dbbdbf3.365084",
+        "name": "BedLight IN",
+        "topic": "cmnd/sonoff_bedlight/power",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "2aba1eb9.69a842",
+        "x": 110,
+        "y": 1860,
+        "wires": [
+            [
+                "64f8d731.5b5628"
+            ]
+        ]
+    },
+    {
+        "id": "64f8d731.5b5628",
+        "type": "switch",
+        "z": "7dbbdbf3.365084",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 1860,
+        "wires": [
+            [
+                "acd55d03.f14c6"
+            ]
+        ]
+    },
+    {
+        "id": "acd55d03.f14c6",
+        "type": "delay",
+        "z": "7dbbdbf3.365084",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "minutes",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 510,
+        "y": 1860,
+        "wires": [
+            [
+                "1ac6c53e.984b2b"
+            ]
+        ]
+    },
+    {
+        "id": "1c1e96b7.b64c19",
+        "type": "mqtt out",
+        "z": "7dbbdbf3.365084",
+        "name": "Bed Light OUT",
+        "topic": "cmnd/sonoff_bedlight/power",
+        "qos": "",
+        "retain": "",
+        "broker": "2aba1eb9.69a842",
+        "x": 980,
+        "y": 1860,
+        "wires": []
+    },
+    {
+        "id": "1ac6c53e.984b2b",
+        "type": "function",
+        "z": "7dbbdbf3.365084",
+        "name": "convert on state to off",
+        "func": "msg.payload = null;\nmsg.payload = 'off';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 760,
+        "y": 1860,
+        "wires": [
+            [
+                "1c1e96b7.b64c19"
+            ]
+        ]
+    },
+    {
+        "id": "4d9e9a05.383684",
+        "type": "comment",
+        "z": "7dbbdbf3.365084",
+        "name": "Logic for auto shutdown of BedLight after 10 min",
+        "info": "",
+        "x": 220,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "f8e3b4ee.140638",
+        "type": "delay",
+        "z": "7dbbdbf3.365084",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "30",
+        "timeoutUnits": "minutes",
+        "rate": "1",
+        "nbRateUnits": "30",
+        "rateUnits": "minute",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 870,
+        "y": 1360,
+        "wires": [
+            [
+                "ff70b6e4.32cf78"
+            ]
         ]
     }
 ]

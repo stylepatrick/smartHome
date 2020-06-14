@@ -3711,7 +3711,8 @@
                 "21469fac.21fab",
                 "7bf8dc4.a229824",
                 "47f9d76.7ffa028",
-                "605c881.b6f3c78"
+                "605c881.b6f3c78",
+                "27d0c885.9f0408"
             ]
         ]
     },
@@ -4351,7 +4352,7 @@
         "format": "handlebars",
         "syntax": "mustache",
         "template": "select avg(temperature) as avg_temp, min(temperature) as min_temp, max(temperature) as max_temp, avg(humidity) as avg_humi, min(humidity) as min_humi, max(humidity) as max_humi, avg(pressure) as avg_press, min(pressure) as min_press, max(pressure) as max_press from state_livingroom\nwhere date > current_date - interval '1 days'",
-        "x": 520,
+        "x": 540,
         "y": 1020,
         "wires": [
             [
@@ -4367,7 +4368,7 @@
         "func": "msg.queryParameters = msg.queryParameters || {};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 280,
+        "x": 300,
         "y": 1020,
         "wires": [
             [
@@ -4388,8 +4389,8 @@
         "label": "AVG",
         "format": "{{msg.payload[0].avg_temp}}",
         "layout": "row-spread",
-        "x": 1070,
-        "y": 840,
+        "x": 1150,
+        "y": 820,
         "wires": []
     },
     {
@@ -4405,8 +4406,8 @@
         "label": "MIN",
         "format": "{{msg.payload[0].min_temp}}",
         "layout": "row-spread",
-        "x": 1070,
-        "y": 880,
+        "x": 1150,
+        "y": 860,
         "wires": []
     },
     {
@@ -4422,8 +4423,8 @@
         "label": "MAX",
         "format": "{{msg.payload[0].max_temp}}",
         "layout": "row-spread",
-        "x": 1070,
-        "y": 920,
+        "x": 1150,
+        "y": 900,
         "wires": []
     },
     {
@@ -4435,7 +4436,7 @@
         "output": true,
         "perrow": false,
         "outputs": 1,
-        "x": 720,
+        "x": 740,
         "y": 1020,
         "wires": [
             [
@@ -4459,7 +4460,8 @@
                 "12ea5125.048d8f",
                 "e552a059.98be",
                 "e519f526.2edb48",
-                "cb992f7b.b9524"
+                "cb992f7b.b9524",
+                "f6404e3f.7c472"
             ]
         ]
     },
@@ -4476,8 +4478,8 @@
         "label": "AVG",
         "format": "{{msg.payload[0].avg_humi}}",
         "layout": "row-spread",
-        "x": 1060,
-        "y": 1000,
+        "x": 1140,
+        "y": 980,
         "wires": []
     },
     {
@@ -4493,8 +4495,8 @@
         "label": "MIN",
         "format": "{{msg.payload[0].min_humi}}",
         "layout": "row-spread",
-        "x": 1060,
-        "y": 1040,
+        "x": 1140,
+        "y": 1020,
         "wires": []
     },
     {
@@ -4510,8 +4512,8 @@
         "label": "MAX",
         "format": "{{msg.payload[0].max_humi}}",
         "layout": "row-spread",
-        "x": 1060,
-        "y": 1080,
+        "x": 1140,
+        "y": 1060,
         "wires": []
     },
     {
@@ -4527,8 +4529,8 @@
         "label": "Livingroom - Status from last 7 days",
         "format": "",
         "layout": "row-center",
-        "x": 1080,
-        "y": 960,
+        "x": 1160,
+        "y": 940,
         "wires": []
     },
     {
@@ -4544,8 +4546,8 @@
         "label": "Livingroom - Status from last 7 days",
         "format": "",
         "layout": "row-center",
-        "x": 1080,
-        "y": 800,
+        "x": 1160,
+        "y": 780,
         "wires": []
     },
     {
@@ -4581,8 +4583,8 @@
         "label": "AVG",
         "format": "{{msg.payload[0].avg_press}}",
         "layout": "row-spread",
-        "x": 1060,
-        "y": 1160,
+        "x": 1140,
+        "y": 1140,
         "wires": []
     },
     {
@@ -4598,8 +4600,8 @@
         "label": "MIN",
         "format": "{{msg.payload[0].min_press}}",
         "layout": "row-spread",
-        "x": 1060,
-        "y": 1200,
+        "x": 1140,
+        "y": 1180,
         "wires": []
     },
     {
@@ -4615,8 +4617,8 @@
         "label": "MAX",
         "format": "{{msg.payload[0].max_press}}",
         "layout": "row-spread",
-        "x": 1060,
-        "y": 1240,
+        "x": 1140,
+        "y": 1220,
         "wires": []
     },
     {
@@ -4632,8 +4634,8 @@
         "label": "Livingroom - Status from last 7 days",
         "format": "",
         "layout": "row-center",
-        "x": 1080,
-        "y": 1120,
+        "x": 1160,
+        "y": 1100,
         "wires": []
     },
     {
@@ -4824,8 +4826,8 @@
         "func": "msg.topic='AVG'\nmsg.payload = msg.payload[0].avg_temp\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1070,
-        "y": 1280,
+        "x": 1150,
+        "y": 1260,
         "wires": [
             [
                 "b575d0c2.6347f"
@@ -4868,8 +4870,8 @@
         ],
         "useOldStyle": true,
         "outputs": 1,
-        "x": 1450,
-        "y": 1320,
+        "x": 1530,
+        "y": 1300,
         "wires": [
             []
         ]
@@ -4882,8 +4884,8 @@
         "func": "msg.topic='MIN'\nmsg.payload = msg.payload[0].min_temp\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1070,
-        "y": 1320,
+        "x": 1150,
+        "y": 1300,
         "wires": [
             [
                 "b575d0c2.6347f"
@@ -4898,8 +4900,8 @@
         "func": "msg.topic='MAX'\nmsg.payload = msg.payload[0].max_temp\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1070,
-        "y": 1360,
+        "x": 1150,
+        "y": 1340,
         "wires": [
             [
                 "b575d0c2.6347f"
@@ -4914,8 +4916,8 @@
         "func": "msg.topic='AVG'\nmsg.payload = msg.payload[0].avg_humi\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1060,
-        "y": 1420,
+        "x": 1140,
+        "y": 1400,
         "wires": [
             [
                 "9d8f68a.3117d98"
@@ -4958,8 +4960,8 @@
         ],
         "useOldStyle": true,
         "outputs": 1,
-        "x": 1440,
-        "y": 1460,
+        "x": 1520,
+        "y": 1440,
         "wires": [
             []
         ]
@@ -4972,8 +4974,8 @@
         "func": "msg.topic='MIN'\nmsg.payload = msg.payload[0].min_humi\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1060,
-        "y": 1460,
+        "x": 1140,
+        "y": 1440,
         "wires": [
             [
                 "9d8f68a.3117d98"
@@ -4988,8 +4990,8 @@
         "func": "msg.topic='MAX'\nmsg.payload = msg.payload[0].max_humi\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1060,
-        "y": 1500,
+        "x": 1140,
+        "y": 1480,
         "wires": [
             [
                 "9d8f68a.3117d98"
@@ -5004,8 +5006,8 @@
         "func": "msg.topic='AVG'\nmsg.payload = msg.payload[0].avg_press\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1060,
-        "y": 1560,
+        "x": 1140,
+        "y": 1540,
         "wires": [
             [
                 "934294f7.e63f18"
@@ -5048,8 +5050,8 @@
         ],
         "useOldStyle": true,
         "outputs": 1,
-        "x": 1440,
-        "y": 1600,
+        "x": 1520,
+        "y": 1580,
         "wires": [
             []
         ]
@@ -5062,8 +5064,8 @@
         "func": "msg.topic='MIN'\nmsg.payload = msg.payload[0].min_press\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1060,
-        "y": 1600,
+        "x": 1140,
+        "y": 1580,
         "wires": [
             [
                 "934294f7.e63f18"
@@ -5078,8 +5080,8 @@
         "func": "msg.topic='MAX'\nmsg.payload = msg.payload[0].max_press\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 1060,
-        "y": 1640,
+        "x": 1140,
+        "y": 1620,
         "wires": [
             [
                 "934294f7.e63f18"
@@ -5805,5 +5807,217 @@
                 "ff70b6e4.32cf78"
             ]
         ]
+    },
+    {
+        "id": "27d0c885.9f0408",
+        "type": "function",
+        "z": "9f53e779.d130a8",
+        "name": "Create Telegram avg history message",
+        "func": "var avg_temp = parseFloat((msg.payload[0].avg_temp)).toFixed(2);\nvar avg_humi = parseFloat((msg.payload[0].avg_humi)).toFixed(2);\nvar todayDate = new Date().toISOString().slice(0,10);\nmsg.payload = {\n    chatId: '390062931',\n    options: { \n        \"parse_mode\": \"HTML\"\n    },\n    type: 'message',\n    content: '<b>Bedroom ' + todayDate + '</b>\\n' +\n             '<b>Humidity:</b> ' +  avg_humi + ' %. \\n' +\n             '<b>Temperature:</b> ' + avg_temp +' C',\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1170,
+        "y": 720,
+        "wires": [
+            [
+                "1097c6cb.acfa39"
+            ]
+        ]
+    },
+    {
+        "id": "1097c6cb.acfa39",
+        "type": "telegram sender",
+        "z": "9f53e779.d130a8",
+        "name": "",
+        "bot": "3d3d8fed.cc3ab",
+        "x": 1450,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2a6c89a4.38c926",
+        "type": "telegram command",
+        "z": "9f53e779.d130a8",
+        "name": "",
+        "command": "/avg_bedroom",
+        "bot": "3d3d8fed.cc3ab",
+        "strict": false,
+        "x": 110,
+        "y": 240,
+        "wires": [
+            [
+                "1fdc8c02.df9664"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "926da85c.4e2578",
+        "type": "template",
+        "z": "9f53e779.d130a8",
+        "name": "select from bedroom",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "select avg(temperature) as avg_temp, min(temperature) as min_temp, max(temperature) as max_temp, avg(humidity) as avg_humi, min(humidity) as min_humi, max(humidity) as max_humi from state_bedroom\nwhere date > current_date - interval '1 days'",
+        "x": 560,
+        "y": 240,
+        "wires": [
+            [
+                "d14a22ba.25365"
+            ]
+        ]
+    },
+    {
+        "id": "1fdc8c02.df9664",
+        "type": "function",
+        "z": "9f53e779.d130a8",
+        "name": "setup params",
+        "func": "msg.queryParameters = msg.queryParameters || {};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "926da85c.4e2578"
+            ]
+        ]
+    },
+    {
+        "id": "d14a22ba.25365",
+        "type": "postgres",
+        "z": "9f53e779.d130a8",
+        "postgresdb": "bacb1987.c1aa28",
+        "name": "",
+        "output": true,
+        "perrow": false,
+        "outputs": 1,
+        "x": 760,
+        "y": 240,
+        "wires": [
+            [
+                "27d0c885.9f0408"
+            ]
+        ]
+    },
+    {
+        "id": "92be30b3.d0b5e",
+        "type": "comment",
+        "z": "9f53e779.d130a8",
+        "name": "Logic for telegram message",
+        "info": "",
+        "x": 1140,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "977a468a.b1a3b8",
+        "type": "telegram command",
+        "z": "9f53e779.d130a8",
+        "name": "",
+        "command": "/avg_livingroom",
+        "bot": "3d3d8fed.cc3ab",
+        "strict": false,
+        "x": 100,
+        "y": 1080,
+        "wires": [
+            [
+                "18e173c8.a3d63c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b5c0d7e8.6cf9d8",
+        "type": "template",
+        "z": "9f53e779.d130a8",
+        "name": "select from livingroom",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "select avg(temperature) as avg_temp, min(temperature) as min_temp, max(temperature) as max_temp, avg(humidity) as avg_humi, min(humidity) as min_humi, max(humidity) as max_humi, avg(pressure) as avg_press, min(pressure) as min_press, max(pressure) as max_press from state_livingroom\nwhere date > current_date - interval '1 days'",
+        "x": 540,
+        "y": 1080,
+        "wires": [
+            [
+                "a401f412.9c0b58"
+            ]
+        ]
+    },
+    {
+        "id": "18e173c8.a3d63c",
+        "type": "function",
+        "z": "9f53e779.d130a8",
+        "name": "setup params",
+        "func": "msg.queryParameters = msg.queryParameters || {};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 300,
+        "y": 1080,
+        "wires": [
+            [
+                "b5c0d7e8.6cf9d8"
+            ]
+        ]
+    },
+    {
+        "id": "a401f412.9c0b58",
+        "type": "postgres",
+        "z": "9f53e779.d130a8",
+        "postgresdb": "bacb1987.c1aa28",
+        "name": "",
+        "output": true,
+        "perrow": false,
+        "outputs": 1,
+        "x": 740,
+        "y": 1080,
+        "wires": [
+            [
+                "f6404e3f.7c472"
+            ]
+        ]
+    },
+    {
+        "id": "f6404e3f.7c472",
+        "type": "function",
+        "z": "9f53e779.d130a8",
+        "name": "Create Telegram avg history message",
+        "func": "var avg_temp = parseFloat((msg.payload[0].avg_temp)).toFixed(2);\nvar avg_humi = parseFloat((msg.payload[0].avg_humi)).toFixed(2);\nvar avg_press = parseFloat((msg.payload[0].avg_press)).toFixed(2);\nvar todayDate = new Date().toISOString().slice(0,10);\nmsg.payload = {\n    chatId: '390062931',\n    options: { \n        \"parse_mode\": \"HTML\"\n    },\n    type: 'message',\n    content: '<b>Living Room ' + todayDate + '</b>\\n' +\n             '<b>Humidity:</b> ' +  avg_humi + ' %. \\n' +\n             '<b>Temperature:</b> ' + avg_temp + ' C \\n' +\n             '<b>Pressure:</b> ' + avg_press + ' P',\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1170,
+        "y": 1720,
+        "wires": [
+            [
+                "3c8d0957.500a66"
+            ]
+        ]
+    },
+    {
+        "id": "3c8d0957.500a66",
+        "type": "telegram sender",
+        "z": "9f53e779.d130a8",
+        "name": "",
+        "bot": "3d3d8fed.cc3ab",
+        "x": 1450,
+        "y": 1720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5546cb3f.c28ba4",
+        "type": "comment",
+        "z": "9f53e779.d130a8",
+        "name": "Logic for telegram message",
+        "info": "",
+        "x": 1140,
+        "y": 1680,
+        "wires": []
     }
 ]
